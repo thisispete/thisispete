@@ -1,0 +1,13 @@
+{
+  "name": "thisispetedotcom",
+  "version": "0.0.1",
+  "dependencies": {
+    "docpad":"6.21.x",
+    "docpad-plugin-swig":"0.0.x",
+    "grunt":"0.3.17"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
