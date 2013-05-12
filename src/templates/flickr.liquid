@@ -1,0 +1,29 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]-->
+<html lang="en">
+<head>
+	<title>{{site_name}}</title>
+{% include "includes/meta" %}
+{% include "includes/css" %}
+{% include "includes/js_head" %}
+</head>
+<body>
+{% include "includes/nav" %}
+	<div id="content" class="content-container">
+		<div id="flickrGallery" data-flickrset="{{flickrid}}" data-size="{{size}}" class="gallery clearfix">
+			<div class="fixedRatioWrapper {{size}} {% if size =='w640'%} ratio4x3 {% else %} ratio3x2 {% endif %}">	
+				<ul class="img-stack"></ul>
+			</div>
+			<div class="pagination"><a href="#" class="prev">prev</a><div class="count"><span id="current">1</span> / <span id="total">1</span></div><a href="#" class="next">next</a></div>
+			<div class="copy">
+				<h1>{{title}}</h1>
+				{{body}}
+				{% if link %}<a href="{{link}}" target="_blank">{{link}}</a>{% endif %}
+			</div>
+		</div>	
+	</div>
+	<div id="bg"></div>
+{% include "includes/js_foot" %}
+</body>
+</html>

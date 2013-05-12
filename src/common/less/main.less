@@ -1,0 +1,359 @@
+.anim-color (@speed :.3s) {
+	-webkit-transition: color @speed ease-in-out;
+	-moz-transition: color @speed ease-in-out;
+	-o-transition: color @speed ease-in-out;
+	-ms-transition:color @speed ease-in-out;
+	transition:color @speed ease-in-out;
+}
+.anim-alpha (@speed :.3s) {
+	-webkit-transition: alpha @speed ease-in-out;
+	-moz-transition: alpha @speed ease-in-out;
+	-o-transition: alpha @speed ease-in-out;
+	-ms-transition:alpha @speed ease-in-out;
+	transition:alpha @speed ease-in-out;
+}
+.anim-all (@speed :.3s) {
+	-webkit-transition: all @speed ease-in-out;
+	-moz-transition: all @speed ease-in-out;
+	-o-transition: all @speed ease-in-out;
+	-ms-transition:all @speed ease-in-out;
+	transition:all @speed ease-in-out;
+}
+.anim-width (@speed :.3s) {
+	-webkit-transition: width @speed ease-in-out;
+	-moz-transition: width @speed ease-in-out;
+	-o-transition: width @speed ease-in-out;
+	-ms-transition:width @speed ease-in-out;
+	transition:width @speed ease-in-out;
+}
+.anim-height (@speed :.3s) {
+	-webkit-transition: height @speed ease-in-out;
+	-moz-transition: height @speed ease-in-out;
+	-o-transition: height @speed ease-in-out;
+	-ms-transition:height @speed ease-in-out;
+	transition:height @speed ease-in-out;
+}
+.alpha (@op :0){
+	opacity: @op / 100;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=" @op ")";
+	filter: "alpha(opacity=" @op ")";
+}
+.shadowBox (){
+	background: url("/img/grey.png") repeat;
+	background: rgba(0, 0, 0, 0.8);
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CC000000', endColorstr='#CC000000', GradientType=0 );
+	
+	-webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, .45);
+	-moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, .45);
+	box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, .45);
+}
+
+body{
+	background:#666;
+	#oldbg,
+	#bg{
+		background: url("http://thisispete.com/img/bg/random.php") center center fixed no-repeat;
+		-moz-background-size: cover;
+		background-size: cover;
+		top:0;
+		position: fixed;
+		height:100%;
+		width:100%;
+		z-index: 0;
+	}
+}	
+	
+header{
+	position:absolute;
+	margin-top:70px;
+	width:230px;
+	.shadowBox;
+	z-index:3;
+}
+#PETElogo{
+	z-index: 99;
+	cursor: pointer;
+	margin: 20px 0 15px 10px;
+}
+#menuButton{
+	z-index: 98;
+	cursor: pointer;
+	position: absolute;
+	margin: 20px 10px;
+}
+nav{
+	padding-bottom:30px;
+	li{
+		.anim-height();
+		margin-bottom:3px;	
+		a, 
+		a:visited{
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size:14px;
+			line-height:15px;
+			color:#ccc;
+			.anim-color(.2s);
+		}
+		a:hover{
+			color:#fff;
+			.anim-color(.2s);
+		}
+	}
+	li.selected{
+		a{
+			.anim-color(.6s);
+			color:#66f;
+			background:none;
+		}
+	}
+	.l1{
+		margin-left: 10px;
+	}
+	.l2, .l3, .l4{
+		height:0;
+		display:none;
+	}
+	.l2{
+		margin-left: 20px;
+	}
+	.l3{
+		margin-left: 30px;
+	}
+	.l4{
+		margin-left: 40px;
+	} 
+}
+
+.content-container{
+	position:absolute;
+	top:70px;
+	left:250px;
+	z-index: 1;
+}
+
+.gallery{
+	.shadowBox;
+	padding: 15px 15px 30px 15px;
+	position:absolute;
+
+	iframe,
+	.swf-stack,
+	.img-stack{
+		width:100%;
+		height:100%;
+		li{
+			text-align: center;
+		}
+	}
+	.copy{
+		display:block;
+		float:left;
+		h1{
+			margin-bottom:12px;
+			padding-right:65px;
+		}
+	}
+	.pagination{
+		float:right;
+		right:15px;
+		position:absolute;
+		padding-right:1px; 
+		cursor:default;
+		.prev{
+			display:block;
+			float:left;
+			margin-top:1px;
+			cursor:pointer;
+		}
+		.next{
+			display:block;
+			float:left;
+			margin-top:1px;
+			cursor:pointer;
+		}
+		.count{
+			float:left;
+			margin:0 6px;
+		}
+	} 
+}
+.fixedRatioWrapper{
+	position:relative;
+	margin-bottom:13px;
+}
+#scrollContent{
+	width: 720px;
+	height: 538px;
+	padding: 15px 15px 25px 15px;
+	.scrollpane{
+		width: 100%;
+		height: 100%;	
+		overflow:auto;
+		outline:none;
+	}
+	#phonePane,
+	.jspPane{
+		p{
+		 padding-right:15px;
+		 margin-bottom:12px;
+		}
+		p:last-child{
+		 margin-bottom:40px;
+		}
+		ul{
+		margin-bottom:10px;
+		}
+		img{
+			max-width:100%;
+		}
+	} 
+}
+
+#flickrGallery{
+	.img-stack li img{
+		max-height: 100%;
+	}
+	.w640{
+		width:640px;
+		height:480px;
+		overflow:hidden;
+	}
+	.w720{
+		width:720px;
+		height:480px;
+		overflow:hidden;
+	}
+}
+#singleVideo,
+#videoGallery{
+	.videoFrame{
+		width:600px; 
+		height:400px;
+	}
+}
+#imageWithVideo{
+	.videoFrame{
+		width:580px; 
+		height:435px;
+	}
+}
+#flashGallery{
+	.flash-warn{
+		position:absolute;
+		z-index:8;
+		padding:15px; 
+	}
+}
+
+#audioPlayer{
+	.cover-art{
+		width:350px;
+		height:350px;
+	}
+	.fixedRatioWrapper{
+		margin-bottom:0;
+	}
+	.download-link{
+		text-transform: uppercase;
+		font-size: 11px;
+		font-weight: 600;
+		color:#ccc;
+		.anim-color(.2s);
+	}
+	.download-link:hover{
+		color:#fff;
+		.anim-color(.2s);
+	}
+	.audiojs {
+		width:350px; 
+		height: 22px; 
+		background: #333;
+		background: rgba(255, 255, 255, 0.05);
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dffffff', endColorstr='#0dffffff',GradientType=0 );
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		-o-box-shadow:none;
+		box-shadow:none;
+		
+		.play-pause {
+			border:none; 
+			width: 15px; 
+			height: 20px; 
+			padding: 0px 8px 0px 0px; 
+		}
+		p { 
+			width: 25px; 
+			height: 20px; 
+		 }
+		.scrubber { 
+			background: #444; 
+			background: rgba(204, 204, 204, 0.3);
+			width: auto;
+			right: 100px;
+			position: absolute;
+			left: 40px; 
+			height: 8px;
+			margin: 5px;
+			border:#444 1px solid; 
+		}
+		.progress { 
+			height: 8px; 
+			width: 0px; 
+			background: #ccc;
+		}
+		.loaded { 
+			height: 8px; 
+			background: #333;
+			background: rgba(0, 0, 0, 0.7);
+		}
+		.time { 
+			border:none;
+			float: right;
+			padding: 0 14px 0 0;
+			margin: 0; 
+			height: 21px; 
+			line-height: 21px; 
+			color:#999;
+			font-size:11px;
+			em, strong{
+				color:#999;
+			}
+		}
+		.error-message { 
+		height: 21px;
+		line-height: 21px;
+		}
+	}
+}
+#contactGrid{
+	position:relative;
+	padding: 14px 15px;
+	ul{
+		max-width:280px;
+	  margin: 0 auto;
+		padding-bottom:1px;
+		li{
+			padding:15px;
+			display:block;
+			float:left;
+			a{
+				position:relative;
+				display:block;
+				z-index: 10;
+				width:60px;
+				height:60px;
+				h3{
+					display:none
+				}
+				margin-bottom:-60px;
+			}
+			.svg-icon{
+				display:block;
+				position:relative;
+				z-index: 1;
+			}
+			
+		}
+	}
+}

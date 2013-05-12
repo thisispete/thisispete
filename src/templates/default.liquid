@@ -1,0 +1,21 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]-->
+<html lang="en">
+<head>
+	<title>{{site_name}}</title>
+{% include "includes/meta" %}
+{% include "includes/css" %}
+{% include "includes/js_head" %}
+</head>
+<body>
+{% include "includes/nav" %}
+	<div id="content" class="content-container">
+		<div class="">
+			{{ body }}
+		</div>		
+	</div>
+	<div id="bg"></div>
+{% include "includes/js_foot" %}
+</body>
+</html>

@@ -1,0 +1,36 @@
+:title: "Calophon"
+:body: |
+  ##About this site
+  
+  ###Built with [Bonsai](http://tinytree.info/):
+  * [LESS](http://lesscss.org/) via the [TILT](https://github.com/rtomayko/tilt) ruby plugin
+  * [Liquid](http://wiki.shopify.com/UsingLiquid/) templating
+  * [YAML](http://yaml.org/)
+  * [Markdown](http://daringfireball.net/projects/markdown/)
+  * [YUI compressor](http://developer.yahoo.com/yui/compressor/)
+  
+  ###Boilerplate:
+  * HTML5 markup influenced by [html5 boilerplate](http://html5boilerplate.com/) 
+  * CSS3 reset [normalize.css](https://github.com/necolas/normalize.css/)
+  
+  ###Javascript Libraries:
+  * [jQuery](http://jquery.com/)
+  * [Raphaël](http://raphaeljs.com/)
+  * [audio.js](http://kolber.github.com/audiojs/)
+  * [Modernizr](http://modernizr.com/)
+  * [SWFObject](http://code.google.com/p/swfobject/)
+  
+  ###jQuery Plug-ins:
+  * [hover intent](http://cherne.net/brian/resources/jquery.hoverIntent.html)
+  * [jScrollPane](http://www.kelvinluck.com/assets/jquery/jScrollPane/jScrollPane.html)
+  * [mouse wheel](http://brandonaaron.net/code/mousewheel/docs)
+
+  ###Social media content:
+  * [vimeo](http://vimeo.com/)
+  * [flickr](http://www.flickr.com/)
+
+  ###Production software:
+  * Adobe CS5
+  * Aptana Studio 3
+  
+  ###©2012 Pete Schirmer. All Rights Reserved.

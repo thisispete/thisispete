@@ -1,0 +1,28 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]-->
+<html lang="en">
+<head>
+	<title>{{site_name}}</title>
+{% include "includes/meta" %}
+{% include "includes/css" %}
+{% include "includes/js_head" %}
+</head>
+<body>
+{% include "includes/nav" %}
+	<div id="content" class="content-container">
+		<div id="singleVideo" class="gallery clearfix">
+			<div class="fixedRatioWrapper ratio3x2">
+				<iframe id="videoFrame" class="videoFrame" src="http://player.vimeo.com/video/{{videoid}}?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;loop=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</div>
+			<div class="copy">
+				<h1>{{title}}</h1>
+				{{body}}
+				{% if link %}<a href="{{link}}" target="_blank">{{link}}</a>{% endif %}
+			</div>
+		</div>		
+	</div>
+	<div id="bg"></div>	
+{% include "includes/js_foot" %}
+</body>
+</html>

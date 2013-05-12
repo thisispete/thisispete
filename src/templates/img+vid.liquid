@@ -1,0 +1,35 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]-->
+<html lang="en">
+<head>
+	<title>{{site_name}}</title>
+{% include "includes/meta" %}
+{% include "includes/css" %}
+{% include "includes/js_head" %}
+</head>
+<body>
+{% include "includes/nav" %}
+	<div id="content" class="content-container">
+		<div id="imageWithVideo" class="gallery clearfix">
+			<div class="fixedRatioWrapper {% case ratio %}{% when '16x9' %}ratio16x9{% when '4x3' %}ratio4x3{% when '1x1' %}ratio1x1{% else %}ratio3x2{% endcase %}">
+				<ul class="img-stack ">
+					{% for image in images %}<li data-disp="img">
+	  					<img src="{{image.path}}" alt="{{image.name}}"/>
+	  				</li>{% endfor %}
+	  				{% for vid in videos %}<li data-disp="vid" data-path="http://player.vimeo.com/video/{{vid.id}}?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;loop=0">
+  					</li>{% endfor %}
+				</ul>
+				<iframe id="videoFrame" class="videoFrame" src="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</div>
+			<div class="pagination"><a href="#" class="prev">prev</a><div class="count"><span id="current">1</span> / <span id="total">1</span></div><a href="#" class="next">next</a></div>
+			<div class="copy">
+				<h1>{{title}}</h1>
+				{{body}}
+			</div>
+		</div>		
+	</div>
+	<div id="bg"></div>
+{% include "includes/js_foot" %}
+</body>
+</html>
