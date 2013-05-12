@@ -1,6 +1,6 @@
 {
   "name": "thisispetedotcom",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "author": "thisispete",
   "repository": {
@@ -12,17 +12,17 @@
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-bump": "~0.0.2",
+    "grunt-bump": ">=0.0.2",
     "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-jshint": "~0.2.0",
     "grunt-contrib-less": "~0.5.1",
     "grunt-contrib-watch": "~0.4.2",
-    "grunt-heroku-deploy": "~0.1.1",
-    "grunt-swig": "0.0.9"
+    "grunt-yui-compressor": ">=0.2.1",
+    "grunt-swig": ">=0.0.9"
   },
   "engines": {
-    "node": "~0.10.x",
+    "node": "0.10.x",
     "npm": "~1.2.14"
   }
 }

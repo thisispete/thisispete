@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      files: ['src/common/*.js'],
+      files: ['src/common/js/*.js'],
       options: {
         node: true,
         jquery: true,
@@ -37,74 +37,78 @@ module.exports = function(grunt) {
       }
     },
 
+    less:{
+      css:{
+        options:{
+          yuicompress: true
+        },
+        files:{
+          'deploy/css/main.css': 'src/common/less/main.less',
+          'deploy/css/phone.css': 'src/common/less/phone.less'
+        }
+      }
+
+    },
+
+    min:{
+      js:{
+        src: 'src/common/js/script.js',
+        dest: 'deploy/js/script.js'
+      }
+    },
+
     copy:{
-      common:{
+      static:{
         files:[
-          // {expand: true, cwd:'packages/common/img/',      src: ['**'], dest: '../build/debug/img/'},
-          // {expand: true, cwd:'packages/common/fonts/',    src: ['**'], dest: '../build/debug/fonts/'},
-          // {expand: true, cwd:'packages/common/js/',       src: ['**'], dest: '../build/debug/js/'},
-          // {expand: true, cwd:'packages/common/swf/',       src: ['**'], dest: '../build/debug/swf/'}
+          {expand: true, cwd:'src/static/img/', src: ['**'], dest: 'deploy/img/'},
+          {expand: true, cwd:'src/static/js/', src: ['**'], dest: 'deploy/js/'},
+          {expand: true, cwd:'src/static/css/', src: ['**'], dest: 'deploy/css/'},
+          {expand: true, cwd:'src/static/', src: ['*.pdf', '*.txt'], dest: 'deploy/'},
         ]
       }
     },
 
-
-    watch:{
-      common:{
-        files:['packages/common/**/*.*', '!packages/common/css/responsive-modules.scss'],
-        tasks:['common']
-      },
-      js:{
-        files:['packages/modules/**/js/*.js'],
-        tasks:['js']
-      },
-      css:{
-        files:['packages/modules/**/css/*.scss'],
-        tasks:['css']
-      },
+    swig:{
       html:{
-        files:['packages/common/html/**/*.jade', 'packages/modules/**/*.jade', 'packages/modules/**/*.json'],
-        tasks:['html']
-      },
-      assets:{
-        files:['packages/modules/**/img/**/*.*'],
-        tasks:['assets']
+        root:'src/data/',
+        dest:'deploy/',
+        src: ['src/data/*.swig', 'src/templates/*.swig'],
+        siteUrl: 'http://thisispete.com/',
+        production: true,
+        sitemap_priorities: {
+          '_DEFAULT_': '0.5',
+          'index': '0.8',
+          'subpage': '0.7'
+        }
       }
     },
 
-
+    watch:{
+      assets:{
+        files:['src/static/**/*.*'],
+        tasks:['copy']
+      },
+      js:{
+        files:['src/common/js/*.js'],
+        tasks:['jshint', 'min']
+      },
+      less:{
+        files:['src/common/less/*.less'],
+        tasks:['less']
+      },
+      swig:{
+        files:['src/data/**/*.*', 'src/templates/*.*'],
+        tasks:['swig']
+      }
+    }
 
   });
 
-  //load grunt plugin tasks
-  grunt.loadNpmTasks('grunt-clear');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-jade');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
+  // Load tasks
+  grunt.file.expand('node_modules/grunt-*').map(function (task) {
+      return task.replace('node_modules/', '');
+  }).forEach(grunt.loadNpmTasks);
 
-
-  //watch
-  //update js
-  //update css
-  //update html
-
-  //main
-  //js lint
-  //clear deploy
-  //less to css
-  //swing to html
-  //js min concat
-  //copy static files
-  //sitemap rebuild
-  //
-
-  //deploy
-  //bump version minor
-  //heroku deploy
-  //git push?
-  //update s3 assets?
+  grunt.registerTask('default', ['jshint', 'clean', 'less', 'swig', 'min', 'copy']);
 
 };
