@@ -71,14 +71,29 @@ module.exports = function(grunt) {
     swig:{
       html:{
         root:'src/data/',
+        cwd: 'src/data/',
         dest:'deploy/',
-        src: ['src/data/*.swig', 'src/templates/*.swig'],
+        src: ['**/*.swig'],
         siteUrl: 'http://thisispete.com/',
         production: true,
+        generateSitemap: false,
+        generateRobotstxt: false,
         sitemap_priorities: {
           '_DEFAULT_': '0.5',
           'index': '0.8',
           'subpage': '0.7'
+        }
+      }
+    },
+
+    fileregexrename:{
+      go:{
+        files:{'deploy/' : 'deploy/**'},
+        options:{
+          replacements:[{
+            pattern: /^[0-9]{2}\./g,
+            replacement: ''
+          }]
         }
       }
     },
@@ -109,6 +124,6 @@ module.exports = function(grunt) {
       return task.replace('node_modules/', '');
   }).forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('default', ['jshint', 'clean', 'less', 'swig', 'min', 'copy']);
+  grunt.registerTask('default', ['jshint', 'clean', 'swig', 'fileregexrename', 'less', 'min', 'copy']);
 
 };

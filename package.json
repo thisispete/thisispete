@@ -1,6 +1,6 @@
 {
   "name": "thisispetedotcom",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "author": "thisispete",
   "repository": {
@@ -19,7 +19,9 @@
     "grunt-contrib-less": "~0.5.1",
     "grunt-contrib-watch": "~0.4.2",
     "grunt-yui-compressor": ">=0.2.1",
-    "grunt-swig": ">=0.0.9"
+    "grunt-swig": "git+https://github.com/rtgibbons/grunt-swig.git#0.0.10",
+    "grunt-file-regex-rename": "0.1.x",
+    "grunt-sitemap": "0.1.x"
   },
   "engines": {
     "node": "0.10.x",
