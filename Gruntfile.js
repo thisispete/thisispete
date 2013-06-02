@@ -68,26 +68,8 @@ module.exports = function(grunt) {
       }
     },
 
-    swig:{
-      html:{
-        root:'src/data/',
-        cwd: 'src/data/',
-        dest:'deploy/',
-        src: ['**/*.swig'],
-        siteUrl: 'http://thisispete.com/',
-        production: true,
-        generateSitemap: false,
-        generateRobotstxt: false,
-        sitemap_priorities: {
-          '_DEFAULT_': '0.5',
-          'index': '0.8',
-          'subpage': '0.7'
-        }
-      }
-    },
-
     fileregexrename:{
-      go:{
+      inline:{
         files:{'deploy/' : 'deploy/**'},
         options:{
           replacements:[{
@@ -124,6 +106,43 @@ module.exports = function(grunt) {
       return task.replace('node_modules/', '');
   }).forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('default', ['jshint', 'clean', 'swig', 'fileregexrename', 'less', 'min', 'copy']);
+  grunt.registerTask('default', ['jshint', 'clean', 'namedSwig', 'less', 'min', 'copy']);
+
+  grunt.registerTask('namedSwig', 'runs swig on each file with a rename regex', function(){
+    grunt.config('swig', {});
+    var i = 0;
+    grunt.file.expand('src/data/**/*.swig').forEach(function(path){
+          path = path.split('index.swig')[0];
+          grunt.config('swig.proc'+i+'.init', {root:'src/data/'});
+          grunt.config('swig.proc'+i+'.cwd', path);
+          path = path.split('src/data/')[1];
+          grunt.config('swig.proc'+i+'.generateSitemap', false);
+          grunt.config('swig.proc'+i+'.generateRobotstxt', false);
+          grunt.config('swig.proc'+i+'.src', '*.swig');
+          grunt.config('swig.proc'+i+'.dest', 'deploy/' + path.replace(/[0-9]{2}\./g, ''));
+          grunt.task.run('swig:proc'+i);
+      i++;
+    })
+  });
+
+
+  grunt.registerTask('regex', 'renames deploy/10.foo/20.bar deploy/foo/bar', function(){
+    var p = '', a = [], n = [], fs = require('fs', path = require('path'));
+
+    grunt.file.recurse('deploy/', function(a){
+      p = path.resolve(a);
+      a = p.split('/').reverse();
+      console.log('renaming: '+ p +' >>> ' + p.replace(/[0-9]{2}\./g, ''));
+      a.forEach(function(e,i){
+        if(e.match(/[0-9]{2}\./)){
+          n = p.split(e);
+          if(fs.existsSync(n[0]+e)){
+            fs.renameSync(n[0] + e , n[0] + e.replace(/[0-9]{2}\./, ''));
+            console.log('success');
+          }
+        }
+      });
+    })
+  });
 
 };
