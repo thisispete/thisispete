@@ -68,18 +68,6 @@ module.exports = function(grunt) {
       }
     },
 
-    fileregexrename:{
-      inline:{
-        files:{'deploy/' : 'deploy/**'},
-        options:{
-          replacements:[{
-            pattern: /^[0-9]{2}\./g,
-            replacement: ''
-          }]
-        }
-      }
-    },
-
     watch:{
       assets:{
         files:['src/static/**/*.*'],
@@ -125,24 +113,5 @@ module.exports = function(grunt) {
     })
   });
 
-
-  grunt.registerTask('regex', 'renames deploy/10.foo/20.bar deploy/foo/bar', function(){
-    var p = '', a = [], n = [], fs = require('fs', path = require('path'));
-
-    grunt.file.recurse('deploy/', function(a){
-      p = path.resolve(a);
-      a = p.split('/').reverse();
-      console.log('renaming: '+ p +' >>> ' + p.replace(/[0-9]{2}\./g, ''));
-      a.forEach(function(e,i){
-        if(e.match(/[0-9]{2}\./)){
-          n = p.split(e);
-          if(fs.existsSync(n[0]+e)){
-            fs.renameSync(n[0] + e , n[0] + e.replace(/[0-9]{2}\./, ''));
-            console.log('success');
-          }
-        }
-      });
-    })
-  });
 
 };
