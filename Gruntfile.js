@@ -67,26 +67,9 @@ module.exports = function(grunt) {
         ]
       }
     },
-    swig:{
-      sitemap:{
-        init: {
-          root: "deploy/"
-        },
-        dest: "deploy/",
-        cwd: "deploy/",
-        src: ['**/*.html'],
-        generateSitemap: true,
-        generateRobotstxt: true,
-        siteUrl: 'http://thisispete.com/',
-        sitemap_priorities: {
-         '_DEFAULT_': '0.5',
-         'index': '0.8',
-         'subpage': '0.7'
-        }
-      }
-    },
+
     sitemap:{
-      d:{
+      deploy:{
         siteRoot: 'deploy/',
         homepage: 'http://thisispete.com/',
         changefreq: 'monthly'
@@ -108,7 +91,7 @@ module.exports = function(grunt) {
       },
       swig:{
         files:['src/data/**/*.*', 'src/templates/*.*'],
-        tasks:['swig']
+        tasks:['html']
       }
     }
 
@@ -119,7 +102,7 @@ module.exports = function(grunt) {
       return task.replace('node_modules/', '');
   }).forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('default', ['jshint', 'clean', 'html', 'less', 'min', 'copy']);
+  grunt.registerTask('default', ['jshint', 'clean', 'html', 'sitemap', 'less', 'min', 'copy']);
 
   grunt.registerTask('html', 'runs swig on each file with a rename regex', function(){
     grunt.config('swig', {});
