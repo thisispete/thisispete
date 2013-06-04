@@ -1,5 +1,6 @@
-{% extends '../templates/base.swig' %}
-
-{% block content %}
-    <p>hi</p>
+{% extends '../templates/text.swig' %}
+{% block body %}
+  <h2>Work Experience</h2>
+  <h3>Nurun</h3>
+  <p>check one</p>
 {% endblock %}

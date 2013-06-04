@@ -19,6 +19,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,700,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css">
+    <link rel="stylesheet" href="/css/jquery.jscrollpane.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/phone.css" media="screen and (max-width: 770px)">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
@@ -32,7 +33,7 @@
       </nav>
     </header>
     <div id="content" class="content-container">
-      {% block content %}{% endblock %}
+        {% block content %}{% endblock %}
     </div>
     <div id="bg"></div>
     <script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>

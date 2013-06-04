@@ -42,14 +42,28 @@
 	background: url("/img/grey.png") repeat;
 	background: rgba(0, 0, 0, 0.8);
 	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CC000000', endColorstr='#CC000000', GradientType=0 );
-	
+
 	-webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, .45);
 	-moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, .45);
 	box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, .45);
 }
 
+html{
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body, button, input, select, textarea, em, strong {
+  font-family: 'Open Sans', 'Helvetica', 'Verdana', sans-serif;
+  color: #ccc;
+  font-weight: 400
+}
+
 body{
-	background:#666;
+	font-size: 12px;
+  line-height: 13px;
+  background: #000;
+  padding: 0;
 	#oldbg,
 	#bg{
 		background: url("http://thisispete.com/img/bg/random.php") center center fixed no-repeat;
@@ -61,14 +75,118 @@ body{
 		width:100%;
 		z-index: 0;
 	}
-}	
-	
+}
 header{
 	position:absolute;
 	margin-top:70px;
 	width:230px;
 	.shadowBox;
 	z-index:3;
+}
+h1 {
+  margin: 0;
+  font-size: 23px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase
+}
+h2 {
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 800
+}
+h3 {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+  margin: 0
+}
+p, div, span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0;
+}
+
+::-moz-selection {
+  background: #003;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #003;
+  color: #fff;
+  text-shadow: none;
+}
+img::-moz-selection {
+  background: transparent;
+}
+img::selection {
+  background: transparent;
+}
+a {
+  color: #ccc !important;
+  text-decoration: none;
+}
+a:visited {
+  color: #ccc !important;
+}
+a:focus {
+  outline: 0 !important;
+}
+a:hover, a:active {
+  outline: 0;
+}
+td {
+  vertical-align: top;
+}
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+.ir br {
+  display: none;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
 }
 #PETElogo{
 	z-index: 99;
@@ -85,8 +203,8 @@ nav{
 	padding-bottom:30px;
 	li{
 		.anim-height();
-		margin-bottom:3px;	
-		a, 
+		margin-bottom:3px;
+		a,
 		a:visited{
 			text-decoration: none;
 			text-transform: uppercase;
@@ -122,7 +240,7 @@ nav{
 	}
 	.l4{
 		margin-left: 40px;
-	} 
+	}
 }
 
 .content-container{
@@ -158,7 +276,7 @@ nav{
 		float:right;
 		right:15px;
 		position:absolute;
-		padding-right:1px; 
+		padding-right:1px;
 		cursor:default;
 		.prev{
 			display:block;
@@ -176,7 +294,7 @@ nav{
 			float:left;
 			margin:0 6px;
 		}
-	} 
+	}
 }
 .fixedRatioWrapper{
 	position:relative;
@@ -188,7 +306,7 @@ nav{
 	padding: 15px 15px 25px 15px;
 	.scrollpane{
 		width: 100%;
-		height: 100%;	
+		height: 100%;
 		overflow:auto;
 		outline:none;
 	}
@@ -207,7 +325,7 @@ nav{
 		img{
 			max-width:100%;
 		}
-	} 
+	}
 }
 
 #flickrGallery{
@@ -228,13 +346,13 @@ nav{
 #singleVideo,
 #videoGallery{
 	.videoFrame{
-		width:600px; 
+		width:600px;
 		height:400px;
 	}
 }
 #imageWithVideo{
 	.videoFrame{
-		width:580px; 
+		width:580px;
 		height:435px;
 	}
 }
@@ -242,7 +360,7 @@ nav{
 	.flash-warn{
 		position:absolute;
 		z-index:8;
-		padding:15px; 
+		padding:15px;
 	}
 }
 
@@ -266,8 +384,8 @@ nav{
 		.anim-color(.2s);
 	}
 	.audiojs {
-		width:350px; 
-		height: 22px; 
+		width:350px;
+		height: 22px;
 		background: #333;
 		background: rgba(255, 255, 255, 0.05);
 		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dffffff', endColorstr='#0dffffff',GradientType=0 );
@@ -275,52 +393,52 @@ nav{
 		-moz-box-shadow:none;
 		-o-box-shadow:none;
 		box-shadow:none;
-		
+
 		.play-pause {
-			border:none; 
-			width: 15px; 
-			height: 20px; 
-			padding: 0px 8px 0px 0px; 
+			border:none;
+			width: 15px;
+			height: 20px;
+			padding: 0px 8px 0px 0px;
 		}
-		p { 
-			width: 25px; 
-			height: 20px; 
+		p {
+			width: 25px;
+			height: 20px;
 		 }
-		.scrubber { 
-			background: #444; 
+		.scrubber {
+			background: #444;
 			background: rgba(204, 204, 204, 0.3);
 			width: auto;
 			right: 100px;
 			position: absolute;
-			left: 40px; 
+			left: 40px;
 			height: 8px;
 			margin: 5px;
-			border:#444 1px solid; 
+			border:#444 1px solid;
 		}
-		.progress { 
-			height: 8px; 
-			width: 0px; 
+		.progress {
+			height: 8px;
+			width: 0px;
 			background: #ccc;
 		}
-		.loaded { 
-			height: 8px; 
+		.loaded {
+			height: 8px;
 			background: #333;
 			background: rgba(0, 0, 0, 0.7);
 		}
-		.time { 
+		.time {
 			border:none;
 			float: right;
 			padding: 0 14px 0 0;
-			margin: 0; 
-			height: 21px; 
-			line-height: 21px; 
+			margin: 0;
+			height: 21px;
+			line-height: 21px;
 			color:#999;
 			font-size:11px;
 			em, strong{
 				color:#999;
 			}
 		}
-		.error-message { 
+		.error-message {
 		height: 21px;
 		line-height: 21px;
 		}
@@ -353,7 +471,7 @@ nav{
 				position:relative;
 				z-index: 1;
 			}
-			
+
 		}
 	}
 }
