@@ -1,4 +1,4 @@
-{% extends '../templates/base.swig' %}
+{% extends 'base.swig' %}
 {% block content %}
   <div id="scrollContent" class="gallery">
   	<div class="scrollpane">

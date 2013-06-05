@@ -109,7 +109,7 @@ module.exports = function(grunt) {
     var i = 0;
     grunt.file.expand('src/data/**/*.swig').forEach(function(path){
           path = path.split('index.swig')[0];
-          grunt.config('swig.proc'+i+'.init', {root:'src/data/'});
+          grunt.config('swig.proc'+i+'.init', {root:[path,'src/templates/']});
           grunt.config('swig.proc'+i+'.cwd', path);
           path = path.split('src/data/')[1];
           grunt.config('swig.proc'+i+'.generateSitemap', false);

@@ -1,4 +1,4 @@
-{% extends '../templates/base.swig' %}
+{% extends 'text.swig' %}
 
 {% block content %}
     <p>hi</p>

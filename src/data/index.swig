@@ -1,4 +1,4 @@
-{% extends '../templates/text.swig' %}
+{% extends 'text.swig' %}
 {% block body %}
   <h2>Work Experience</h2>
   <h3>Nurun</h3>
