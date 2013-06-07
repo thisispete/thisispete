@@ -1,4 +1,5 @@
 {% extends 'text.swig' %}
+
 {% block body %}
 <div>
   <h2 >About this site</h2>

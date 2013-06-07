@@ -111,6 +111,7 @@ module.exports = function(grunt) {
           path = path.split('index.swig')[0];
           grunt.config('swig.proc'+i+'.init', {root:[path,'src/templates/']});
           grunt.config('swig.proc'+i+'.cwd', path);
+          grunt.config('swig.proc'+i+'.root', path);
           path = path.split('src/data/')[1];
           grunt.config('swig.proc'+i+'.generateSitemap', false);
           grunt.config('swig.proc'+i+'.generateRobotstxt', false);
