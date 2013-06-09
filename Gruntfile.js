@@ -67,6 +67,15 @@ module.exports = function(grunt) {
           {expand: true, cwd:'src/static/css/', src: ['**'], dest: 'deploy/css/'},
           {expand: true, cwd:'src/static/', src: ['*.pdf', '*.txt'], dest: 'deploy/'},
         ]
+      },
+      images:{
+        files: grunt.file.expand('src/data/**/images/*.*').map(function(a){
+          return {
+            expand:false,
+            src: a,
+            dest: 'deploy/' + a.split('src/data/')[1].replace(/[0-9]{2}\./g, '')
+          }
+        })
       }
     },
 
@@ -81,7 +90,11 @@ module.exports = function(grunt) {
     watch:{
       assets:{
         files:['src/static/**/*.*'],
-        tasks:['copy']
+        tasks:['copy:static']
+      },
+      images:{
+        files:['src/data/**/images/*.*'],
+        tasks:['copy:images']
       },
       js:{
         files:['src/common/js/*.js'],
