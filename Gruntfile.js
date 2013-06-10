@@ -127,7 +127,7 @@ module.exports = function(grunt) {
           grunt.config('swig.proc'+i+'.init', {root:[path,'src/templates/']});
           grunt.config('swig.proc'+i+'.cwd', path);
           grunt.config('swig.proc'+i+'.root', path);
-          grunt.config('swig.proc'+i+'.images', grunt.file.expand(path + '/images/*.jpg').map(function(a){return a.split('src/data/')[1].replace(/[0-9]{2}\./g, '')}));
+          grunt.config('swig.proc'+i+'.images', grunt.file.expand(path + '/images/*.*').map(function(a){return a.split('src/data')[1].replace(/[0-9]{2}\./g, '')}));
           path = path.split('src/data/')[1];
           grunt.config('swig.proc'+i+'.generateSitemap', false);
           grunt.config('swig.proc'+i+'.generateRobotstxt', false);
