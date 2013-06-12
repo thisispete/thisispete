@@ -1,0 +1,4 @@
+{% extends 'img.swig' %}
+{% block body %}
+  <p>Worked with the team at odopod to launch a new line of Sony headphones called Piiq. The site featured great full screen video loops of hand models showing off the products.</p>
+{% endblock %}

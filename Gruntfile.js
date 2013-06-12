@@ -136,8 +136,9 @@ module.exports = function(grunt) {
           grunt.task.run('swig:proc'+i);
       i++;
     })
-    console.log(grunt.config('swig'))
   });
+
+
 
 
 };

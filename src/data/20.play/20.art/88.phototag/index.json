@@ -1,0 +1,13 @@
+{
+  "title": "Phototag",
+  "ratio": "2x1",
+  "embed": [
+    {
+      "path": "phototag.swf",
+      "alt": "phototag.jpg",
+      "width": 800,
+      "height": 400
+    }
+  ],
+  "body": "photo remix series with Mike Vandermallie"
+}
