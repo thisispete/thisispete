@@ -30,6 +30,40 @@
       <div id="PETElogo" data-href="/" class="clearfix"><h1 class="visuallyhidden">PETE</h1></div>
       <div id="menuButton" class="clearfix"></div>
       <nav>
+        {% if navigation -%}
+        <ul>
+          {% for l1 in navigation -%}
+            {% set l1c = loop.index -%}
+            <li id="l1_{{l1c}}" class="l1" data-parent="l0" data-sub="{{ l1.children.size }}">
+              <a id="{{l1.slug}}" href="{{l1.permalink}}">{{l1.name | upper | replace("_", " ")}}</a>
+            </li>
+            {% if l1.children.length > 0 -%}
+              {% for l2 in l1.children -%}
+                {% set l2c = loop.index -%}
+                <li id="l2_{{l1c}}_{{l2c}}" class="l2" data-parent="l1_{{l1c}}" data-sub="{{ l2.children.size }}">
+                  <a id="{{l2.slug}}" href="{{l2.permalink}}">{{l2.name | upper | replace("_", " ")}}</a>
+                </li>
+                {% if l2.children.length > 0 -%}
+                  {% for l3 in l2.children -%}
+                    {% set l3c = loop.index -%}
+                    <li id="l3_{{l1c}}_{{l2c}}_{{l3c}}" class="l3" data-parent="l2_{{l1c}}_{{l2c}}" data-sub="{{ l3.children.size }}">
+                      <a id="{{l3.slug}}" href="{{l3.permalink}}">{{l3.name | upper | replace("_", " ")}}</a>
+                    </li>
+                    {% if l3.children.length > 0 -%}
+                      {% for l4 in l3.children -%}
+                        {% set l4c = loop.index -%}
+                        <li id="l4_{{l1c}}_{{l2c}}_{{l3c}}_{{l4c}}" class="l4" data-parent="l3_{{l1c}}_{{l2c}}_{{l3c}}">
+                          <a id="{{l4.slug}}" href="{{l4.permalink}}">{{l4.name | upper | replace("_", " ")}}</a>
+                        </li>
+                      {% endfor %}
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
       </nav>
     </header>
     <div id="content" class="content-container">
