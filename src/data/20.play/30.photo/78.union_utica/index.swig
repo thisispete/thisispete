@@ -1,0 +1,1 @@
+{% extends 'flickr.swig' %}
