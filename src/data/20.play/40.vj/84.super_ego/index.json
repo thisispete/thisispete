@@ -1,7 +1,7 @@
 {
-  ":title": "super ego",
-  ":ratio": "4x3",
-  ":videos": [
+  "title": "super ego",
+  "ratio": "4x3",
+  "videos": [
     {
       "id": 5659395,
       "name": "super ego  1"
@@ -18,6 +18,5 @@
       "id": 5659436,
       "name": "super ego 4"
     }
-  ],
-  ":body": "Resident VJ and Co-host with DJ KidHack for monthly night at rickshaw stop, later resident DJ and VJ when Future Universal re-launched the event at DNA lounge.\n"
+  ]
 }
