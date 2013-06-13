@@ -30,6 +30,7 @@
       <div id="PETElogo" data-href="/" class="clearfix"><h1 class="visuallyhidden">PETE</h1></div>
       <div id="menuButton" class="clearfix"></div>
       <nav>
+        {{ nav }}
         {% if navigation -%}
         <ul>
           {% for l1 in navigation -%}

@@ -2,7 +2,11 @@ module.exports = function(grunt) {
 
   grunt.config.init({
     pkg: grunt.file.readJSON('package.json'),
+    nav: (function(){
+      return grunt.file.expand(['src/data/*', '!src/data/*.swig']);
 
+
+    })(),
 
     //configs
     clean:{
@@ -121,6 +125,8 @@ module.exports = function(grunt) {
 
   grunt.registerTask('html', 'runs swig on each file with a rename regex', function(){
     grunt.config('swig', {});
+    console.log(grunt.config.data.nav);
+    return
     var i = 0;
     grunt.file.expand('src/data/**/*.swig').forEach(function(path){
           path = path.split('index.swig')[0];
@@ -133,12 +139,9 @@ module.exports = function(grunt) {
           grunt.config('swig.proc'+i+'.generateRobotstxt', false);
           grunt.config('swig.proc'+i+'.src', '*.swig');
           grunt.config('swig.proc'+i+'.dest', 'deploy/' + path.replace(/[0-9]{2}\./g, ''));
+          grunt.config('swig.proc'+i+'.nav', grunt.config.data.nav);
           grunt.task.run('swig:proc'+i);
       i++;
     })
   });
-
-
-
-
 };
