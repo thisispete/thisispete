@@ -7,6 +7,7 @@
   <h3 >Built with <a target="_blank" href="http://gruntjs.com">Grunt</a> (<a target="_blank" href="http://nodejs.org/">Node.js</a>):</h3>
   <ul>
     <li><a target="_blank" href="http://lesscss.org/">LESS</a></li>
+    <li><a target="_blank" href="http://www.jshint.com/about/">JS Hint</a></li>
     <li><a target="_blank" href="http://paularmstrong.github.io/swig/">SWIG</a> templating</li>
     <li><a target="_blank" href="http://developer.yahoo.com/yui/compressor/">YUI compressor</a></li>
   </ul>

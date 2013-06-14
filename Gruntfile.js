@@ -1,8 +1,6 @@
 module.exports = function(grunt) {
 
   grunt.config.init({
-    pkg: grunt.file.readJSON('package.json'),
-
     nav: (function(){
       var tree = [],
       match,
