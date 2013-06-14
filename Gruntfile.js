@@ -94,12 +94,12 @@ module.exports = function(grunt) {
           {expand: true, cwd:'src/static/', src: ['*.pdf', '*.txt'], dest: 'deploy/'},
         ]
       },
-      images:{
-        files: grunt.file.expand('src/data/**/images/*.*').map(function(a){
+      assets:{
+        files: grunt.file.expand(['src/data/**/images/*.*', 'src/data/**/img/*.*', 'src/data/**/swf/*.*']).map(function(a){
           return {
             expand:false,
             src: a,
-            dest: 'deploy/' + a.split('src/data/')[1].replace(/[0-9]{2}\./g, '')
+            dest: 'deploy/' + a.split('src/data/')[1].replace(/\/[0-9]{2}\./g, '/').replace(/^[0-9]{2}\./g, '')
           }
         })
       }
@@ -114,13 +114,13 @@ module.exports = function(grunt) {
     },
 
     watch:{
-      assets:{
+      static:{
         files:['src/static/**/*.*'],
         tasks:['copy:static']
       },
-      images:{
-        files:['src/data/**/images/*.*'],
-        tasks:['copy:images']
+      assets:{
+        files:['src/data/**/images/*.*', 'src/data/**/img/*.*', 'src/data/**/swf/*.*'],
+        tasks:['copy:assets']
       },
       js:{
         files:['src/common/js/*.js'],
@@ -153,7 +153,7 @@ module.exports = function(grunt) {
           grunt.config('swig.proc'+i+'.init', {root:[path,'src/templates/']});
           grunt.config('swig.proc'+i+'.cwd', path);
           grunt.config('swig.proc'+i+'.root', path);
-          grunt.config('swig.proc'+i+'.images', grunt.file.expand(path + '/images/*.*').map(function(a){return a.split('src/data')[1].replace(/[0-9]{2}\./g, '')}));
+          grunt.config('swig.proc'+i+'.images', grunt.file.expand(path + '/images/*.*').map(function(a){return a.split('src/data')[1].replace(/\/[0-9]{2}\./g, '/').replace(/^[0-9]{2}\./g, '')}));
           path = path.split('src/data/')[1];
           grunt.config('swig.proc'+i+'.generateSitemap', false);
           grunt.config('swig.proc'+i+'.generateRobotstxt', false);

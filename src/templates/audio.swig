@@ -2,8 +2,8 @@
 {% block content %}
 	<div id="audioPlayer" class="gallery clearfix">	
 		<div class="fixedRatioWrapper ratio1x1">
-		  {% for image in art -%}
-        <img class="cover-art" src="{{image.path}}" alt="{{image.name}}"/>
+		  {% for image in images -%}
+        <img class="cover-art" src="{{image}}"/>
 			{% endfor %}
 		</div>
 		<audio src="{{s3link}}" preload="none"></audio>
