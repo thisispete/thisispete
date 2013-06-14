@@ -29,7 +29,8 @@
   <ul>
     <li><a target="_blank" href="http://vimeo.com/">vimeo</a></li>
     <li><a target="_blank" href="http://www.flickr.com/">flickr</a></li>
-  	<li>Google <a target="_blank" href="http://www.google.com/fonts/">fonts</a> & <a target="_blank" href="https://developers.google.com/speed/libraries/devguide">hosted code libraries</a></li>
+  	<li><a target="_blank" href="http://www.google.com/fonts/">google fonts</a></li> 
+  	<li><a target="_blank" href="http://developers.google.com/speed/libraries/devguide">google hosted libraries</a></li>
   	<li><a target="_blank" href="http://cdnjs.com/">cdnjs</a></li>
   </ul>
   <h3>Source:</h3>
