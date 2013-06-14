@@ -406,17 +406,25 @@ PS.ImageGallery = function() {
 }();
 
 PS.FlickrGallery = function() {
-  var urlbase = "http://thisispete.com/php/getflickrset.php?setid=";
   var _target, _stack, _list, _setid, _last, _size;
+  var sizes = {
+    square : "_s",
+    thumbnail : "_t",
+    small : "_m",
+    medium : "",
+    medium_640 : "_z",
+    large : "_b",
+    original : "_o"
+  };
 
   var _init = function(target) {
     _target = target;
     _stack = _target.find('.img-stack').first();
     _setid = _target.attr('data-flickrset');
     if (_target.data('size') === 'w720') {
-      _size = '&size=large';
+      _size = sizes.large;
     } else {
-      _size = '&size=medium_640';
+      _size = sizes.medium_640;
     }
     _load(_setid, _size);
     _target.find('.pagination').addClass('invisible');
@@ -426,17 +434,17 @@ PS.FlickrGallery = function() {
     _stack.css('height', $('.fixedRatioWrapper').css('padding-top') == '0px' ? 'auto' : $('.fixedRatioWrapper').css('padding-top'));
   };
   var _load = function(set, size) {
-    $.ajax({
-      url : urlbase + set + size,
-      dataType : 'json',
-      success : _callback
-    });
-  };
-  var _callback = function(data, status) {
-    _setPhotos = data;
+    //jsonp
+    //http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=d4759f9c817a56f55970208a0af89415&photoset_id=72157632914169601&format=json
+    $.getJSON('http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=d4759f9c817a56f55970208a0af89415&photoset_id=' + set + '&format=json&jsoncallback=?', function(data){
+    console.log(data);
+    _setPhotos = data.photoset.photo;
+
     $.each(_setPhotos, function(i, e) {
-      _stack.append("<li><img src='" + e.src + "' alt='" + e.title + "'></li>");
+      var url = "http://farm" + e.farm + ".static.flickr.com/" + e.server + "/" + e.id + "_" + e.secret + size + ".jpg";
+      _stack.append("<li><img src='" + url + "' alt='" + e.title + "'></li>");
     });
+
     PS.Paginator.init(_target, _stack.find('li'), _update);
     PS.Paginator.clickInit(_update);
     _target.find('.pagination').removeClass('invisible');
@@ -447,6 +455,7 @@ PS.FlickrGallery = function() {
     });
     _last = 1;
     _resize();
+    });
   };
 
   var _update = function(count) {
