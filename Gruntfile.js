@@ -2,10 +2,32 @@ module.exports = function(grunt) {
 
   grunt.config.init({
     pkg: grunt.file.readJSON('package.json'),
+
     nav: (function(){
-      return grunt.file.expand(['src/data/*', '!src/data/*.swig']);
-
-
+      var tree = [],
+      match,
+      recursepath = function(path){
+       return [path + '/*', '!' + path + '/*.swig', '!' + path + '/*.json', '!' + path +'/images', '!' + path +'/art', '!' + path +'/swf', '!' + path +'/img', '!' + path +'/0.404']
+      },
+      recurse = function(path, p){
+        var count = 0;
+        grunt.file.expand(recursepath(path)).map(function(a){
+          count++;
+          var depth =  a.split('src/data/')[1].split('/').length,
+          c = "l" + depth,
+          parent = p,
+          id = c + parent.replace(/^\w{2}/, '') +'_' +count,
+          sub = grunt.file.expand(recursepath(a)).length,
+          id2 = a.replace(/[0-9]{2}\./g, '').replace(/[a-z]+\//g, ''),
+          href = a.split('src/data/')[1].replace(/[0-9]{2}\./g, ''),
+          text = id2.toUpperCase().replace(/_/g, ' '),
+          li = ('<li id="'+id+'" class="'+c+'" data-parent="'+parent+'" data-sub="'+sub+'"><a id="'+id2+'" href="/'+href+'/">'+text+'</a></li>');
+          tree.push(li);
+          recurse(a, id);
+        })
+      }
+      recurse('src/data', 'l0');
+      return tree
     })(),
 
     //configs
@@ -125,8 +147,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('html', 'runs swig on each file with a rename regex', function(){
     grunt.config('swig', {});
-    console.log(grunt.config.data.nav);
-    return
     var i = 0;
     grunt.file.expand('src/data/**/*.swig').forEach(function(path){
           path = path.split('index.swig')[0];
