@@ -15,7 +15,8 @@ function logErrors(err, req, res, next) {
 
 app.get('/bg/*', function(request, response) {
   //render form
-  response.send(__dirname + 'deploy/img/bg/'+ bglist[Math.floor(Math.random() * bglist.length)]);
+  response.redirect('img/bg/'+ bglist[Math.floor(Math.random() * bglist.length)]);
+
 });
 
 

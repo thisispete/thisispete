@@ -690,6 +690,7 @@ PS.bginit = function() {
   if ($('#bg').data('env') == 'heroku'){
     path = "http://thisispete.herokuapp.com/bg/";
   }
+  console.log(path);
   $('#bg').on('click', function(e) {
     var bg = $('#bg');
     bg.off('click');
