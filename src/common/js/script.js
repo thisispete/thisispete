@@ -686,18 +686,25 @@ PS.Svglib = function() {
 }();
 
 PS.bginit = function() {
+  var path = "http://thisispete.com/img/bg/random.php?rnd=";
+  if ($('#bg').data('env') == 'heroku'){
+    path = "http://thisispete.herokuapp.com/bg/";
+  }
   $('#bg').on('click', function(e) {
     var bg = $('#bg');
+    bg.off('click');
     var newbg = bg.clone();
-    bg.attr('id', 'oldbg');
-    newbg.css("background-image", "url('http://thisispete.com/img/bg/random.php?rnd=" + Math.random() * 9999999 + "')");
+    bg.attr('id', '').addClass('oldbg');
+    newbg.css("background-image", "url('" + path + Math.floor(Math.random() * 9999999) + "')");
     bg.before(newbg);
     setTimeout(function() {
       bg.fadeOut(400, function() {
-        PS.bginit();
         setTimeout(function() {
-          $('#oldbg').remove();
-        }, 3000);
+          $('.oldbg').remove();
+          bg = null;
+          newbg = null;
+          PS.bginit();
+        }, 1000);
       });
     }, 700);
   });
@@ -706,6 +713,7 @@ PS.bginit = function() {
 //DOCUMENT READY:
 $(document).ready(function() {
   PS.bginit();
+  $('#bg').trigger('click');
   PS.nav.init();
   PS.initContent();
 

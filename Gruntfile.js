@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
   grunt.config.init({
+    env: 'default',
     nav: (function(){
       var tree = [],
       match,
@@ -142,7 +143,11 @@ module.exports = function(grunt) {
   }).forEach(grunt.loadNpmTasks);
 
   grunt.registerTask('default', ['jshint', 'clean', 'html', 'sitemap', 'less', 'min', 'copy']);
-  grunt.registerTask('heroku',['html', 'sitemap', 'less', 'min', 'copy'] );
+  grunt.registerTask('heroku', function(){
+    grunt.config.data.env = 'heroku';
+    grunt.task.run( ['html', 'sitemap', 'less', 'min', 'copy'] );
+  });
+
 
   grunt.registerTask('html', 'runs swig on each file with a rename regex', function(){
     grunt.config('swig', {});
@@ -159,6 +164,7 @@ module.exports = function(grunt) {
           grunt.config('swig.proc'+i+'.src', '*.swig');
           grunt.config('swig.proc'+i+'.dest', 'deploy/' + path.replace(/[0-9]{2}\./g, ''));
           grunt.config('swig.proc'+i+'.nav', grunt.config.data.nav);
+          grunt.config('swig.proc'+i+'.env', grunt.config.data.env);
           grunt.task.run('swig:proc'+i);
       i++;
     })

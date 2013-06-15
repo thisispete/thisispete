@@ -40,7 +40,7 @@
     <div id="content" class="content-container">
         {% block content %}{% endblock %}
     </div>
-    <div id="bg"></div>
+    <div id="bg" data-env="{{env}}"></div>
     <script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
     <script src="/js/lib/bundle.js"></script>
     <script src="/js/lib/audio.min.js"></script>
