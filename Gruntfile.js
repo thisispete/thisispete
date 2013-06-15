@@ -142,6 +142,7 @@ module.exports = function(grunt) {
   }).forEach(grunt.loadNpmTasks);
 
   grunt.registerTask('default', ['jshint', 'clean', 'html', 'sitemap', 'less', 'min', 'copy']);
+  grunt.registerTask('heroku',['html', 'sitemap', 'less', 'min', 'copy'] );
 
   grunt.registerTask('html', 'runs swig on each file with a rename regex', function(){
     grunt.config('swig', {});
