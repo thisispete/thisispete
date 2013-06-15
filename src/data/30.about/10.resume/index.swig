@@ -4,10 +4,10 @@
   <div>
     <h2>Work Experience</h2>
   
-    <h3>Senior Interactive Developer, Level 2, nurun, Jun 2013 - current.</h3> 
+    <h3>Senior Interactive Developer, Level 2, <a href="http://www.nurun.com" target="_blank">nurun</a>, Jun 2013 - current.</h3> 
     <p>Interactive developer. Focusing on front end development, systems architecture, hardware, R&amp;D, point of sale interactive experiences, &amp; the internet of things.</p>
     
-    <h3>Senior Interactive Developer, Level 2, odopod, Jan 2008 - Jun 2013.</h3>  
+    <h3>Senior Interactive Developer, Level 2, <a href="http://www.odopod.com" target="_blank">odopod</a>, Jan 2008 - Jun 2013.</h3>  
     <p>Interactive developer for numerous award winning flash sites including; white gold (got milk?), nestea liquid awesomeness, nvidia speak visual, Sony Internet TV, and numerous other projects for clients including; HP, Nike, Tesla, Honda, BF Goodrich, Nest, and Google.</p>
     
     <h3>Senior Interactive Developer, Attik, June 2006 - Aug 2007.</h3>  
