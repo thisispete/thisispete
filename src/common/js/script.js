@@ -435,8 +435,7 @@ PS.FlickrGallery = function() {
   };
   var _load = function(set, size) {
     //jsonp
-    //http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=d4759f9c817a56f55970208a0af89415&photoset_id=72157632914169601&format=json
-    $.getJSON('http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=d4759f9c817a56f55970208a0af89415&photoset_id=' + set + '&format=json&jsoncallback=?', function(data){
+    $.getJSON('http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=f59ac814b3b03d3ff487f8262b7be4ec&photoset_id=' + set + '&format=json&jsoncallback=?', function(data){
     console.log(data);
     _setPhotos = data.photoset.photo;
 
