@@ -127,9 +127,11 @@ PS.nav = function() {
   };
   var _show = function(id) {
     var n = 200;
+    _slidetop();
     $.each($("nav [data-parent='" + id + "']"), function(i, e) {
       n = historySupport ? n + 20 : 0;
       $(e).delay(n).css("height", "16px").fadeIn(300, function() {
+        clearInterval(looptop);
         _contenttop();
       });
     });
@@ -150,17 +152,27 @@ PS.nav = function() {
       });
     });
   };
+  var looptop;
+  var _slidetop = function(){
+    if ($(window).width() < 770) {
+      looptop = setInterval(_contenttop, 33);
+    }
+  };
 
   var _collapse = function() {
     $('nav>ul').delay(400).hide(300);
+    _slidetop();
     $('#menuButton').delay(700).fadeIn(300, function() {
+      clearInterval(looptop);
       _contenttop();
     });
   };
 
   var _expand = function() {
     $('nav>ul').delay(200).show(300);
+    _slidetop();
     $('#menuButton').fadeOut(200, function() {
+      clearInterval(looptop);
       _contenttop();
     });
   };
