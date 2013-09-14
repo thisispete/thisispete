@@ -4,7 +4,7 @@
 <div>
   <h2 id="white_block_clock">White Block Clock</h2>
 
-  <p><img alt="White Block Clock" src="http://aws.thisispete.com/images/play/electronics/white_block_clock/whiteblock.jpg"></p>
+  <p><img alt="White Block Clock" src="http://aws.thisispete.com/images/play/electronics/white_block_clock/images/whiteblock.jpg"></p>
   <p><img src="http://aws.thisispete.com/images/play/electronics/white_block_clock/images/img_15.jpg"></p>
 
   <p>I love these wooden block clocks I’ve been seeing around that have LED displays placed behind the surface of thin wood veneer. However I wanted to make one that was all white with a high-gloss finish, and I wanted to be able to design my own font for the time display.</p>
