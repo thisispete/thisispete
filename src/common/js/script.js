@@ -58,7 +58,7 @@ PS.nav = function() {
       var link = $(this).attr('href');
       // "design/work/"
       var haschildren = $(this).parent().data("sub") > 0;
-      var ancestor = window.location.pathname.lastIndexOf(link) > -1 && window.location.pathname != link;
+      var ancestor = window.location.pathname.lastIndexOf(link) > -1 && window.location.pathname !== link;
 
       if (ancestor) {// if opened deeper than current click in the same path, close down to this one
         link = link.substring(0, link.lastIndexOf("/"));
@@ -69,7 +69,7 @@ PS.nav = function() {
 
         $('nav li').removeClass('selected');
 
-      } else if ($(this).attr("id") == loc) {// clicking a link for the current location
+      } else if ($(this).attr("id") === loc) {// clicking a link for the current location
         if (haschildren) {// do nothing if its an end of the line link
           _hide(id.substr(1, 1));
           //hide the expanded section
@@ -138,7 +138,7 @@ PS.nav = function() {
   };
 
   var _update = function(href) {
-    href = href == "/" ? "" : href;
+    href = href === "/" ? "" : href;
     $("#content").before("<div class='content-container'></div>");
     var newcontent = $("#content").prev();
     newcontent.hide();
@@ -234,7 +234,7 @@ PS.textPane = function() {
   var _resize = function() {
     _pane.data('jsp').reinitialise();
     if ($(window).width() > PS.minPhoneWidth) {
-      if (_state != 1) {
+      if (_state !== 1) {
         _pane.show();
         _phone.hide();
         _state = 1;
@@ -269,7 +269,7 @@ PS.Paginator = function() {
     _totalDisp.html(_total);
     _pagination = _target.find('.pagination');
 
-    if (_total == 1) {
+    if (_total === 1) {
       _pagination.hide();
     } else {
       _prev = _pagination.find('.prev').first();
@@ -334,7 +334,7 @@ PS.Paginator = function() {
   };
   var _update = function() {
     _currentDisp.html(_count);
-    if (_count == 1) {
+    if (_count === 1) {
       _prev.addClass('disabled');
       _lpath.animate({
         "fill" : "#666"
@@ -345,7 +345,7 @@ PS.Paginator = function() {
         "fill" : "#CCC"
       }, 200);
     }
-    if (_count == _total) {
+    if (_count === _total) {
       _next.addClass('disabled');
       _rpath.animate({
         "fill" : "#666"
@@ -399,7 +399,7 @@ PS.ImageGallery = function() {
     _resize();
   };
   var _resize = function() {
-    _stack.css('height', $('.fixedRatioWrapper').css('padding-top') == '0px' ? 'auto' : $('.fixedRatioWrapper').css('padding-top'));
+    _stack.css('height', $('.fixedRatioWrapper').css('padding-top') === '0px' ? 'auto' : $('.fixedRatioWrapper').css('padding-top'));
   };
   var _update = function(count) {
     $(_list[_last - 1]).fadeOut(200, function() {
@@ -443,7 +443,7 @@ PS.FlickrGallery = function() {
     $(window).resize(_resize);
   };
   var _resize = function() {
-    _stack.css('height', $('.fixedRatioWrapper').css('padding-top') == '0px' ? 'auto' : $('.fixedRatioWrapper').css('padding-top'));
+    _stack.css('height', $('.fixedRatioWrapper').css('padding-top') === '0px' ? 'auto' : $('.fixedRatioWrapper').css('padding-top'));
   };
   var _load = function(set, size) {
     //jsonp
@@ -565,7 +565,7 @@ PS.ImageWithVideo = function() {
     PS.Paginator.clickInit(_update);
     _last = 1;
     _target.find('.img-stack:first-child li:gt(0)').hide();
-    if ($(_stack[_last - 1]).data("disp") == 'vid') {
+    if ($(_stack[_last - 1]).data("disp") === 'vid') {
       $('#videoFrame').attr("src", $(_stack[_last - 1]).data("path"));
     } else {
       $('#videoFrame').hide();
@@ -575,16 +575,16 @@ PS.ImageWithVideo = function() {
     $(_stack[_last - 1]).fadeOut(200, function() {
       _target.find('.img-stack:first-child li').hide();
       $(_stack[count - 1]).fadeIn(200);
-      if ($(_stack[count - 1]).data("disp") == 'img') {
+      if ($(_stack[count - 1]).data("disp") === 'img') {
         $('#videoFrame').hide();
       } else {
-        if ($('#videoFrame').css('display') == 'none') {
+        if ($('#videoFrame').css('display') === 'none') {
           $('#videoFrame').show();
         }
       }
     });
-    if ($(_stack[count - 1]).data("disp") == 'vid') {
-      if ($('#videoFrame').attr("src") != $(_stack[count - 1]).data("path")) {
+    if ($(_stack[count - 1]).data("disp") === 'vid') {
+      if ($('#videoFrame').attr("src") !== $(_stack[count - 1]).data("path")) {
         $('#videoFrame').attr("src", $(_stack[count - 1]).data("path"));
       }
     }
@@ -698,7 +698,7 @@ PS.Svglib = function() {
 
 PS.bginit = function() {
   var path = "http://thisispete.com/img/bg/random.php?rnd=";
-  if ($('#bg').data('env') == 'heroku'){
+  if ($('#bg').data('env') === 'heroku'){
     path = "http://thisispete.herokuapp.com/bg/";
   }
   console.log(path);
@@ -728,10 +728,4 @@ $(document).ready(function() {
   $('#bg').trigger('click');
   PS.nav.init();
   PS.initContent();
-
-  // Google Analytics
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28724804-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
 });

@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       var tree = [],
       match,
       recursepath = function(path){
-       return [path + '/*', '!' + path + '/*.swig', '!' + path + '/*.json', '!' + path +'/images', '!' + path +'/art', '!' + path +'/swf', '!' + path +'/img', '!' + path +'/0.404']
+       return [path + '/*', '!' + path + '/*.swig', '!' + path + '/*.json', '!' + path +'/images', '!' + path +'/art', '!' + path +'/swf', '!' + path +'/img', '!' + path +'/0.404'];
       },
       recurse = function(path, p){
         var count = 0;
@@ -23,10 +23,10 @@ module.exports = function(grunt) {
           li = ('<li id="'+id+'" class="'+c+'" data-parent="'+parent+'" data-sub="'+sub+'"><a id="'+id2+'" href="/'+href+'/">'+text+'</a></li>');
           tree.push(li);
           recurse(a, id);
-        })
-      }
+        });
+      };
       recurse('src/data', 'l0');
-      return tree
+      return tree;
     })(),
 
     //configs
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
             expand:false,
             src: a,
             dest: 'deploy/' + a.split('src/data/')[1].replace(/\/[0-9]{2}\./g, '/').replace(/^[0-9]{2}\./g, '')
-          }
+          };
         })
       }
     },
@@ -157,7 +157,7 @@ module.exports = function(grunt) {
           grunt.config('swig.proc'+i+'.init', {root:[path,'src/templates/']});
           grunt.config('swig.proc'+i+'.cwd', path);
           grunt.config('swig.proc'+i+'.root', path);
-          grunt.config('swig.proc'+i+'.images', grunt.file.expand(path + '/images/*.*').map(function(a){return a.split('src/data')[1].replace(/\/[0-9]{2}\./g, '/').replace(/^[0-9]{2}\./g, '')}));
+          grunt.config('swig.proc'+i+'.images', grunt.file.expand(path + '/images/*.*').map(function(a){return a.split('src/data')[1].replace(/\/[0-9]{2}\./g, '/').replace(/^[0-9]{2}\./g, '');}));
           path = path.split('src/data/')[1];
           grunt.config('swig.proc'+i+'.generateSitemap', false);
           grunt.config('swig.proc'+i+'.generateRobotstxt', false);
@@ -167,6 +167,6 @@ module.exports = function(grunt) {
           grunt.config('swig.proc'+i+'.env', grunt.config.data.env);
           grunt.task.run('swig:proc'+i);
       i++;
-    })
+    });
   });
 };

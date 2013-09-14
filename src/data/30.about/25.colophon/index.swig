@@ -3,9 +3,12 @@
 {% block body %}
 <div>
   <h2 >About this site</h2>
-  
-  <h3 >Built with <a target="_blank" href="http://gruntjs.com">Grunt</a> (<a target="_blank" href="http://nodejs.org/">Node.js</a>):</h3>
+
+  <h3 >Built with:</h3>
   <ul>
+    <li><a target="_blank" href="http://nodejs.org/">Node</a></li>
+    <li><a target="_blank" href="http://expressjs.com/">Express</a></li>
+    <li><a target="_blank" href="http://gruntjs.com">Grunt</a></li>
     <li><a target="_blank" href="http://lesscss.org/">LESS</a></li>
     <li><a target="_blank" href="http://www.jshint.com/about/">JS Hint</a></li>
     <li><a target="_blank" href="http://paularmstrong.github.io/swig/">SWIG</a> templating</li>
@@ -25,19 +28,21 @@
     <li><a target="_blank" href="http://brandonaaron.net/code/mousewheel/docs">mouse wheel</a></li>
   </ul>
 
-  <h3>Hosted assets:</h3>
+  <h3>Hosting:</h3>
   <ul>
+    <li><a target="_blank" href="http://heroku.com/>heroku</a></li>
     <li><a target="_blank" href="http://vimeo.com/">vimeo</a></li>
     <li><a target="_blank" href="http://www.flickr.com/">flickr</a></li>
-  	<li><a target="_blank" href="http://www.google.com/fonts/">google fonts</a></li> 
-  	<li><a target="_blank" href="http://developers.google.com/speed/libraries/devguide">google hosted libraries</a></li>
-  	<li><a target="_blank" href="http://cdnjs.com/">cdnjs</a></li>
+    <li><a target="_blank" href="http://www.google.com/fonts/">google fonts</a></li>
+    <li><a target="_blank" href="http://developers.google.com/speed/libraries/devguide">google hosted libraries</a></li>
+    <li><a target="_blank" href="http://cdnjs.com/">cdnjs</a></li>
+    <li><a target="_blank" href="http://aws.amazon.com/s3/">amazon s3</a></li>
   </ul>
   <h3>Source:</h3>
   <ul>
   	<li><a target="_blank" href="https://github.com/thisispete/thisispete">Github</a></li>
   </ul>
-  
+
   <h3>©2013 Pete Schirmer. All Rights Reserved.</h3>
 </div>
 {% endblock%}
