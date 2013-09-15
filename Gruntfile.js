@@ -89,12 +89,12 @@ module.exports = function(grunt) {
         files:[
           {expand: true, cwd:'src/static/js/', src: ['**'], dest: 'deploy/js/'},
           {expand: true, cwd:'src/static/css/', src: ['**'], dest: 'deploy/css/'},
+          {expand: true, cwd:'src/static/', src: ['*.pdf', '*.txt'], dest: 'deploy/'}
         ]
       },
       staticAssets:{
         files:[
-          {expand: true, cwd:'src/static/img/', src: ['**'], dest: 'assets/'},
-          {expand: true, cwd:'src/static/', src: ['*.pdf', '*.txt'], dest: 'assets/'}
+          {expand: true, cwd:'src/static/img/', src: ['**'], dest: 'assets/'}
         ]
       },
       nestedAssets:{
