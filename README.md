@@ -2,8 +2,10 @@ THIS IS PETE DOT COM
 
 ## About this site
 
-### Built with [Grunt](http://gruntjs.com) ([Node.js](http://nodejs.org/)):
-
+### Built with:
+*   [Node.js](http://nodejs.org/)
+*   [Express.js](http://expressjs.com/)
+*   [Grunt](http://gruntjs.com)
 *   [LESS](http://lesscss.org/)
 *   [JS Hint](http://www.jshint.com/about/)
 *   [SWIG](http://paularmstrong.github.io/swig/) templating
