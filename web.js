@@ -17,7 +17,7 @@ function logErrors(err, req, res, next) {
 app.get('/bg/*', function(request, response) {
   //render form
   var filename = 'bg/'+ bglist[Math.floor(Math.random() * bglist.length)];
-  if(app.get('env') !== 'production'){
+  if(app.get('env') === 'production'){
     response.redirect('http://aws.thisispete.com/images/' + filename);
   }else{
     response.sendfile(__dirname + '/assets/' + filename);
