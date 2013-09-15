@@ -2,20 +2,22 @@
 var express = require('express');
 var app = express();
 var fs = require('fs');
-var bglist = fs.readdirSync('deploy/img/bg/');
+var bglist = fs.readdirSync('src/static/img/bg/');
+var imgDir = app.get('env') === 'production' ? 'http://aws.thisispete.com/images/' : __dirname + '/assets/';
 app.use(express.bodyParser());
 app.use(app.router);
 app.use(logErrors);
 app.use(express.static(__dirname + '/deploy'));
+app.use('/assets', express.static(__dirname + '/assets'));
 
 function logErrors(err, req, res, next) {
   console.error(err.stack);
   next(err);
-};
+}
 
 app.get('/bg/*', function(request, response) {
   //render form
-  response.sendfile(__dirname + '/deploy/img/bg/'+ bglist[Math.floor(Math.random() * bglist.length)]);
+  response.sendfile(imgDir + 'bg/'+ bglist[Math.floor(Math.random() * bglist.length)]);
 
 });
 

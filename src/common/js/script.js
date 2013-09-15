@@ -697,17 +697,12 @@ PS.Svglib = function() {
 }();
 
 PS.bginit = function() {
-  var path = "http://thisispete.com/img/bg/random.php?rnd=";
-  if ($('#bg').data('env') === 'heroku'){
-    path = "http://thisispete.herokuapp.com/bg/";
-  }
-  console.log(path);
   $('#bg').on('click', function(e) {
     var bg = $('#bg');
     bg.off('click');
     var newbg = bg.clone();
     bg.attr('id', '').addClass('oldbg');
-    newbg.css("background-image", "url('" + path + Math.floor(Math.random() * 9999999) + "')");
+    newbg.css("background-image", "url('/bg/" + Math.floor(Math.random() * 9999999) + "')");
     bg.before(newbg);
     setTimeout(function() {
       bg.fadeOut(400, function() {

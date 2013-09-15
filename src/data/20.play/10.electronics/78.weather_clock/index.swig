@@ -4,7 +4,7 @@
 <div>
   <h2 id="antique_weather_clock">Antique Weather Clock</h2>
 
-  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/images/weatherclock.jpg"></p>
+  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/weatherclock.jpg"></p>
 
   <p>I love the idea of hacking antiques, using electronics to update their functionality or change it completly. I came up with this concept for an antique weather clock, instead of telling the time it tells you the weather.</p>
   <p>I used a fake antique (replica) that I picked up for cheep on ebay. I took out the clock work, and replaced it with a servo and used a phidgets USB - servo controller so I could control the servo from my computer. I had to use some gears so that the needle shaft would turn 360 degrees, since the servo only turns about 180. I also re-designed the face of the clock keeping a similar look to the original time piece. Once that was all set I created a little flash application that would connect to yahoo! weather service, and update the servo. I made it so it could toggle between current condition and the local forecast, and also made it so I could enter another zip code to see what the weather is in other places. Their weather service reports something like 40 different conditions, so I had to condense some of them, I combined some things, and ended up with 14 ‘conditions’</p>
@@ -39,11 +39,11 @@
   <p>Couple little quirks as a result: It’s hardcoded to only work on my wifi with my password, so changing networks requires re-programing the Arduino board. The php contains the zip code for lookup so when I move I have to change the zip in the php. The Arduino library also required a ip address, I’m not sure how long my server holds it’s ip address, I may have to start investigating how to get DNS working with the web client library.</p>
   <p>First night I accidentally left it updating every 10 seconds, so had quite the traffic surge on my website logs, but Sure enough it was accurately telling me that it was cloudy when I woke up.</p>
 
-  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/images/IMG_4279.jpg"></p>
-  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/images/IMG_4281.jpg"></p>
-  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/images/IMG_4284.jpg"></p>
-  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/images/IMG_4285.jpg"></p>
-  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/images/IMG_4286.jpg"></p>
+  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/IMG_4279.jpg"></p>
+  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/IMG_4281.jpg"></p>
+  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/IMG_4284.jpg"></p>
+  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/IMG_4285.jpg"></p>
+  <p><img alt="Antique Weather Clock" src="http://aws.thisispete.com/images/play/electronics/weather_clock/IMG_4286.jpg"></p>
 
   <p>© 2006 Peter Schirmer</p>
 

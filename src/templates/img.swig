@@ -4,7 +4,7 @@
     <div class="fixedRatioWrapper {% if ratio == '16x9' %}ratio16x9{% else if ratio == '4x3' %}ratio4x3{% else if ratio == '1x1' %}ratio1x1{% else %}ratio3x2{% endif %}">
       <ul class="img-stack">
         {% for image in images -%}
-          <li><img src="http://aws.thisispete.com/images{{image}}"/></li>
+          <li><img src="{{assetRoot}}{{image}}"/></li>
         {% endfor %}
       </ul>
     </div>

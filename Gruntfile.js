@@ -34,7 +34,7 @@ module.exports = function(grunt) {
      options:{
         force:true
       },
-      debug: ['deploy/']
+      debug: ['deploy/', 'assets/']
     },
 
     jshint: {
@@ -87,14 +87,27 @@ module.exports = function(grunt) {
     copy:{
       static:{
         files:[
-          {expand: true, cwd:'src/static/img/', src: ['**'], dest: 'deploy/img/'},
           {expand: true, cwd:'src/static/js/', src: ['**'], dest: 'deploy/js/'},
           {expand: true, cwd:'src/static/css/', src: ['**'], dest: 'deploy/css/'},
-          {expand: true, cwd:'src/static/', src: ['*.pdf', '*.txt'], dest: 'deploy/'},
         ]
       },
-      assets:{
-        files: grunt.file.expand(['src/data/**/images/*.*', 'src/data/**/img/*.*', 'src/data/**/swf/*.*']).map(function(a){
+      staticAssets:{
+        files:[
+          {expand: true, cwd:'src/static/img/', src: ['**'], dest: 'assets/'},
+          {expand: true, cwd:'src/static/', src: ['*.pdf', '*.txt'], dest: 'assets/'}
+        ]
+      },
+      nestedAssets:{
+        files: grunt.file.expand(['src/data/**/images/*.*']).map(function(a){
+          return {
+            expand:false,
+            src: a,
+            dest: 'assets/' + a.split('src/data/')[1].replace(/\/[0-9]{2}\./g, '/').replace(/^[0-9]{2}\./g, '').replace('images/', '')
+          };
+        })
+      },
+      exceptions:{
+        files: grunt.file.expand(['src/data/**/img/*.*', 'src/data/**/swf/*.*']).map(function(a){
           return {
             expand:false,
             src: a,
@@ -145,7 +158,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['jshint', 'clean', 'html', 'sitemap', 'less', 'min', 'copy']);
   grunt.registerTask('heroku', function(){
     grunt.config.data.env = 'heroku';
-    grunt.task.run( ['html', 'sitemap', 'less', 'min', 'copy'] );
+    grunt.task.run( ['html', 'sitemap', 'less', 'min', 'copy:static', 'copy:exceptions'] );
   });
 
 
@@ -157,7 +170,8 @@ module.exports = function(grunt) {
           grunt.config('swig.proc'+i+'.init', {root:[path,'src/templates/']});
           grunt.config('swig.proc'+i+'.cwd', path);
           grunt.config('swig.proc'+i+'.root', path);
-          grunt.config('swig.proc'+i+'.images', grunt.file.expand(path + '/images/*.*').map(function(a){return a.split('src/data')[1].replace(/\/[0-9]{2}\./g, '/').replace(/^[0-9]{2}\./g, '');}));
+          grunt.config('swig.proc'+i+'.assetRoot', grunt.config.data.env === 'heroku' ? 'http://aws.thisispete.com/images' : '/assets');
+          grunt.config('swig.proc'+i+'.images', grunt.file.expand(path + '/images/*.*').map(function(a){return a.split('src/data')[1].replace(/\/[0-9]{2}\./g, '/').replace(/^[0-9]{2}\./g, '').replace('images/', '');}));
           path = path.split('src/data/')[1];
           grunt.config('swig.proc'+i+'.generateSitemap', false);
           grunt.config('swig.proc'+i+'.generateRobotstxt', false);

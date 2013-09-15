@@ -30,7 +30,7 @@
 
   <h3>Hosting:</h3>
   <ul>
-    <li><a target="_blank" href="http://heroku.com"/>heroku</a></li>
+    <li><a target="_blank" href="http://heroku.com">heroku</a></li>
     <li><a target="_blank" href="http://vimeo.com/">vimeo</a></li>
     <li><a target="_blank" href="http://www.flickr.com/">flickr</a></li>
     <li><a target="_blank" href="http://www.google.com/fonts/">google fonts</a></li>
