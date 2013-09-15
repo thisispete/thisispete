@@ -3,12 +3,13 @@ THIS IS PETE DOT COM
 ## About this site
 
 ### Built with:
+
 *   [Node.js](http://nodejs.org/)
 *   [Express.js](http://expressjs.com/)
 *   [Grunt](http://gruntjs.com)
 *   [LESS](http://lesscss.org/)
 *   [JS Hint](http://www.jshint.com/about/)
-*   [SWIG](http://paularmstrong.github.io/swig/) templating
+*   [SWIG templating](http://paularmstrong.github.io/swig/)
 *   [YUI compressor](http://developer.yahoo.com/yui/compressor/)
 
 ### Libraries & plugins:
