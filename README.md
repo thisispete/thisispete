@@ -4,30 +4,33 @@ THIS IS PETE DOT COM
 
 ### Built with:
 
-*   [Node.js](http://nodejs.org/)
-*   [Express.js](http://expressjs.com/)
-*   [Grunt](http://gruntjs.com)
+*   [node.js](http://nodejs.org/)
+*   [express](http://expressjs.com/)
+*   [grunt](http://gruntjs.com)
 *   [LESS](http://lesscss.org/)
-*   [JS Hint](http://www.jshint.com/about/)
+*   [js hint](http://www.jshint.com/about/)
 *   [SWIG templating](http://paularmstrong.github.io/swig/)
 *   [YUI compressor](http://developer.yahoo.com/yui/compressor/)
+*   [heroku grunt buildpack](https://github.com/mbuchetics/heroku-buildpack-nodejs-grunt.git)
 
 ### Libraries & plugins:
 
 *   [normalize.css](https://github.com/necolas/normalize.css/)
 *   [jQuery](http://jquery.com/)
-*   [Raphaël](http://raphaeljs.com/)
+*   [raphaël](http://raphaeljs.com/)
 *   [audio.js](http://kolber.github.com/audiojs/)
-*   [Modernizr](http://modernizr.com/)
+*   [modernizr](http://modernizr.com/)
 *   [SWFObject](http://code.google.com/p/swfobject/)
 *   [hover intent](http://cherne.net/brian/resources/jquery.hoverIntent.html)
 *   [jScrollPane](http://www.kelvinluck.com/assets/jquery/jScrollPane/jScrollPane.html)
 *   [mouse wheel](http://brandonaaron.net/code/mousewheel/docs)
 
-### Hosted assets:
+### Hosting
 
+*   [heroku](http://heroku.com)
 *   [vimeo](http://vimeo.com/)
 *   [flickr](http://www.flickr.com/)
 *   [google fonts](http://www.google.com/fonts/)
 *   [google hosted libraries](http://developers.google.com/speed/libraries/devguide)
 *   [cdnjs](http://cdnjs.com/)
+*   [amazon s3](http://aws.amazon.com/s3/)

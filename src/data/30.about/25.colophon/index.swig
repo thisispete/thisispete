@@ -6,22 +6,23 @@
 
   <h3 >Built with:</h3>
   <ul>
-    <li><a target="_blank" href="http://nodejs.org/">Node</a></li>
-    <li><a target="_blank" href="http://expressjs.com/">Express</a></li>
-    <li><a target="_blank" href="http://gruntjs.com">Grunt</a></li>
+    <li><a target="_blank" href="http://nodejs.org/">node.js</a></li>
+    <li><a target="_blank" href="http://expressjs.com/">express</a></li>
+    <li><a target="_blank" href="http://gruntjs.com">grunt</a></li>
     <li><a target="_blank" href="http://lesscss.org/">LESS</a></li>
-    <li><a target="_blank" href="http://www.jshint.com/about/">JS Hint</a></li>
+    <li><a target="_blank" href="http://www.jshint.com/about/">js hint</a></li>
     <li><a target="_blank" href="http://paularmstrong.github.io/swig/">SWIG templating</a></li>
     <li><a target="_blank" href="http://developer.yahoo.com/yui/compressor/">YUI compressor</a></li>
+    <li><a target="_blank" href="https://github.com/mbuchetics/heroku-buildpack-nodejs-grunt.git">heroku grunt buildpack</a></li>
   </ul>
 
   <h3>Libraries &amp; plugins:</h3>
   <ul>
     <li><a target="_blank" href="https://github.com/necolas/normalize.css/">normalize.css</a></li>
     <li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
-    <li><a target="_blank" href="http://raphaeljs.com/">Raphaël</a></li>
+    <li><a target="_blank" href="http://raphaeljs.com/">raphaël</a></li>
     <li><a target="_blank" href="http://kolber.github.com/audiojs/">audio.js</a></li>
-    <li><a target="_blank" href="http://modernizr.com/">Modernizr</a></li>
+    <li><a target="_blank" href="http://modernizr.com/">modernizr</a></li>
     <li><a target="_blank" href="http://code.google.com/p/swfobject/">SWFObject</a></li>
     <li><a target="_blank" href="http://cherne.net/brian/resources/jquery.hoverIntent.html">hover intent</a></li>
     <li><a target="_blank" href="http://www.kelvinluck.com/assets/jquery/jScrollPane/jScrollPane.html">jScrollPane</a></li>
@@ -40,7 +41,7 @@
   </ul>
   <h3>Source:</h3>
   <ul>
-  	<li><a target="_blank" href="https://github.com/thisispete/thisispete">Github</a></li>
+  	<li><a target="_blank" href="https://github.com/thisispete/thisispete">github</a></li>
   </ul>
 
   <h3>©2013 Pete Schirmer. All Rights Reserved.</h3>
