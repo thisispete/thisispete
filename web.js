@@ -3,7 +3,6 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 var bglist = fs.readdirSync('src/static/img/bg/');
-var imgDir = app.get('env') === 'production' ? 'http://aws.thisispete.com/images/' : __dirname + '/assets/';
 app.use(express.bodyParser());
 app.use(app.router);
 app.use(logErrors);
@@ -17,7 +16,13 @@ function logErrors(err, req, res, next) {
 
 app.get('/bg/*', function(request, response) {
   //render form
-  response.sendfile(imgDir + 'bg/'+ bglist[Math.floor(Math.random() * bglist.length)]);
+  var filename = 'bg/'+ bglist[Math.floor(Math.random() * bglist.length)];
+  if(app.get('env') !== 'production'){
+    response.redirect('http://aws.thisispete.com/images/' + filename);
+  }else{
+    response.sendfile(__dirname + '/assets/' + filename);
+  }
+
 
 });
 
