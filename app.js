@@ -14,19 +14,6 @@ function logErrors(err, req, res, next) {
   next(err);
 }
 
-app.get('/weatherclock/img/', function(request, response) {
-  response.redirect('http://aws.thisispete.com/images/play/electronics/weather_clock/');
-});
-app.get('/whiteblock/', function(request, response) {
-  response.redirect('/play/electronics/white_block_clock/');
-});
-app.get('/facebook/', function(request, response) {
-  response.redirect('http://www.facebook.com/peterschirmer');
-});
-app.get('/linkedin/', function(request, response) {
-  response.redirect('http://www.linkedin.com/in/thisispete');
-});
-
 app.get('/bg/*', function(request, response) {
   //render form
   var filename = 'bg/'+ bglist[Math.floor(Math.random() * bglist.length)];
