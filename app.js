@@ -3,8 +3,9 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 var bglist = fs.readdirSync('src/static/img/bg/');
+var http = require('http');
+
 app.use(express.bodyParser());
-app.use(app.router);
 app.use(logErrors);
 app.use('/', express.static(__dirname + '/deploy'));
 app.use('/assets', express.static(__dirname + '/assets'));
@@ -36,22 +37,15 @@ app.get('/github', function(request, response, next) {
   next();
 });
 
-
 app.get('/bg/*', function(request, response) {
-  //render form
   var filename = 'bg/'+ bglist[Math.floor(Math.random() * bglist.length)];
   if(app.get('env') === 'production'){
     response.redirect('http://aws.thisispete.com/images/' + filename);
   }else{
     response.sendfile(__dirname + '/assets/' + filename);
   }
-
-
 });
 
-
-//kickoff
-var port = process.env.PORT || 5000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
+http.createServer(app).listen(app.get('port'), function(){
+  console.log("Express server listening on port " + app.get('port'));
 });
