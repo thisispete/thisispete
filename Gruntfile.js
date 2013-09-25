@@ -30,6 +30,15 @@ module.exports = function(grunt) {
     })(),
 
     //configs
+    bump: {
+      options: {
+        files: ['package.json'],
+        commit: false,
+        createTag: false,
+        push: false,
+      }
+    },
+
     clean:{
      options:{
         force:true
@@ -43,7 +52,6 @@ module.exports = function(grunt) {
         node: true,
         jquery: true,
         browser: true,
-        es5: true,
         boss: true,
         curly: true,
         expr: true,
