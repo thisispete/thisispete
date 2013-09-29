@@ -19,7 +19,7 @@
     "grunt-contrib-less": "~0.7.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-yui-compressor": ">=0.3.0",
-    "grunt-swig": ">=0.1.2",
+    "grunt-swig": "0.0.11",
     "grunt-sitemap": "git://github.com/thisispete/grunt-sitemap.git"
   },
   "engines": {
