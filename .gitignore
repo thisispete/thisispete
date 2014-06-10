@@ -1,3 +1,6 @@
 deploy
 assets
 .elasticbeanstalk/
+.project
+thisispete.sublime-project
+thisispete.sublime-workspace
