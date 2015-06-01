@@ -87,6 +87,9 @@ module.exports = function(grunt) {
 
     min:{
       js:{
+        options: {
+          report: 'min'
+        },
         src: 'src/common/js/script.js',
         dest: 'deploy/js/script.js'
       }
