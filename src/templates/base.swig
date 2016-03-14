@@ -45,7 +45,7 @@
     <script src="/js/lib/bundle.js"></script>
     <script src="/js/lib/audio.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.14/jquery.jscrollpane.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/script/jquery.jscrollpane.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.3/jquery.mousewheel.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/swipe/2.0/swipe.min.js"></script>
     <script src="/js/script.js"></script>
