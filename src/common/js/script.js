@@ -35,6 +35,7 @@ PS.nav = function() {
 
     if (historySupport) {
       _initHistoryNav();
+      _updateNav();
     } else {
       _updateNav();
     }
