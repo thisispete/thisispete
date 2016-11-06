@@ -4,14 +4,11 @@
   <div>
     <h2>Work Experience</h2>
 
-    <h3>Senior Interactive “wildcard” Developer, Level 2, <a href="http://www.odopod.com" target="_blank">odopod</a>, Jan 2008 - current</h3>
+    <h3>Senior Interactive “wildcard” Developer, Level 2, <a href="http://www.odopod.com" target="_blank">odopod</a>, Jan 2008 - Nov 2016</h3>
     <p>Focusing on front end development, architecture, point-of-sale interactive experiences, &amp; internet of things / R&amp;D. Notable projects include; Tesla Kiosk experiences, Audemars Piguet point of sale app, Sony.com, Nest.com, White Gold (Got Milk?), Nestea Liquid Awesomeness, Nvidia speak Visual. Clients include; HP, Nike, Tesla, Honda, BF Goodrich, Nest, Dolby Labs, Audemars Piguet, EA Games, Coca-cola, Subzero Wolf Appliances, Google, Microsoft, and Sony.</p>
 
     <h3>Senior Interactive Developer, Attik, June 2006 - Aug 2007.</h3>
     <p>Interactive Developer / Technical Lead for a number of large scale flash sites for Scion cars including; want2bsquare.com, littledeviant.com, and exprescion.com.</p>
-
-    <h3>Freelance Design and Development, Sept. 2004 - Current.</h3>
-    <p>Specializing in Flash Development, brand and identity design, and creative consulting for interactive projects.</p>
 
     <h2>Qualifications</h2>
 
