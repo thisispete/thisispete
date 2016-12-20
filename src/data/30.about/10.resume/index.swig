@@ -22,7 +22,7 @@
       <li>An excellent understanding of UX / UI application design concerns</li>
       <li>Extensive experience developing dynamic websites, and automated build systems</li>
       <li>Experience with editing and optimizing video for web and interactive video techniques</li>
-      <li>An broad understanding of computer programming languages, key concepts, and strategies</li>
+      <li>A broad understanding of computer programming languages, key concepts, and strategies</li>
       <li>Quick to pick up new languages and adapt with changing technological requirements</li>
       <li>Ability to explain complicated technologies and concepts to non technical audiences</li>
       <li>Familiarity with designing logos, Corporate identity, and information graphic systems</li>
