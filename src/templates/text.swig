@@ -5,6 +5,6 @@
   		<div>
         {% block body %}{% endblock %}
   		</div>
-  	</div>	
+  	</div>
   </div>
 {% endblock %}
