@@ -1,4 +1,4 @@
 {% extends 'img.swig' %}
 {% block body %}
-  <p>Worked with the crew one last time for a refresh of odopod's website. Focus was on surfacing the work, making it easier to learn about their offerings, and company culture. <a href="http://www.odopod.com">http://www.odopod.com</a></p>
+  <p>Design for a score keeping app for darts. Developed the app for iOS 7, however it is no longer maintained for newer versions of iOS.</p>
 {% endblock %}
