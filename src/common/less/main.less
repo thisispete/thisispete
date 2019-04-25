@@ -313,6 +313,10 @@ nav{
 		height: 100%;
 		overflow:auto;
 		outline:none;
+    .videoFrame {
+      height: unset;
+      height: -webkit-fill-available;
+    }
 	}
 	#phonePane,
 	.jspPane{
@@ -358,6 +362,10 @@ nav{
 	.videoFrame{
 		width:580px;
 		height:435px;
+	}
+  .ratio16x9 .videoFrame {
+		width:800px;
+		height:450px;
 	}
 }
 #flashGallery{

@@ -15,15 +15,15 @@ function logErrors(err, req, res, next) {
 //static files
 app.use('/', express.static(__dirname + '/deploy'));
 app.use('/assets', express.static(__dirname + '/assets'));
-app.use('/weatherclock/img/', express.static(__dirname + '/assets/play/electronics/weather_clock/'));
+app.use('/weatherclock/img/', express.static(__dirname + '/assets/work/prototyping/weather_clock/'));
 
 //shortcuts
 app.get('/whiteblock', function(request, response, next) {
-  response.redirect('/play/electronics/white_block_clock/');
+  response.redirect('/work/prototyping/white_block_clock/');
   next();
 });
 app.get('/weatherclock', function(request, response, next) {
-  response.redirect('/play/electronics/weather_clock/');
+  response.redirect('/work/prototyping/weather_clock/');
   next();
 });
 app.get('/facebook', function(request, response, next) {
@@ -45,7 +45,7 @@ app.get('/bg/*', function(request, response) {
   if(app.get('env') === 'production'){
     response.redirect('http://aws.thisispete.com/images/' + filename);
   }else{
-    response.sendfile(__dirname + '/assets/' + filename);
+    response.sendFile(__dirname + '/assets/' + filename);
   }
 });
 

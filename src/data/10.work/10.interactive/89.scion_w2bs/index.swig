@@ -1,4 +1,0 @@
-{% extends 'img.swig' %}
-{% block body %}
-  <p>Worked as the technical lead with Attik and a huge international team to develop this enormous flash game portal & contest to celebrate the re-design of the Scion xB.</p>
-{% endblock %}

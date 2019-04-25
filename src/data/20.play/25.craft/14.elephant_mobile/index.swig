@@ -1,4 +1,0 @@
-{% extends 'img.swig' %}
-{% block body%}
-  <p>I made this for my niece. Her nursery was elephant themed. The pipe cleaner and washer gave them some heft and let me pose the shape a bit better than just fabric on it's own. The dowels were finished with a few coats of tung oil.</p>
-{% endblock %}

@@ -1,1 +1,0 @@
-{% extends 'img.swig' %}

@@ -1,4 +1,0 @@
-{% extends 'img.swig' %}
-{% block body %}
-  <p>Fully responsive re-launch for sony.com. There were a ton of people involved, multiple companies / countries, I played the role of lead front-end architect / senior developer for nurun.</p>
-{% endblock %}

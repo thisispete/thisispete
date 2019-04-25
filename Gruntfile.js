@@ -85,13 +85,14 @@ module.exports = function(grunt) {
 
     },
 
-    min:{
+    uglify:{
+      options: {
+        mangle: false
+      },
       js:{
-        options: {
-          report: 'min'
-        },
-        src: 'src/common/js/script.js',
-        dest: 'deploy/js/script.js'
+        files: {
+          'deploy/js/script.js': ['src/common/js/script.js']
+        }
       }
     },
 
@@ -147,7 +148,7 @@ module.exports = function(grunt) {
       },
       js:{
         files:['src/common/js/*.js'],
-        tasks:['jshint', 'min']
+        tasks:['jshint', 'uglify']
       },
       less:{
         files:['src/common/less/*.less'],
@@ -166,10 +167,10 @@ module.exports = function(grunt) {
       return task.replace('node_modules/', '');
   }).forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('default', ['jshint', 'clean', 'html', 'sitemap', 'less', 'min', 'copy']);
+  grunt.registerTask('default', ['jshint', 'clean', 'html', 'sitemap', 'less', 'uglify', 'copy']);
   grunt.registerTask('heroku', function(){
     grunt.config.data.env = 'heroku';
-    grunt.task.run( ['html', 'sitemap', 'less', 'min', 'copy:static', 'copy:exceptions'] );
+    grunt.task.run( ['html', 'sitemap', 'less', 'uglify', 'copy:static', 'copy:exceptions'] );
   });
 
 
