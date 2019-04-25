@@ -3,6 +3,10 @@
   "version": "0.2.8",
   "private": true,
   "author": "thisispete",
+  "scripts": {
+    "postinstall": "grunt",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/thisispete/thisispete"
