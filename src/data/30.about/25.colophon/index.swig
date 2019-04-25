@@ -12,8 +12,7 @@
     <li><a target="_blank" href="http://lesscss.org/">LESS</a></li>
     <li><a target="_blank" href="http://www.jshint.com/about/">js hint</a></li>
     <li><a target="_blank" href="http://paularmstrong.github.io/swig/">SWIG templating</a></li>
-    <li><a target="_blank" href="http://developer.yahoo.com/yui/compressor/">YUI compressor</a></li>
-    <li><a target="_blank" href="https://github.com/mbuchetics/heroku-buildpack-nodejs-grunt.git">heroku grunt buildpack</a></li>
+    <li><a target="_blank" href="https://www.uglifyjs.net/">uglify</a></li>
   </ul>
 
   <h3>Libraries &amp; plugins:</h3>
@@ -33,7 +32,6 @@
   <ul>
     <li><a target="_blank" href="http://heroku.com">heroku</a></li>
     <li><a target="_blank" href="http://vimeo.com/">vimeo</a></li>
-    <li><a target="_blank" href="http://www.flickr.com/">flickr</a></li>
     <li><a target="_blank" href="http://www.google.com/fonts/">google fonts</a></li>
     <li><a target="_blank" href="http://developers.google.com/speed/libraries/devguide">google hosted libraries</a></li>
     <li><a target="_blank" href="http://cdnjs.com/">cdnjs</a></li>
@@ -44,6 +42,6 @@
   	<li><a target="_blank" href="https://github.com/thisispete/thisispete">github</a></li>
   </ul>
 
-  <h3>©2013 Pete Schirmer. All Rights Reserved.</h3>
+  <h3>©2019 Pete Schirmer. All Rights Reserved.</h3>
 </div>
 {% endblock%}
