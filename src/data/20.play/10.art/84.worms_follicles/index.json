@@ -1,0 +1,18 @@
+{
+  "title": "life studies",
+  "ratio": "16x5",
+  "embed": [
+    {
+      "path": "curves6.swf",
+      "alt": "curves6.jpg",
+      "width": 800,
+      "height": 250
+    },
+    {
+      "path": "worms2.swf",
+      "alt": "worms2.jpg",
+      "width": 800,
+      "height": 250
+    }
+  ]
+}

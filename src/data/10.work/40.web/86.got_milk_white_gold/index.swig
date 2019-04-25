@@ -1,0 +1,4 @@
+{% extends 'img.swig' %}
+{% block body %}
+  <p>Worked with odopod to develop the website for this milk fueled rock legend, part of the 'Got Milk?' campaign. The site featured a interactive music video, as well as my portion; a photo shoot in which you could change the character's costume, and the scenery, snap photos and get the result a custom signed photo downloadable as a desktop image.</p>
+{% endblock %}
