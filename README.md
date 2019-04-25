@@ -10,8 +10,7 @@ THIS IS PETE DOT COM
 *   [LESS](http://lesscss.org/)
 *   [js hint](http://www.jshint.com/about/)
 *   [SWIG templating](http://paularmstrong.github.io/swig/)
-*   [YUI compressor](http://developer.yahoo.com/yui/compressor/)
-*   [heroku grunt buildpack](https://github.com/mbuchetics/heroku-buildpack-nodejs-grunt.git)
+*   [Uglify](https://www.uglifyjs.net/)
 
 ### Libraries & plugins:
 
@@ -29,7 +28,6 @@ THIS IS PETE DOT COM
 
 *   [heroku](http://heroku.com)
 *   [vimeo](http://vimeo.com/)
-*   [flickr](http://www.flickr.com/)
 *   [google fonts](http://www.google.com/fonts/)
 *   [google hosted libraries](http://developers.google.com/speed/libraries/devguide)
 *   [cdnjs](http://cdnjs.com/)
