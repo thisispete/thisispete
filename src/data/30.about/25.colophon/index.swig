@@ -1,7 +1,7 @@
 {% extends 'text.swig' %}
 
 {% block body %}
-<div>
+<div class="textOnly">
   <h2 >About this site</h2>
 
   <h3 >Built with:</h3>
@@ -23,9 +23,6 @@
     <li><a target="_blank" href="http://kolber.github.com/audiojs/">audio.js</a></li>
     <li><a target="_blank" href="http://modernizr.com/">modernizr</a></li>
     <li><a target="_blank" href="http://code.google.com/p/swfobject/">SWFObject</a></li>
-    <li><a target="_blank" href="http://cherne.net/brian/resources/jquery.hoverIntent.html">hover intent</a></li>
-    <li><a target="_blank" href="http://www.kelvinluck.com/assets/jquery/jScrollPane/jScrollPane.html">jScrollPane</a></li>
-    <li><a target="_blank" href="http://brandonaaron.net/code/mousewheel/docs">mouse wheel</a></li>
   </ul>
 
   <h3>Hosting:</h3>

@@ -1,10 +1,8 @@
 {% extends 'base.swig' %}
 {% block content %}
-  <div id="scrollContent" class="gallery">
-  	<div class="scrollpane">
-  		<div>
-        {% block body %}{% endblock %}
-  		</div>
-  	</div>
+  <div id="scrollContent" class="scroll">
+		<div>
+      {% block body %}{% endblock %}
+		</div>
   </div>
 {% endblock %}

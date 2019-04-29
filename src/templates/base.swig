@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css">
     <link rel="stylesheet" href="/css/jquery.jscrollpane.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/phone.css" media="screen and (max-width: 770px)">
+    <link rel="stylesheet" href="/css/phone.css" media="screen and (max-width: 767px)">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="/js/lib/modernizr.custom.05816.js"></script>
   </head>
   <body>
-    <header>
+    <div class="gridContainer">
       <div id="PETElogo" data-href="/" class="clearfix"><h1 class="visuallyhidden">PETE</h1></div>
-      <div id="menuButton" class="clearfix"></div>
+
       <nav>
         <ul>
           {% for li in nav -%}
@@ -36,18 +36,19 @@
           {% endfor %}
         </ul>
       </nav>
-    </header>
-    <div id="content" class="content-container">
-        {% block content %}{% endblock %}
+
+      <div id="content" class="content-container">
+          {% block content %}{% endblock %}
+      </div>
     </div>
     <div id="bg" data-env="{{env}}"></div>
     <script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
     <script src="/js/lib/bundle.js"></script>
     <script src="/js/lib/audio.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/script/jquery.jscrollpane.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.3/jquery.mousewheel.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/swipe/2.0/swipe.min.js"></script>
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.23/script/jquery.jscrollpane.min.js"></script> -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.3/jquery.mousewheel.min.js"></script> -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/swipe/2.0/swipe.min.js"></script> -->
     <script src="/js/script.js"></script>
     <!--[if lt IE 9 ]>
       <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>

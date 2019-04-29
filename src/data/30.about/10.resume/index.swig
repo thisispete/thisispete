@@ -1,7 +1,7 @@
 {% extends 'text.swig' %}
 
 {% block body %}
-  <div>
+  <div class="textOnly">
     <h2>Work Experience</h2>
 
     <h3>Senior Design Technologist <a href="https://www.fjordnet.com/">MATTER / Fjord</a>, Jan 2017 - Current</h3>

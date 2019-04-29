@@ -1,7 +1,7 @@
 {% extends 'text.swig' %}
 
 {% block body %}
-<div>
+<div class="textOnly">
   <h2>This is Pete</h2>
 
   <p>I have a BFA from the New York State School of Ceramics, School of Art and Design at Alfred University. I studied video / sonic / electronic art, graphic design, photography, kinetic sculpture / instillation art, and interactive / web / new media design.</p>

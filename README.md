@@ -20,9 +20,6 @@ THIS IS PETE DOT COM
 *   [audio.js](http://kolber.github.com/audiojs/)
 *   [modernizr](http://modernizr.com/)
 *   [SWFObject](http://code.google.com/p/swfobject/)
-*   [hover intent](http://cherne.net/brian/resources/jquery.hoverIntent.html)
-*   [jScrollPane](http://www.kelvinluck.com/assets/jquery/jScrollPane/jScrollPane.html)
-*   [mouse wheel](http://brandonaaron.net/code/mousewheel/docs)
 
 ### Hosting
 
