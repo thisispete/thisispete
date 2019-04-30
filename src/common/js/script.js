@@ -400,7 +400,7 @@ PS.Contact = function() {
         "fill" : "#CCC",
         "stroke-width" : "0.000001"
       });
-      var clicktarget = $(e).prev();
+      var clicktarget = $(e).parent();
       clicktarget.attr('href', $(e).data('url'));
       clicktarget.hover(function(h) {
         path.animate({
