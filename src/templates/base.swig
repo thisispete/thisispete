@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css">
     <link rel="stylesheet" href="/css/jquery.jscrollpane.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/phone.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="/css/phone.css" media="screen and (max-width: 900px)">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="/js/lib/modernizr.custom.05816.js"></script>
   </head>

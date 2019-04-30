@@ -8,7 +8,7 @@
 
 var PS = PS || {};
 // log("ThisIsPete dot com v3.0");
-PS.minPhoneWidth = 767;
+PS.minPhoneWidth = 900;
 PS.initialLoad = true;
 
 PS.nav = function() {
