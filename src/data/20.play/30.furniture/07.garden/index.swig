@@ -1,4 +1,0 @@
-{% extends 'img.swig' %}
-{% block body%}
-  <p>The garden bed here at 808 was getting a bit shabby, it was also hard to get to everything as it was all one big plot. I decided to split it up and build 3 identical raised garden beds. The wood is redwood, which is generally quite resiliant for outdoor applications, I also applied an organic weather sealant specifically to use as a food-safe preservative to the inside surfaces to help protect them from rot while they're in constant contact with the wood. I ran some drip irrigation lines through each bed as I installed them, and my neighbor was nice enought to give me some fresh chicken manure, the plants couldn't be happier!</p>
-{% endblock %}

@@ -6,19 +6,23 @@ THIS IS PETE DOT COM
 
 *   [node.js](http://nodejs.org/)
 *   [express](http://expressjs.com/)
-*   [grunt](http://gruntjs.com)
-*   [LESS](http://lesscss.org/)
-*   [js hint](http://www.jshint.com/about/)
-*   [SWIG templating](http://paularmstrong.github.io/swig/)
-*   [Uglify](https://www.uglifyjs.net/)
+*   [gulp](http://gulpjs.com)
+*   [babel](https://babeljs.io)
+*   [SASS](http://sass-lang.com/)
+*   [browserslist](https://github.com/browserslist/browserslist)
+*   [postcss](https://postcss.org/)
+*   [nunjucks](https://mozilla.github.io/nunjucks/)
+*   [uglify](https://www.uglifyjs.net/)
+*   [postcss normalize](https://github.com/csstools/postcss-normalize)
+*   [autoprefixer](https://github.com/postcss/autoprefixer)
+*   [babelify](https://github.com/babel/babelify)
+*   [browserify](https://github.com/browserify/browserify)
 
-### Libraries & plugins:
+### Runtime Libraries:
 
-*   [normalize.css](https://github.com/necolas/normalize.css/)
 *   [jQuery](http://jquery.com/)
 *   [raphaël](http://raphaeljs.com/)
 *   [audio.js](http://kolber.github.com/audiojs/)
-*   [modernizr](http://modernizr.com/)
 *   [SWFObject](http://code.google.com/p/swfobject/)
 
 ### Hosting
@@ -26,6 +30,5 @@ THIS IS PETE DOT COM
 *   [heroku](http://heroku.com)
 *   [vimeo](http://vimeo.com/)
 *   [google fonts](http://www.google.com/fonts/)
-*   [google hosted libraries](http://developers.google.com/speed/libraries/devguide)
 *   [cdnjs](http://cdnjs.com/)
 *   [amazon s3](http://aws.amazon.com/s3/)

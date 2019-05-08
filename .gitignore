@@ -99,4 +99,5 @@ build/Release
 # Build directories
 deploy
 assets
+design
 .elasticbeanstalk/

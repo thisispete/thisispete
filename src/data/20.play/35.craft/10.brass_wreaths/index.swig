@@ -1,4 +1,0 @@
-{% extends 'img.swig' %}
-{% block body%}
-  <p>I built 10 of these for gifts for friends who help me through hard times. Brass tube and wire.</p>
-{% endblock %}

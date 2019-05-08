@@ -1,4 +1,0 @@
-{% extends 'img.swig' %}
-{% block body %}
-  <p>Worked with odopod to develop this interactive 'webcam' style video experience for Nestea, in which the character steve would pit his nestea feuled strength, agility, and mystical charms against you in a series of makeshift challenges, including riding a mechinacal bear.</p>
-{% endblock %}
