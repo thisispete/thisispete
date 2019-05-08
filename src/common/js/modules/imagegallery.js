@@ -12,7 +12,7 @@ export default class ImageGallery {
       $(this._list[0]).delay(1).fadeIn(200);
       this._stack.find('li:gt(0)').hide();
     }else{
-      this._paginator = new Paginator(target, this._list, null, false, true);
+      this._paginator = new Paginator(target, this._list, () => {}, false, true);
     }
     $(window).resize(this._resize);
     this._resize();

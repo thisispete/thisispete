@@ -26,7 +26,7 @@ export default class Paginator {
   _initPassive(){
     this._pagination.find('.prev').first().hide();
     this._pagination.find('.next').first().hide();
-    this._stack = this._target.find('.img-stack').first();
+    this._stack = this._target.find('.img-stack').first() || this._target.find('.swf-stack').first();
 
     const throttle = (method, scope, time) => {
         clearTimeout(method._tId);

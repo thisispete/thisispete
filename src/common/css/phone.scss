@@ -118,8 +118,7 @@ nav{
 }
 
 #singleVideo,
-#videoGallery,
-#imageWithVideo{
+#videoGallery{
 	.videoFrame{
 		height:100%;
 		width:100%;
@@ -134,9 +133,7 @@ nav{
   	}
   }
 }
-#flashGallery{
 
-}
 #audioPlayer{
 	.audiojs {
 		width:100%;
@@ -170,6 +167,7 @@ nav{
 }
 
 #imageGallery,
+#flashGallery,
 #comboGallery {
   .fixedRatioWrapper {
     margin-bottom: 0;
@@ -193,9 +191,21 @@ nav{
         }
       }
     }
+    .swf-stack{
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      overflow-y: hidden;
+      li .flash-container > img{
+        width:100vw;
+        height:unset;
+      }
+    }
     @supports (scroll-snap-align: start) {
       /* modern scroll snap points */
-      .img-stack {
+      .img-stack,
+      .swf-stack {
         scroll-snap-type: x mandatory;
         li{
           scroll-snap-align: center;
@@ -204,7 +214,8 @@ nav{
     }
     @supports not (scroll-snap-align: start) {
       /* old scroll snap points spec */
-      .img-stack {
+      .img-stack,
+      .swf-stack {
         scroll-snap-type: mandatory;
         scroll-snap-destination: 0 50%;
         scroll-snap-points-x: repeat(100%);

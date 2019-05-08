@@ -1,8 +1,8 @@
 {% extends 'base.njk' %}
 {% block content %}
       	<div id="comboGallery" class="gallery clearfix">
-          <script src="https://player.vimeo.com/api/player.js"></script>
           <div class="gallery-content">
+            <script src="https://player.vimeo.com/api/player.js"></script>
       			<h1>{{title}}</h1>
         		<div class="fixedRatioWrapper {% if not ratio.length %}ratio3x2{% else %}ratio{{ratio}}{% endif %}">
         			<ul class="img-stack">
