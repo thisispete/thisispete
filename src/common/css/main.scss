@@ -176,6 +176,9 @@ header{
 .gridContainer {
   display: grid;
   grid-template-columns: 250px 1fr min-content 1fr;
+  @media screen and (min-width: 901px) and (max-width: 1049px) {
+    grid-template-columns: 222px 1fr min-content 1fr;
+  }
   grid-template-rows: auto;
   grid-template-areas: "nav . content .";
   width: 100vw;
@@ -184,7 +187,8 @@ header{
 }
 
 #PETElogo{
-  position:absolute;
+  filter: drop-shadow(0px 3px 4px rgba(0,0,0,0.3));
+  position: absolute;
   right: 30px;
   bottom: 25px;
 	z-index: 99;
@@ -196,6 +200,9 @@ nav{
   align-self: center;
   justify-self: stretch;
   margin-left: 35px;
+  @media screen and (min-width: 901px) and (max-width: 1049px) {
+    margin-left: 20px;
+  }
   z-index: 3;
 	li{
 		@include anim-height();
@@ -312,6 +319,9 @@ nav{
   }
   .fixedRatioWrapper{
     position:relative;
+    .ratio_custom_2{
+      margin-bottom: -10px;
+    }
   }
 }
 ::-webkit-scrollbar {
