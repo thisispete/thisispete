@@ -332,9 +332,12 @@ nav{
 ::-webkit-scrollbar-thumb {
     background: #cccccc;
 }
+
 #scrollContent{
   overflow: scroll;
   height: 100vh;
+  scrollbar-width: none;
+  
   h1:first-child{
     margin-bottom: 30px;
     margin-top: 20vh;
