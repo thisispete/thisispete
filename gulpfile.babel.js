@@ -14,7 +14,7 @@ import postcssNormalize from 'postcss-normalize';
 import postcssPresetEnv from 'postcss-preset-env';
 import postSCSS from '@csstools/postcss-sass';
 import rename from 'gulp-rename';
-import server from 'gulp-express';
+import gls from 'gulp-live-server';
 import sourcemaps from 'gulp-sourcemaps';
 import sitemaps from 'gulp-sitemap';
 import source from 'vinyl-source-stream';
@@ -48,7 +48,7 @@ const clean = () => {
 
 const css = () => {
   const plugins = [
-    autoprefixer({browsers: browserslistSettings}),
+    autoprefixer({ overrideBrowserslist: browserslistSettings}),
     postcssPresetEnv({browsers: browserslistSettings}),
     postSCSS({browsers: browserslistSettings}),
     postcssNormalize({browsers: browserslistSettings})
@@ -187,8 +187,9 @@ const copy = gulp.parallel(copyFiles, copyNestedAssetsSameDomain);
 // dev task serve app.js watch and notify on tiny-lr
 const dev = done => {
     process.env.NODE_ENV = 'development'
-    server.run(['app.js'], {}, 35729);
-
+    var server = gls('app.js', undefined, 35729);
+    server.start()
+  
     gulp.watch([PATH.CSS], css).on('change', server.notify);
     gulp.watch([PATH.JS], js).on('change', server.notify);
     gulp.watch([PATH.HTML, PATH.TEMPLATES], html).on('change', server.notify);
