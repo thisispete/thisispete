@@ -5,7 +5,7 @@
   "author": "thisispete",
   "scripts": {
     "postinstall": "gulp",
-    "dev": "NODE_ENV=development node app.js",
+    "dev": "gulp dev",
     "start": "node app.js"
   },
   "repository": {
