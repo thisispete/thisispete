@@ -3,12 +3,12 @@
     "short_name": "PETE",
     "icons": [
         {
-            "src": "/assets/android-chrome-192x192.png?v=QEGLn5E5X3",
+            "src": "/images/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/assets/android-chrome-512x512.png?v=QEGLn5E5X3",
+            "src": "/images/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
