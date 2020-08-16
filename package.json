@@ -12,12 +12,9 @@
     "node": ">=12.18.3"
   },
   "scripts": {
-    "start": "node --experimental-modules server/main.js"
   },
   "devDependencies": {
-    "parcel": "1.12.4"
   },
   "dependencies": {
-    "express": "^4.17.1"
   }
 }

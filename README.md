@@ -5,7 +5,7 @@ THIS IS PETE DOT COM
 ### Built with:
 
 *   [node.js](http://nodejs.org/)
-*   [express](http://expressjs.com/)
+
 
 ### Hosting
 
