@@ -1,0 +1,17 @@
+---
+label: Link
+hide_body: true
+display_field: post
+fields:
+- name: post
+  type: select
+  default: []
+  config:
+    required: true
+    options: []
+    source:
+      type: pages
+      section: 
+      file: 
+      path: 
+  label: Post

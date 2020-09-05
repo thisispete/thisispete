@@ -1,0 +1,35 @@
+---
+label: Post Template
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Slug
+  description: 'filename / URL path: <strong>use underscores!</strong>'
+- name: display_title
+  type: text
+  config:
+    required: true
+  label: Title
+  default: ''
+  description: Title for display purposes
+- name: template
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - gallery
+    - blog
+    - resume
+    - contact
+    - audio
+    - video
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Template

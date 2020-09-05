@@ -1,0 +1,26 @@
+---
+label: Blog Post
+hide_body: true
+display_field: title
+fields:
+- name: post_template
+  type: include
+  config: {}
+  template: post
+  label: Post Template
+- name: content
+  type: blocks
+  template_types:
+  - image-block
+  - video-block
+  config:
+    min: 
+    max: 
+  label: Content
+- name: footer
+  type: text
+  config:
+    required: false
+  label: Footer
+pages:
+- content/work/exhibit/reset_button.json

@@ -1,0 +1,17 @@
+{
+  "links": [
+    {
+      "url": "http://linkedin.com/in/thisispete",
+      "icon": "/linkedin_931fa0bb49.svg",
+      "hover": "linkedin"
+    },
+    {
+      "url": "https://github.com/thisispete",
+      "icon": "/github_dc32120304.svg",
+      "hover": "git hub"
+    }
+  ],
+  "title": "contact",
+  "display_title": "contact",
+  "template": "contact"
+}

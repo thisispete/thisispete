@@ -1,20 +1,20 @@
 {
-  "name": "thisispetedotcom",
-  "version": "0.4.0",
+  "name": "forestry-next",
+  "version": "0.1.0",
   "private": true,
-  "author": "thisispete",
-  "license": "UNLICENSED",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thisispete/thisispete"
-  },
-  "engines": {
-    "node": ">=12.18.3"
-  },
   "scripts": {
-  },
-  "devDependencies": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^2.6.6",
+    "gsap": "^3.5.1",
+    "jsx-switch": "^0.0.3",
+    "next": "9.5.2",
+    "normalize.scss": "^0.1.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "sass": "^1.26.10"
   }
 }

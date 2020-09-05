@@ -1,0 +1,35 @@
+---
+label: Contact List
+hide_body: true
+fields:
+- name: post_template
+  type: include
+  config: {}
+  template: post
+  label: post template
+- name: links
+  type: field_group_list
+  fields:
+  - name: url
+    type: text
+    config:
+      required: true
+    label: URL
+  - name: hover
+    type: text
+    config:
+      required: true
+    label: Hover Text
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: SVG Icon
+    description: 60x60 fill:#ccc
+  config:
+    min: 
+    max: 
+    labelField: hover
+  label: contact links
+pages:
+- content/about/contact.json

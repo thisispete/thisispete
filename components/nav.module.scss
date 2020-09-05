@@ -1,0 +1,55 @@
+@mixin anim-color() {
+  transition:color .2s ease-in;
+}
+@mixin anim-height () {
+	transition:height .15s ease-in-out;
+}
+
+
+
+.nav {
+  width: 100%;
+  padding-left: 4rem;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .navItem {
+    @include anim-height();
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    height:1.2rem;
+    
+    a {
+    	@include anim-color();
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size:1.1rem;
+    }
+    a:hover {
+      color: blue;
+    }
+
+    &.selected {
+      a {
+        color: red;
+      }
+    }
+
+    &.hidden {
+      height: 0;
+    }
+
+    &.level_0 {
+      margin-left: 0;
+    }
+    &.level_1 {
+      margin-left: 0.5rem;
+    }
+    &.level_2 {
+      margin-left: 1rem;
+    }
+  }
+}

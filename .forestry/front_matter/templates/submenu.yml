@@ -1,0 +1,19 @@
+---
+label: Submenu
+hide_body: true
+display_field: slug
+fields:
+- name: slug
+  type: text
+  config:
+    required: true
+  label: Slug
+- name: items
+  type: blocks
+  label: Items
+  template_types:
+  - submenu
+  - link
+  config:
+    min: 2
+    max: 

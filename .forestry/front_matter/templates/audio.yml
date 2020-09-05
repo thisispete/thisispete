@@ -1,0 +1,23 @@
+---
+label: DJ Recording
+hide_body: true
+display_field: title
+fields:
+- name: template
+  type: include
+  config: {}
+  template: post
+  label: post template
+- name: url
+  type: text
+  config:
+    required: true
+  label: Track URL
+- name: cover
+  type: file
+  config:
+    maxSize: 64
+  label: Cover Art
+pages:
+- content/play/dj/nightlife_1.json
+- content/play/dj/nightlife_2.json
