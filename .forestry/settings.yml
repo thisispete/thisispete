@@ -2,7 +2,7 @@
 new_page_extension: html
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url: https://api.vercel.com/v1/integrations/deploy/QmfTkgobDG16C2tf8zG3w2ifoDQyWm5CtVWbSpbFNCa6bs/IZ6LlWgysu
 sections:
 - type: heading
   label: Work
