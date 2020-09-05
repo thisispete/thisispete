@@ -1,17 +1,129 @@
 ---
-new_page_extension: md
+new_page_extension: html
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
-sections: 
+sections:
+- type: heading
+  label: Work
+- type: directory
+  path: content/work/exhibit
+  label: Exhibit
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - gallery
+  - blog-post
+- type: directory
+  path: content/work/prototyping
+  label: Prototyping
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - gallery
+  - blog-post
+- type: directory
+  path: content/work/web
+  label: Web
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - gallery
+  - blog-post
+- type: document
+  path: content/work/identity.json
+  label: Identity
+- type: document
+  path: content/work/promotional.json
+  label: Promotional
+- type: directory
+  path: content/work/ui
+  label: UI
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - gallery
+  - blog-post
+- type: heading
+  label: Play
+- type: directory
+  path: content/play/art
+  label: Art
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - gallery
+  - blog-post
+- type: document
+  path: content/play/photo.json
+  label: Photo
+- type: directory
+  path: content/play/furniture
+  label: Furniture
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - gallery
+  - blog-post
+- type: directory
+  path: content/play/furnishings
+  label: Furnishings
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - gallery
+  - blog-post
+- type: directory
+  path: content/play/vj
+  label: VJ
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - audio
+- type: directory
+  path: content/play/dj
+  label: DJ
+  create: all
+  match: "**/*"
+  new_doc_ext: json
+  templates:
+  - audio
+- type: heading
+  label: About
+- type: document
+  path: content/about/resume.json
+  label: Resume
+- type: document
+  path: content/about/bio.json
+  label: Bio
+- type: document
+  path: content/about/colophon.json
+  label: Colophon
+- type: document
+  path: content/about/contact.json
+  label: Contact
+- type: heading
+  label: Config
+- type: document
+  path: content/nav.json
+  label: Nav
 upload_dir: ''
 public_path: https://s3.amazonaws.com/cms.thisispete.com
 front_matter_path: ''
-use_front_matter_path: 
+use_front_matter_path: false
 file_template: ":filename:"
 build:
-  install_dependencies_command: npm install
+  preview_output_directory: build
+  install_dependencies_command: yarn install
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run develop
+  instant_preview_command: yarn dev
