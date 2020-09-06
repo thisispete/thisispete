@@ -1,4 +1,8 @@
 ---
 label: Image Set
 hide_body: true
-fields: []
+fields:
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
