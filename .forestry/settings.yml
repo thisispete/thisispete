@@ -115,6 +115,10 @@ sections:
 - type: document
   path: content/nav.json
   label: Nav
+- type: document
+  path: content/bg.json
+  label: BG
+  match: "**/*"
 upload_dir: images
 public_path: https://s3.amazonaws.com/cms.thisispete.com
 front_matter_path: ''
