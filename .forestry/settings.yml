@@ -119,7 +119,7 @@ sections:
   path: content/bg.json
   label: BG
 upload_dir: images
-public_path: https://s3.amazonaws.com/cms.thisispete.com
+public_path: https://s3.amazonaws.com/cms.thisispete.com/images
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
