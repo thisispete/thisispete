@@ -16,6 +16,14 @@
             },
             {
               "template": "link",
+              "post": "content/work/exhibit/mission_control.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/exhibit/tesla_go_electric.json"
+            },
+            {
+              "template": "link",
               "post": "content/work/exhibit/honda_kiosks.json"
             }
           ]
