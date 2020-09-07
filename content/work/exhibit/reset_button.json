@@ -29,6 +29,10 @@
       "description": "<p>I whipped up an arduino controller that controlled the lighting over DMX, and connected to a computer as a USB keyboard, then coded a custom video player app in open-frameworks to handle the video playback and keyboard control.</p>"
     },
     {
+      "template": "text",
+      "html": "<p>Here's the final piece working on the trade-show floor</p>"
+    },
+    {
       "template": "image-block",
       "description": "<p>Here's the final piece working on the tradeshow floor</p>",
       "alt_text": "Final reset button installed in trade show booth",
@@ -39,6 +43,10 @@
       "vimeo_id": "336239295",
       "title": "reset button demo video",
       "description": ""
+    },
+    {
+      "template": "text",
+      "html": "<p>And here's the <em>money</em> shot of Warren Buffet interacting with it.</p>"
     },
     {
       "template": "image-block",
