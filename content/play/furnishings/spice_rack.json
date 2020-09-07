@@ -1,0 +1,17 @@
+{
+  "template": "gallery",
+  "title": "spice_rack",
+  "display_title": "XXL Spice Rack",
+  "description": "<p>Custom XXL Spice rack for Berkeley Lambert Walker Wilson &amp; Co. I hear they can fit at least 59 different kinds of spice in there.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/spice_rack_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/spice_rack_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/spice_rack_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/spice_rack_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/spice_rack_05.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/spice_rack_06.jpg"
+  ],
+  "videos": [
+
+  ]
+}
