@@ -1,0 +1,16 @@
+{
+  "template": "gallery",
+  "title": "tea_boxes",
+  "display_title": "Tea Boxes",
+  "description": "<p>Three different tea box designs for gifts.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tea_boxes_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tea_boxes_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tea_boxes_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tea_boxes_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tea_boxes_05.jpg"
+  ],
+  "videos": [
+
+  ]
+}
