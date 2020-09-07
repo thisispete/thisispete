@@ -41,6 +41,44 @@
           ]
         },
         {
+          "template": "submenu",
+          "slug": "prototyping",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/work/prototyping/twitter_lights.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/dust_collector.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/captive_platform.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/ar_visualizations.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/odopod_sign.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/odobook.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/white_block_clock.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/weather_clock.json"
+            }
+          ]
+        },
+        {
           "template": "link",
           "post": "content/work/identity.json"
         }
