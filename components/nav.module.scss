@@ -1,9 +1,12 @@
-@mixin anim-color() {
-  transition: color 0.2s ease-in;
+@mixin anim-color($time: 0.2s) {
+  transition-property: color;
+  transition-duration: $time;
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
-@mixin anim-height() {
-  transition: height 0.15s;
-  transition-timing-function: cubic-bezier(0.455,  0.030, 0.515, 0.955);
+@mixin anim-height($time: 0.18s) {
+  transition-property: height;
+  transition-duration: $time;
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .nav {
@@ -11,49 +14,53 @@
   width: 100%;
   padding-left: 4rem;
   z-index: 3;
-  ul {
-    margin: 0;
-    padding: 0;
-  }
+
   .navItem {
     @include anim-height();
     overflow: hidden;
-    height: 1.2rem;
+    height: 1.3rem;
+
     a {
-      @include anim-color();
+      @include anim-color(.4s);
       color: #ccc;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 1rem;
       line-height: 1.1rem;
-
+      user-select: none
     }
     a:hover {
       color: #fff;
-      @include anim-color();
+      @include anim-color(.2s);
     }
 
     &.selected {
       a {
-        @include anim-color();
+        @include anim-color(.1s);
         color: #66f;
-        background: none;
       }
     }
 
     &.hidden {
       height: 0;
-      @include anim-height();
+      a{
+        @include anim-color(.01s);
+        color: rgba($color: #fff, $alpha: 0.0);
+      }
     }
 
-    &.level_0 {
-      margin-left: 0;
+    @for $i from 0 through 3 {
+      $left: 0.75rem * $i;
+      &.level-#{$i} {
+        margin-left: $left;
+      }
     }
-    &.level_1 {
-      margin-left: .75rem;
-    }
-    &.level_2 {
-      margin-left: 1.5rem;
+  
+    @for $i from 1 through 20 {
+      $delay: 0.1s + 0.025s * $i;
+      &.delay-#{$i} {
+        transition-delay: $delay;
+      }
     }
   }
 }
