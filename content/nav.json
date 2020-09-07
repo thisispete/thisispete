@@ -143,6 +143,40 @@
       "slug": "play",
       "items": [
         {
+          "template": "submenu",
+          "slug": "art",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/play/art/rochester_dvd.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/sketches.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/untitled.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/duos.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/synaethesia.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/80_circles.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/lines.json"
+            }
+          ]
+        },
+        {
           "template": "link",
           "post": "content/play/photo.json"
         },
