@@ -1,0 +1,41 @@
+{
+  "template": "blog",
+  "title": "weather_clock",
+  "display_title": "Antique Weather Clock",
+  "content": [
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/weather_clock_01.jpg",
+      "alt_text": "antique clock with weather symbols instead of numbers on the face"
+    },
+    {
+      "template": "text",
+      "html": "<p>I love the idea of hacking antiques, using electronics to update their functionality or change it completely. I came up with this concept for an antique weather clock, instead of telling the time it tells you the weather.</p><p><br></p>"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/weather_clock_03.jpg",
+      "alt_text": "inside of clock with electronics and servo motor"
+    },
+    {
+      "template": "text",
+      "html": "<p>I used a fake antique (replica) that I picked up for cheep on eBay. I took out the clock work, and replaced it with a servo and a micro-controller, then I re-designed the face of the clock keeping a similar look to the original time piece. The weather service I was using reports something like 40 different weather conditions, so I had to condense the list, and I ended up with 14 ‘conditions’</p><ul><li><p>Cold</p></li><li><p>Hot</p></li><li><p>Fog</p></li><li><p>Cloudy</p></li><li><p>Partly Cloudy</p></li><li><p>Sunny</p></li><li><p>Clear Night</p></li><li><p>Rain</p></li><li><p>Icy Conditions</p></li><li><p>Snow</p></li><li><p>Windy</p></li><li><p>Thunderstorms</p></li><li><p>Severe Weather Warning</p></li><li><p>Dead Clock (no internet connection / error)<br></p></li></ul>"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/weather_clock_02.jpg",
+      "alt_text": "detail of gears"
+    },
+    {
+      "template": "text",
+      "html": "<p>In 2011 I re-worked the micro-controller to be fully self contained (previously it required a USB connection and had an app running on a computer)</p><p>It now runs over WiFi, needing just power or battery connection. I off-loaded the logic to run on a web app, so I can change the zip-code or weather service without re-flashing the firmware. However every time I change WiFi credentials I have to re-program the controller.</p><p><br></p>"
+    },
+    {
+      "template": "video-block",
+      "vimeo_id": "335024805",
+      "title": "video of clock hand moving"
+    }
+  ],
+  "footer": "©2006 Peter Schirmer"
+}
+<img src="https://s3.amazonaws.com/cms.thisispete.com/images/weather_clock_02.jpg"><img src="https://s3.amazonaws.com/cms.thisispete.com/images/weather_clock_03.jpg"><img src="https://s3.amazonaws.com/cms.thisispete.com/images/weather_clock_01.jpg">
