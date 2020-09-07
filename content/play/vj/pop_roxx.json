@@ -1,0 +1,14 @@
+{
+  "template": "gallery",
+  "title": "pop_roxx",
+  "display_title": "POP ROXX",
+  "description": "<p>Guest VJ for Pop Roxx at <a href=\"https://www.dnalounge.com/\" title=\"\" target=\"_blank\">DNA Lounge</a></p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/pop_roxx_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/pop_roxx_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/pop_roxx_03.jpg"
+  ],
+  "videos": [
+
+  ]
+}
