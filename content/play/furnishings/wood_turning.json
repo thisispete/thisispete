@@ -1,0 +1,17 @@
+{
+  "template": "gallery",
+  "title": "wood_turning",
+  "display_title": "Wood Turning",
+  "description": "<p>Couple different wood turning projects, an acorn inspired birdhouse, a mallet, and some yule tree ornaments.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/wood_turning_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/wood_turning_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/wood_turning_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/wood_turning_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/wood_turning_05.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/wood_turning_06.jpg"
+  ],
+  "videos": [
+
+  ]
+}
