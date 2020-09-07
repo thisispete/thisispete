@@ -1,0 +1,50 @@
+{
+  "template": "blog",
+  "title": "white_block_clock",
+  "display_title": "White Block Clock",
+  "content": [
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/white_clock_01.jpg",
+      "alt_text": "red glowing led matrix clock in white plastic case"
+    },
+    {
+      "template": "text",
+      "html": "<p>I love those wooden block clocks I’ve been seeing around that have LED displays placed behind the surface of thin wood veneer. However I wanted to make one that was all white with a high-gloss finish, and I wanted to be able to design my own font for the time display.</p><p>For the display I used a <a href=\"http://jimmieprodgers.com/kits/lolshield/\" title=\"\" target=\"_blank\">LOL Sheild Kit</a> for Arduino.<br></p>"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/white_clock_04.jpg",
+      "alt_text": "detail of clock"
+    },
+    {
+      "template": "text",
+      "html": "<p>The display uses the <a href=\"http://www.arduino.cc/playground/Code/Charlieplex\" title=\"\" target=\"_blank\">Arduino Charlieplexing</a> library, which reads in lines of binary that have been bit-shifted into decimal. This way it stores a 2-d array of 1’s and 0’s for on and off as a 1-d array of integers, which saves memory.</p><p>To create the custom display graphics, first I made some interactive prototypes of the grid of pixels. I whipped up a couple of flash programs that let me click pixels on and off and export the data in a format that the Arduino code would use to display my custom designed numbers. After I was pretty happy with the designs I exported all the data to the Arduino.</p><p><br></p>"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/white_clock_03.jpg",
+      "alt_text": "clock internal electronics in clear box"
+    },
+    {
+      "template": "text",
+      "html": "<p>The next bit was building a case. I did a lot of searching for boxes online, and finally found one at TAP plastics that looked like a good place to start.</p><p><br></p>"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/white_clock_02.jpg",
+      "alt_text": "case is painted white and showing internal button connections"
+    },
+    {
+      "template": "text",
+      "html": "<p>It took a few tries and broken cases to get it right, drilling in plastic is tricky, but in the end I love how it looks with the paint on the inside like a white cube had been incased in clear plastic.</p><p>In the back I wired two buttons for setting the hours and minutes, and added a power connector.</p><p><br></p>"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/white_clock_05.jpg",
+      "alt_text": "soldering station with circuit board holder"
+    }
+  ],
+  "footer": "©2010 Peter Schirmer"
+}
+<img src="https://s3.amazonaws.com/cms.thisispete.com/images/white_clock_05.jpg"><img src="https://s3.amazonaws.com/cms.thisispete.com/images/white_clock_02.jpg"><img src="https://s3.amazonaws.com/cms.thisispete.com/images/white_clock_03.jpg"><img src="https://s3.amazonaws.com/cms.thisispete.com/images/white_clock_04.jpg"><img src="https://s3.amazonaws.com/cms.thisispete.com/images/white_clock_01.jpg">
