@@ -1,0 +1,15 @@
+{
+  "template": "gallery",
+  "title": "odopod",
+  "display_title": "odopod.com 2016 Refresh",
+  "description": "<p>Worked with the crew one last time for a refresh of odopod's website. Focus was on surfacing the work, making it easier to learn about their offerings, and company culture.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/odopod_web_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/odopod_web_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/odopod_web_03.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/odopod_web_04.png"
+  ],
+  "videos": [
+
+  ]
+}
