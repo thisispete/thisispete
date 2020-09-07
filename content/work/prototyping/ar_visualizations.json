@@ -1,0 +1,16 @@
+{
+  "template": "gallery",
+  "title": "ar_visualizations",
+  "display_title": "Augmented Reality Visualization",
+  "description": "<p>Created a couple AR apps using iOS ARKIT for the industrial designers at Matter to help clients visualize some of their large format designs within a space.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/matter_ar_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/matter_ar_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/matter_ar_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/matter_ar_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/matter_ar_05.jpg"
+  ],
+  "videos": [
+
+  ]
+}
