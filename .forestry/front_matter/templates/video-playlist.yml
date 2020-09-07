@@ -7,6 +7,11 @@ fields:
   config: {}
   template: post
   label: post template
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
 - name: video_list
   type: blocks
   template_types:
