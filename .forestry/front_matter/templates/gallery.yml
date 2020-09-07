@@ -40,6 +40,7 @@ pages:
 - content/play/furniture/garden.json
 - content/play/furniture/highhorse.json
 - content/play/furniture/kitchen_helper.json
+- content/play/furniture/picnic_table.json
 - content/play/furniture/workbench.json
 - content/play/photo.json
 - content/work/exhibit/ap_pos.json
