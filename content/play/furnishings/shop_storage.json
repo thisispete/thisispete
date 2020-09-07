@@ -1,0 +1,14 @@
+{
+  "template": "gallery",
+  "title": "shop_storage",
+  "display_title": "Woodshop Storage",
+  "description": "<p>Couple of beginner CNC projects designed in fusion 360 and cut from street sourced plywood.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/shop_storage_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/shop_storage_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/shop_storage_03.jpg"
+  ],
+  "videos": [
+
+  ]
+}
