@@ -79,10 +79,6 @@
           ]
         },
         {
-          "template": "link",
-          "post": "content/work/identity.json"
-        },
-        {
           "template": "submenu",
           "slug": "web",
           "items": [
@@ -133,6 +129,28 @@
             {
               "template": "link",
               "post": "content/work/web/electropolis_site.json"
+            }
+          ]
+        },
+        {
+          "template": "link",
+          "post": "content/work/identity.json"
+        },
+        {
+          "template": "link",
+          "post": "content/work/promotional.json"
+        },
+        {
+          "template": "submenu",
+          "slug": "ui",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/work/ui/time_for_pi.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/ui/triple_20.json"
             }
           ]
         }
