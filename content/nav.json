@@ -200,6 +200,40 @@
         },
         {
           "template": "submenu",
+          "slug": "furniture",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/play/furniture/kitchen_helper.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/assembly_table.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/workbench.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/highhorse.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/garden.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/picnic_table.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/bed.json"
+            }
+          ]
+        },
+        {
+          "template": "submenu",
           "slug": "dj",
           "items": [
             {
