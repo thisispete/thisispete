@@ -1,6 +1,7 @@
 ---
-label: Generic Text Post
+label: HTML Text
 hide_body: true
+display_field: display_title
 fields:
 - name: post_template
   type: include
