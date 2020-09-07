@@ -1,0 +1,16 @@
+{
+  "template": "gallery",
+  "title": "tesla_configurator",
+  "display_title": "Tesla Roadster Design Studio App",
+  "description": "<p>Worked with the teams at Tesla Motors and odopod to create this web app for Tesla. The same code base works for the in-store touch screen kiosks, the main Tesla website, and is specifically designed to support iPad too.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_configurator_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_configurator_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_configurator_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_configurator_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_configurator_05.jpg"
+  ],
+  "videos": [
+
+  ]
+}
