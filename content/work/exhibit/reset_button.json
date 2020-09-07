@@ -19,6 +19,10 @@
       "description": "<p>Worked with the team at Fjord, and John Murray Productions to create this massive reset button to promote the 'Three' insurance product by Berkshire Hathaway at their annual shareholder meeting in Omaha Nebraska.</p><p>The concept was to have this oversized reset button, that had some lighting effects, and when pressed the lights would change, and it would trigger a video on the wall behind it to play.</p>"
     },
     {
+      "template": "text",
+      "html": "<p>I whipped up an Arduino controller that controlled the lighting over DMX, and connected to a computer as a USB keyboard, then coded a custom video player app in open-frameworks to handle the video playback and keyboard control.</p>"
+    },
+    {
       "template": "video-block",
       "vimeo_id": "332487293",
       "title": "button demo",
