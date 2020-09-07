@@ -1,0 +1,16 @@
+{
+  "template": "gallery",
+  "title": "lines",
+  "display_title": "Lines",
+  "description": "<p>2 ink drawings, 22x30\" completed between 1999 and 2002</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/lines_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/lines_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/lines_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/lines_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/lines_05.jpg"
+  ],
+  "videos": [
+
+  ]
+}

@@ -32,6 +32,7 @@ fields:
 pages:
 - content/play/art/80_circles.json
 - content/play/art/duos.json
+- content/play/art/lines.json
 - content/play/art/sketches.json
 - content/play/art/synaethesia.json
 - content/play/art/untitled.json
