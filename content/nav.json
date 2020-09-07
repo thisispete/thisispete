@@ -343,6 +343,18 @@
             {
               "template": "link",
               "post": "content/play/dj/nightlife_2.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/dj/dusty_summer.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/dj/partyline.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/dj/odopod_10_years.json"
             }
           ]
         }
