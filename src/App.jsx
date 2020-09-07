@@ -9,7 +9,8 @@ import {
   Blog, 
   Contact,
   Gallery,
-  Resume,
+  Text,
+  Playlist
 } from './contentTypes/';
   
 import Transition from './Transition';
@@ -70,8 +71,11 @@ export default function App({ navData, pageData }) {
             <Case expr={template == TYPES.CONTACT}>
               <Contact data={pageData} />
             </Case>
-            <Case expr={template == TYPES.RESUME}>
-              <Resume data={pageData} />
+            <Case expr={template == TYPES.PLAYLIST}>
+              <Playlist data={pageData} />
+            </Case>
+            <Case expr={template == TYPES.TEXT}>
+              <Text data={pageData} />
             </Case>
             <Default><React.Fragment /></Default>
           </Switch>

@@ -1,12 +1,12 @@
-import ContentBase from "./ContentBase";
+import Base from "./Base";
 import styles from './blog.module.scss';
 
 export default function Blog(props) {
   
   return (
-    <ContentBase>
+    <Base>
       <h1>Blog</h1>
-    </ContentBase>
+    </Base>
   )
 }
 /*

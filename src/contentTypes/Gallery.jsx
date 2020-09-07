@@ -1,12 +1,12 @@
-import ContentBase from "./ContentBase";
+import Base from "./Base";
 import styles from './gallery.module.scss';
 
 export default function Gallery(props) {
 
   return (
-    <ContentBase>
+    <Base>
       <h1>Gallery</h1>
-    </ContentBase>
+    </Base>
   )
 }
 

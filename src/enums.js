@@ -3,7 +3,8 @@ export const TYPES = {
   AUDIO: "audio",
   GALLERY: "gallery",
   CONTACT: "contact",
-  RESUME: "resume",
+  PLAYLIST: "playlist",
+  TEXT: "text",
   BLANK: "blank"
 }
 

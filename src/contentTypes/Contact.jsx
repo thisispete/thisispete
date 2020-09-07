@@ -1,12 +1,12 @@
-import ContentBase from "./ContentBase";
+import Base from "./Base";
 import styles from './contact.module.scss';
 
 export default function Contact(props) {
 
   return (
-    <ContentBase>
+    <Base>
       <h1>Contact</h1>
-    </ContentBase>
+    </Base>
   )
 }
 

@@ -1,11 +1,11 @@
 import Base from "./Base";
-import styles from './audio.module.scss';
+import styles from './text.module.scss';
 
-export default function Audio(props) {
+export default function Text(props) {
 
   return (
     <Base>
-      <h1>Audio</h1>
+      <h1>Text</h1>
     </Base>
   )
 }
