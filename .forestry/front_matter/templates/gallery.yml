@@ -30,6 +30,7 @@ fields:
     min: 
     max: 
 pages:
+- content/play/art/duos.json
 - content/play/art/sketches.json
 - content/play/art/untitled.json
 - content/play/photo.json
