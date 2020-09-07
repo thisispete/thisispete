@@ -27,6 +27,7 @@ fields:
     - contact
     - audio
     - video_playlist
+    - html
     source:
       type: simple
       section: 
