@@ -280,6 +280,60 @@
         },
         {
           "template": "submenu",
+          "slug": "vj",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/play/vj/getaround.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/fitc.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/electropolis.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/opulent_temple.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/super_ego.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/future.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/be_the_riottt.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/pop_roxx.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/sea_of_dreams.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/video_riot.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/comacast.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/terry_mullens.json"
+            }
+          ]
+        },
+        {
+          "template": "submenu",
           "slug": "dj",
           "items": [
             {
