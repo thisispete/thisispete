@@ -103,9 +103,6 @@ sections:
   path: content/about/resume.json
   label: Resume
 - type: document
-  path: content/about/bio.json
-  label: Bio
-- type: document
   path: content/about/colophon.json
   label: Colophon
 - type: document

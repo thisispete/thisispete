@@ -16,3 +16,5 @@ fields:
     schema:
       format: html-blocks
   label: text
+pages:
+- content/about/bio.json
