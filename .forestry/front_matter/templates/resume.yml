@@ -111,5 +111,3 @@ fields:
   config:
     required: false
   label: pdf
-pages:
-- content/about/resume.json

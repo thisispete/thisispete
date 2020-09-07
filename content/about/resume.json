@@ -40,5 +40,6 @@
   },
   "title": "resume",
   "display_title": "Pete Schirmer Resume 2020",
-  "template": "resume"
+  "template": "html",
+  "text": ""
 }

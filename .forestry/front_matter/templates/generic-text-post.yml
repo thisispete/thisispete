@@ -18,3 +18,4 @@ fields:
   label: text
 pages:
 - content/about/bio.json
+- content/about/resume.json
