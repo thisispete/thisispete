@@ -26,7 +26,6 @@ fields:
     - resume
     - contact
     - audio
-    - video
     source:
       type: simple
       section: 
