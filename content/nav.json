@@ -370,6 +370,10 @@
         },
         {
           "template": "link",
+          "post": "content/about/bio.json"
+        },
+        {
+          "template": "link",
           "post": "content/about/contact.json"
         }
       ]
