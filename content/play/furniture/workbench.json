@@ -1,0 +1,18 @@
+{
+  "template": "gallery",
+  "title": "workbench",
+  "display_title": "808 Workbench",
+  "description": "<p>This is my workbench. I designed it in fusion 360, then while sourcing materials found this beautiful Afzelia and Chinkopin wood from a lumber yard near my house in Oakland that was closing. I modified the legs and did bridle joints instead of just layering them as in the design. Found some nice vintage drawer pulls, and topped with some masonite.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/workbench_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/workbench_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/workbench_03.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/workbench_04.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/workbench_05.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/workbench_06.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/workbench_07.png"
+  ],
+  "videos": [
+
+  ]
+}
