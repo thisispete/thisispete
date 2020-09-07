@@ -26,6 +26,7 @@ fields:
     - resume
     - contact
     - audio
+    - video_playlist
     source:
       type: simple
       section: 
