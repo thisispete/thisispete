@@ -32,6 +32,7 @@ fields:
 pages:
 - content/play/art/duos.json
 - content/play/art/sketches.json
+- content/play/art/synaethesia.json
 - content/play/art/untitled.json
 - content/play/photo.json
 - content/work/exhibit/ap_pos.json

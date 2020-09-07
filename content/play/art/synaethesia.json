@@ -1,0 +1,16 @@
+{
+  "template": "gallery",
+  "title": "synaethesia",
+  "display_title": "Synaethesia",
+  "description": "<p>Photos from video installation at Synaethesia group show at the Visual Studies Workshop in Rochester</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/synaethesia_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/synaethesia_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/synaethesia_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/synaethesia_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/synaethesia_05.jpg"
+  ],
+  "videos": [
+
+  ]
+}
