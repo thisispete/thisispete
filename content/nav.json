@@ -20,7 +20,19 @@
             },
             {
               "template": "link",
+              "post": "content/work/exhibit/tesla_refresh.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/exhibit/ap_pos.json"
+            },
+            {
+              "template": "link",
               "post": "content/work/exhibit/tesla_go_electric.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/exhibit/tesla_configurator.json"
             },
             {
               "template": "link",
