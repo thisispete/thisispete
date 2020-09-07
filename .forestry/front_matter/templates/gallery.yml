@@ -32,4 +32,5 @@ fields:
 pages:
 - content/play/photo.json
 - content/work/exhibit/honda_kiosks.json
+- content/work/exhibit/mission_control.json
 - content/work/identity.json
