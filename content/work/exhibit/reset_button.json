@@ -9,6 +9,10 @@
       "description": ""
     },
     {
+      "template": "text",
+      "html": "<p>Worked with the team at Fjord, and John Murray Productions to create this massive reset button to promote the 'Three' insurance product by Berkshire Hathaway at their annual shareholder meeting in Omaha Nebraska.</p><p>The concept was to have this oversized reset button, that had some lighting effects, and when pressed the lights would change, and it would trigger a video on the wall behind it to play.</p>"
+    },
+    {
       "template": "image-block",
       "image": "https://s3.amazonaws.com/cms.thisispete.com/images/berkshire_reset_04.jpg",
       "alt_text": "Trade show booth rendering with giant reset button",
