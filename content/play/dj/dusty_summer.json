@@ -1,0 +1,8 @@
+{
+  "template": "gallery",
+  "title": "dusty_summer",
+  "display_title": "Dusty Summer",
+  "description": "<p>Studio demo recording summer of 2010</p>",
+  "url": "http://aws.thisispete.com/dj/dusty_summer.mp3",
+  "cover": "https://s3.amazonaws.com/cms.thisispete.com/images/dusty_summer.jpg"
+}
