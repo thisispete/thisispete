@@ -1,0 +1,50 @@
+{
+  "template": "blog",
+  "title": "captive_platform",
+  "display_title": "Captive Portal Prototyping Platform",
+  "content": [
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/matter_captive_portal_01.jpg",
+      "alt_text": "Raspberry Pi with breakout board and battery packs"
+    },
+    {
+      "template": "text",
+      "html": "<p>While at Matter we had several prototyping projects that needed various hardware components to be controlled or monitored remotely for testing. The first one that came up had an additional requirement that it needed to work without a network connection, and be fully battery operated.</p><p>The solution I developed was to have a Raspberry Pi that was powered by a usb battery pack and configured to create it's own captive web portal, which hosted a node.js web app that could control the Raspberry Pi's pins.</p><p><br></p>"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/matter_captive_portal_05.jpg",
+      "alt_text": "raspberry pi hardware, batteries and wires inside wood container"
+    },
+    {
+      "template": "text",
+      "html": "<p>A user would use their phone, tablet, or laptop to connect to the wifi network being created by the Pi, they would be automatically taken to the web app that controlled whatever hardware options were needed for the presentation.</p><p><br></p>"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/matter_captive_portal_02.jpg",
+      "alt_text": "iPad with web browser displaying large buttons"
+    },
+    {
+      "template": "text",
+      "html": "<p>I used Ansible to automate the provisioning and setup of each Pi so that they could reliably be configured exactly as needed, this made swapping hardware and spinning up new projects very quick and reliable.</p><p>These projects also gave me plenty of opportunity to create some custom circuit boards, usually for controlling different lighting options.</p><p><br></p>"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/matter_captive_portal_03.jpg",
+      "alt_text": "home-made circuit board with lots of colorful wires"
+    },
+    {
+      "template": "video-block",
+      "vimeo_id": "336741226",
+      "title": "video walkthrough showing web app toggling on led light strips"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/matter_captive_portal_04.jpg",
+      "alt_text": "home made circuit board with colorful wires"
+    }
+  ],
+  "footer": ""
+}
