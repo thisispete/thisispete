@@ -1,0 +1,12 @@
+{
+  "template": "gallery",
+  "title": "electropolis_site",
+  "display_title": "Electropolis",
+  "description": "<p>Designed and Developed this homepage for <a href=\"http://www.clubelectropolis.com/\" title=\"\" target=\"_blank\">Club Electropolis</a></p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/electropolis.jpg"
+  ],
+  "videos": [
+
+  ]
+}
