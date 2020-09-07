@@ -1,4 +1,136 @@
+@mixin anim-color($speed: .3s) {
+  transition:color $speed ease-in-out;
+}
+
 html{
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body, button, input, select, textarea, em, strong {
+  font-family: 'Open Sans', 'Helvetica', 'Verdana', sans-serif;
+  color: #ccc;
+  font-weight: 400;
+  margin: 0;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #cccccc;
+}
+
+body{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+	font-size: 12px;
+  line-height: 13px;
+  background: #000;
+  padding: 0;
+	.oldbg,
+	#bg{
+    background: center center fixed no-repeat;
+    background-image: url("/api/background");
+		-moz-background-size: cover;
+		background-size: cover;
+		top:0;
+		position: fixed;
+		height:100%;
+		width:100%;
+		z-index: 0;
+	}
+  .oldbg:before,
+  #bg:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.8);
+  }
+}
+
+h1 {
+  margin: 0;
+  font-size: 23px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase
+}
+h2 {
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+h3 {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+  margin: 0
+}
+p, div, span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0;
+}
+
+::-moz-selection {
+  background: #003;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #003;
+  color: #fff;
+  text-shadow: none;
+}
+img::-moz-selection {
+  background: transparent;
+}
+img::selection {
+  background: transparent;
+}
+a {
+  @include anim-color(.2s);
+  color: #ccc;
+  text-decoration: none;
+}
+a:visited {
+  color: #ccc;
+}
+a:focus {
+  outline: 0 !important;
+}
+a:hover, a:active {
+  color: #fff;
+  outline: 0;
+}
+ul, ol { margin: 0; padding: 0; list-style: none;}
+td {
+  vertical-align: top;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }

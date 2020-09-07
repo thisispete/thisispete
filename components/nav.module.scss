@@ -1,55 +1,59 @@
 @mixin anim-color() {
-  transition:color .2s ease-in;
+  transition: color 0.2s ease-in;
 }
-@mixin anim-height () {
-	transition:height .15s ease-in-out;
+@mixin anim-height() {
+  transition: height 0.15s;
+  transition-timing-function: cubic-bezier(0.455,  0.030, 0.515, 0.955);
 }
-
-
 
 .nav {
+  grid-area: nav;
   width: 100%;
   padding-left: 4rem;
+  z-index: 3;
   ul {
     margin: 0;
     padding: 0;
   }
   .navItem {
     @include anim-height();
-    list-style: none;
-    display: block;
     overflow: hidden;
-    height:1.2rem;
-    
+    height: 1.2rem;
     a {
-    	@include anim-color();
-      color: black;
+      @include anim-color();
+      color: #ccc;
       text-decoration: none;
       text-transform: uppercase;
-      font-size:1.1rem;
+      font-size: 1rem;
+      line-height: 1.1rem;
+
     }
     a:hover {
-      color: blue;
+      color: #fff;
+      @include anim-color();
     }
 
     &.selected {
       a {
-        color: red;
+        @include anim-color();
+        color: #66f;
+        background: none;
       }
     }
 
     &.hidden {
       height: 0;
+      @include anim-height();
     }
 
     &.level_0 {
       margin-left: 0;
     }
     &.level_1 {
-      margin-left: 0.5rem;
+      margin-left: .75rem;
     }
     &.level_2 {
-      margin-left: 1rem;
+      margin-left: 1.5rem;
     }
   }
 }
