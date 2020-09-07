@@ -1,0 +1,17 @@
+{
+  "template": "gallery",
+  "title": "sony_google_tv",
+  "display_title": "Sony Internet TV / Google TV",
+  "description": "<p>Worked with the team at odopod to develop this interactive flash video website for Sony showcasing the new Google TV product line.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sony_google_tv_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sony_google_tv_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sony_google_tv_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sony_google_tv_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sony_google_tv_05.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sony_google_tv_06.jpg"
+  ],
+  "videos": [
+
+  ]
+}
