@@ -58,6 +58,7 @@ sections:
   new_doc_ext: json
   templates:
   - gallery
+  - video-playlist
   - blog-post
 - type: document
   path: content/play/photo.json
@@ -87,7 +88,7 @@ sections:
   match: "**/*"
   new_doc_ext: json
   templates:
-  - audio
+  - gallery
 - type: directory
   path: content/play/dj
   label: DJ
