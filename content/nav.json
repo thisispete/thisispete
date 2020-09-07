@@ -81,6 +81,60 @@
         {
           "template": "link",
           "post": "content/work/identity.json"
+        },
+        {
+          "template": "submenu",
+          "slug": "web",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/work/web/odopod.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/sony_google_tv.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/nest_labs.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/sony_google_tv.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/sony_piiq_launch.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/liquid_awesome.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/nvidia_speak_visual.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/got_milk_white_gold.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/scion_little_d.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/scion_w2bs.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/exprescion.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/electropolis_site.json"
+            }
+          ]
         }
       ]
     },
