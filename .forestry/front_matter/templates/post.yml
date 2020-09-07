@@ -23,11 +23,10 @@ fields:
     options:
     - gallery
     - blog
-    - resume
     - contact
     - audio
-    - video_playlist
-    - html
+    - playlist
+    - text
     source:
       type: simple
       section: 
