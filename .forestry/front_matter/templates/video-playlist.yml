@@ -15,3 +15,5 @@ fields:
     min: 
     max: 
   label: Video List
+pages:
+- content/play/art/rochester_dvd.json
