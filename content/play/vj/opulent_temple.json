@@ -1,0 +1,13 @@
+{
+  "template": "gallery",
+  "title": "opulent_temple",
+  "display_title": "Opulent Temple",
+  "description": "<p>Guest VJ for Opulent Temple at Burning Man</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/opulent_temple_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/opulent_temple_02.jpg"
+  ],
+  "videos": [
+
+  ]
+}
