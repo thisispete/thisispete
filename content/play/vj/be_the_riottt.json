@@ -1,0 +1,15 @@
+{
+  "template": "gallery",
+  "title": "be_the_riottt",
+  "display_title": "Be the RioTTT",
+  "description": "<p>VJ sets for Fingerbangerz, Saul Williams, Metric, the Rapture. Bill Graham Civic Auditorium SF</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/be_the_riottt_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/be_the_riottt_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/be_the_riottt_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/be_the_riottt_02.jpg"
+  ],
+  "videos": [
+
+  ]
+}
