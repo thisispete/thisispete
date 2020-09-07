@@ -1,0 +1,19 @@
+{
+  "template": "gallery",
+  "title": "bed",
+  "display_title": "Loft Storage Bed",
+  "description": "<p>When I was living in my loft in San Francisco I was short on long-term storage. I sketched up this platform bed with storage under the mattress and commissioned <a href=\"http://jeremiahcollection.com/\" title=\"\" target=\"_blank\">Jeremiah Collection</a> to manufacture it for me out of walnut. They added the headboard, modified a few details to conceal all the hardware, it came out amazing!</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/bed_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/bed_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/bed_03.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/bed_04.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/bed_05.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/bed_06.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/bed_07.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/bed_08.png"
+  ],
+  "videos": [
+
+  ]
+}
