@@ -1,0 +1,15 @@
+{
+  "template": "gallery",
+  "title": "scion_w2bs",
+  "display_title": "Want2BSquare",
+  "description": "<p>Worked as the technical lead with Attik and a huge international team to develop this enormous flash game portal &amp; contest to celebrate the re-design of the Scion xB.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/scion_wtbs_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/scion_wtbs_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/scion_wtbs_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/scion_wtbs_04.jpg"
+  ],
+  "videos": [
+
+  ]
+}
