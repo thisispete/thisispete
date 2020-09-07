@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import { getNavPaths, getDataForPath, getNavJson } from '../lib/content'
-import App from 'components/App'
+import Head from 'next/head';
+import { getNavPaths, getDataForPath, getNavJson } from '@PETE/content';
+import App from '@PETE/App';
 
 export default function Post(props) {
   return (

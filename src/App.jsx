@@ -1,19 +1,24 @@
-import { Switch, Case, Default } from 'jsx-switch';
 import Head from 'next/head'
-import styles from './app.module.scss'
-import { TYPES } from 'lib/enums'
-import Nav from './Nav';
-import Blog from './contentTypes/Blog';
-import Gallery from './contentTypes/Gallery';
-import Transition from './contentTypes/Transition';
-import Contact from './contentTypes/Contact';
-import Audio from './contentTypes/Audio';
-import Resume from './contentTypes/Resume';
+import { Switch, Case, Default } from 'jsx-switch';
 
+import { TYPES } from '@PETE/enums'
+
+import Nav from './Nav';
+import {
+  Audio,
+  Blog, 
+  Contact,
+  Gallery,
+  Resume,
+} from './contentTypes/';
+  
+import Transition from './Transition';
+
+import styles from './app.module.scss'
 
 export default function App({ navData, pageData }) {
   const { template } = pageData;
-  const idRoot = 'http://cms.thisispete.com/icons';
+  const idRoot = 'http://aws.thisispete.com/icons';
 
   return (
     <div className={styles.main} data-barba="wrapper">

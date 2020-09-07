@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import {MENU, TYPES} from 'lib/enums';
+import { MENU, TYPES } from 'src/enums';
 
 const contentDir = path.join(process.cwd(), 'content')
 
@@ -12,20 +12,19 @@ export function getNavJson() {
 }
 
 const parseNav = (node, path = '/') => {
-  if (node.template == MENU.SUBMENU){
+  if (node.template == MENU.SUBMENU) {
     node.path = path == '/' ? `/${node.slug}` : `${path}/${node.slug}`;
     let items = node.items.map(item => {
       return parseNav(item, node.path);
     })
     items.unshift(node);
     return items.flat();
-  }else {
+  } else {
     node.path = node.post.replace(/\.json$/, '').replace(/content/, '');
     node.slug = node.path.split('/').pop();
     return node
   }
 }
-
 
 export function getNavPaths() {
   let navJson = getNavJson();
@@ -51,7 +50,7 @@ function checkFileExistsSync(filepath) {
 export function getDataForPath(navPath) {
   const filePath = path.join(contentDir, `${navPath}.json`);
   const fileExists = checkFileExistsSync(filePath);
-  if(fileExists){
+  if (fileExists) {
 
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const jsonData = JSON.parse(fileContents);
@@ -59,8 +58,8 @@ export function getDataForPath(navPath) {
       path: navPath,
       pageData: jsonData
     }
-  }else{
-    return{
+  } else {
+    return {
       path: navPath,
       pageData: {
         template: TYPES.BLANK
@@ -68,4 +67,3 @@ export function getDataForPath(navPath) {
     }
   }
 }
-

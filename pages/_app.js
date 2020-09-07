@@ -1,5 +1,5 @@
 import '../node_modules/normalize.scss/normalize.scss';
-import 'components/global.scss';
+import '@PETE/global.scss';
 import Router from "next/router";
 import withGA from "next-ga";
 

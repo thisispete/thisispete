@@ -1,7 +1,8 @@
-import styles from './nav.module.scss'
 import { useRouter } from 'next/router'
-import { MENU } from 'lib/enums';
 import Link from 'next/link'
+import { MENU } from '@PETE/enums';
+
+import styles from './nav.module.scss'
 
 export default function Nav({navData}) {
   const router = useRouter()

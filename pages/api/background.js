@@ -11,5 +11,3 @@ export default (req, res) => {
   const pick = Math.floor(Math.random() * json.images.length)
   res.redirect(json.images[pick]);
 }
-
-
