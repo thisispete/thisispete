@@ -4,13 +4,13 @@
   "content": [
     {
       "template": "image-block",
-      "image": "https://s3.amazonaws.com/cms.thisispete.com/reset1_a6a9b3993b.jpg",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/berkshire_reset_01.jpg",
       "alt_text": "Giant novelty button with the word 'reset' displayed, electronics",
       "description": ""
     },
     {
       "template": "image-block",
-      "image": "https://s3.amazonaws.com/cms.thisispete.com/reset4_8448b41940.jpg",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/berkshire_reset_04.jpg",
       "alt_text": "Trade show booth rendering with giant reset button",
       "description": "<p>Worked with the team at Fjord, and John Murray Productions to create this massive reset button to promote the 'Three' insurance product by Berkshire Hathaway at their annual shareholder meeting in Omaha Nebraska.</p><p>The concept was to have this oversized reset button, that had some lighting effects, and when pressed the lights would change, and it would trigger a video on the wall behind it to play.</p>"
     },
@@ -24,7 +24,7 @@
       "template": "image-block",
       "description": "<p>Here's the final piece working on the tradeshow floor</p>",
       "alt_text": "Final reset button installed in trade show booth",
-      "image": "https://s3.amazonaws.com/cms.thisispete.com/reset3_ba4ce7e7eb.jpg"
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/berkshire_reset_03.jpg"
     },
     {
       "template": "video-block",
@@ -36,7 +36,7 @@
       "template": "image-block",
       "description": "<p>And here's the money shot of Warren Buffet interacting with it</p>",
       "alt_text": "Warren Buffet pushing the reset button, with some help",
-      "image": "https://s3.amazonaws.com/cms.thisispete.com/reset2_e54b3ee3ff.jpg"
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/berkshire_reset_02.jpg"
     }
   ],
   "footer": "",
