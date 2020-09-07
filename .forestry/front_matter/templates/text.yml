@@ -1,6 +1,7 @@
 ---
-label: Text
+label: Text Box
 hide_body: true
+display_field: html
 fields:
 - name: html
   type: textarea
