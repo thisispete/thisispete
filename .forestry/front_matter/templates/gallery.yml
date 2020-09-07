@@ -55,6 +55,7 @@ pages:
 - content/play/furniture/picnic_table.json
 - content/play/furniture/workbench.json
 - content/play/photo.json
+- content/play/vj/fitc.json
 - content/play/vj/getaround.json
 - content/work/exhibit/ap_pos.json
 - content/work/exhibit/honda_kiosks.json
