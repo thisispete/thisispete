@@ -234,6 +234,52 @@
         },
         {
           "template": "submenu",
+          "slug": "furnishings",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/play/furnishings/grow_station.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/spice_rack.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/knife_rack.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/shop_storage.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/jupiter_cake_box.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/wood_turning.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/tea_boxes.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/cutting_boards.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/tool_roll.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/brass_wreaths.json"
+            }
+          ]
+        },
+        {
+          "template": "submenu",
           "slug": "dj",
           "items": [
             {
