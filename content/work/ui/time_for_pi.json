@@ -1,0 +1,16 @@
+{
+  "template": "gallery",
+  "title": "time_for_pi",
+  "display_title": "Time for Pi",
+  "description": "<p>Custom minimal set-top box ui for a media server, navigable by remote control d-pad. Prototype of ui was built using react, but never deployed publicly.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/time_for_pi_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/time_for_pi_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/time_for_pi_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/time_for_pi_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/time_for_pi_05.jpg"
+  ],
+  "videos": [
+
+  ]
+}
