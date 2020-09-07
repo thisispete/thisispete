@@ -1,4 +1,17 @@
 ---
 label: Video Playlist
 hide_body: true
-fields: []
+fields:
+- name: post_template
+  type: include
+  config: {}
+  template: post
+  label: post template
+- name: video_list
+  type: blocks
+  template_types:
+  - video-block
+  config:
+    min: 
+    max: 
+  label: Video List
