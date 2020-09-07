@@ -57,7 +57,7 @@
     }
   
     @for $i from 1 through 20 {
-      $delay: 0.1s + 0.025s * $i;
+      $delay: 0.1s + 0.02s * $i;
       &.delay-#{$i} {
         transition-delay: $delay;
       }

@@ -48,7 +48,7 @@ export default function Nav({navData}) {
       return (
         <li className={classes.join(' ')} key={item.path}>
           <Link href='[[...slug]]' as={href}>
-            <a>{item.slug.replace('_', ' ').toUpperCase()}</a>
+            <a>{item.slug.split('_').join(' ').toUpperCase()}</a>
           </Link>
         </li>
       )
