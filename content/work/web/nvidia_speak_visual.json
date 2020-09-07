@@ -1,0 +1,16 @@
+{
+  "template": "gallery",
+  "title": "nvidia_speak_visual",
+  "display_title": "Speak Visual",
+  "description": "<p>Worked with odopod to develop this slick 3d flash website for the Nvidia 'Speak Visual' campaign.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/nvidia_speak_visual_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/nvidia_speak_visual_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/nvidia_speak_visual_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/nvidia_speak_visual_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/nvidia_speak_visual_05.jpg"
+  ],
+  "videos": [
+
+  ]
+}
