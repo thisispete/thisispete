@@ -1,0 +1,17 @@
+{
+  "template": "gallery",
+  "title": "dust_collector",
+  "display_title": "CNC Dust Collection Hub",
+  "description": "<p>My CNC needed a dust collector, I never like the clumsy dust shoe designs, so I came up with this hub design using Loc-Line and PVC. It mounts to the Z-axis, avoids the spindle cable, and is easy to re-position. </p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/cnc_dust_collector_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/cnc_dust_collector_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/cnc_dust_collector_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/cnc_dust_collector_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/cnc_dust_collector_05.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/cnc_dust_collector_06.jpg"
+  ],
+  "videos": [
+
+  ]
+}
