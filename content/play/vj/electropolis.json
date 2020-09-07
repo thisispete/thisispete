@@ -1,0 +1,19 @@
+{
+  "template": "gallery",
+  "title": "electropolis",
+  "display_title": "Electropolis",
+  "description": "<p>Bi-monthly electro night at etiquette lounge SF</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/electropolis_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/electropolis_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/electropolis_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/electropolis_02.jpg"
+  ],
+  "videos": [
+    {
+      "template": "video-block",
+      "title": "electropolis",
+      "vimeo_id": "5659422"
+    }
+  ]
+}
