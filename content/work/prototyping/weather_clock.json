@@ -19,7 +19,7 @@
     },
     {
       "template": "text-block",
-      "html": "<p>I used a fake antique (replica) that I picked up for cheep on eBay. I took out the clock work, and replaced it with a servo and a micro-controller, then I re-designed the face of the clock keeping a similar look to the original time piece. The weather service I was using reports something like 40 different weather conditions, so I had to condense the list, and I ended up with 14 ‘conditions’</p><ul><li><p>Cold</p></li><li><p>Hot</p></li><li><p>Fog</p></li><li><p>Cloudy</p></li><li><p>Partly Cloudy</p></li><li><p>Sunny</p></li><li><p>Clear Night</p></li><li><p>Rain</p></li><li><p>Icy Conditions</p></li><li><p>Snow</p></li><li><p>Windy</p></li><li><p>Thunderstorms</p></li><li><p>Severe Weather Warning</p></li><li><p>Dead Clock (no internet connection / error)<br></p></li></ul>"
+      "html": "<p>I used a fake antique (replica) that I picked up for cheep on eBay. I took out the clock work, and replaced it with a servo and a micro-controller, then I re-designed the face of the clock keeping a similar look to the original time piece. The weather service I was using reports something like 40 different weather conditions, so I had to condense the list, and I ended up with 14 ‘conditions’</p><ul><li><p>Cold</p></li><li><p>Hot</p></li><li><p>Fog</p></li><li><p>Cloudy</p></li><li><p>Partly Cloudy</p></li><li><p>Sunny</p></li><li><p>Clear Night</p></li><li><p>Rain</p></li><li><p>Icy Conditions</p></li><li><p>Snow</p></li><li><p>Windy</p></li><li><p>Thunderstorms</p></li><li><p>Severe Weather Warning</p></li><li><p>Dead Clock (no internet connection / error)</p></li></ul>"
     },
     {
       "template": "image-block",
