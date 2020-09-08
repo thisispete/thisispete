@@ -2,23 +2,25 @@ import Base from "./Base";
 import styles from './contact.module.scss';
 
 export default function Contact(props) {
+  const {
+    links
+  } = props.data;
 
   return (
     <Base>
-      <h1>Contact</h1>
+      <ul className={styles.contact}>
+        {links.map(link =>
+          <li key={link.hover}>
+            <a href="link.url" target="_blank">
+              <h3>{link.hover}</h3>
+              <img src={link.icon} />
+            </a>
+          </li>
+        )}
+      </ul>
     </Base>
   )
 }
 
 
-/*
-        <div id="contactGrid" class="gallery clearfix">
-          <div class="gallery-content">
-        		<ul class="contact-grid clearfix">
-        			{% for link in links -%}
-                <li><a href="#" target="_blank"><h3>{{link.hover}}</h3><div class="svg-icon" data-url="{{link.url}}" data-svg="{{link.path}}"></div></a></li>
-          		{% endfor %}
-        		</ul>
-          </div>
-      	</div>
-*/
+

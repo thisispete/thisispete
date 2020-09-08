@@ -1,0 +1,25 @@
+.contact{
+  display: grid;
+  grid-auto-flow: column;
+
+  li{
+    padding:15px;
+
+    a{
+      position:relative;
+      display:block;
+      z-index: 10;
+
+      h3{
+        display:none
+      }
+    }
+
+    img{
+      display:block;
+      position:relative;
+      z-index: 1;
+    }
+
+  }	
+}
