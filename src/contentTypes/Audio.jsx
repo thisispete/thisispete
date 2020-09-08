@@ -1,31 +1,32 @@
 import Base from "./Base";
 import styles from './audio.module.scss';
+import Player from 'react-hooks-player';
 
 export default function Audio(props) {
+	const {
+		display_title: title,
+		description,
+		url,
+		cover
+	} = props.data;
+	console.dir(props.data);
 
-  return (
-    <Base>
-      <h1>Audio</h1>
-    </Base>
-  )
+	return (
+		<Base>
+			<div className={styles.audio}>
+				<h1>{title}</h1>
+				<img src={cover} alt="album art" />
+				<Player
+					url={url}
+					title=""
+					color="#fff"
+					background="rgba(255,255,255,0.05)"
+					volumeControls={true}
+					height={30}
+				/>
+				<div class={styles.copy} dangerouslySetInnerHTML={{__html: description}} />
+				<a className={styles.download} href={url} target="_blank">Download</a>
+			</div>
+		</Base>
+	)
 }
-
-
-/*
-	<div id="audioPlayer" class="gallery clearfix">
-    <div class="gallery-content">
-      <h1>{{title}}</h1>
-  		<div class="fixedRatioWrapper ratio1x1">
-  		  {% for image in images -%}
-          <img class="cover-art" src="{{assetRoot}}{{image}}"/>
-  			{% endfor %}
-  		</div>
-  		<audio src="{{s3link}}" preload="none"></audio>
-  		<div class="copy">
-  			{% block body%}
-        {% endblock %}
-   			<p><a class="download-link" href="{{s3link}}" target="_blank">Download</a></p>
-  		</div>
-    </div>
-	</div>
-*/
