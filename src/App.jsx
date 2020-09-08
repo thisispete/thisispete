@@ -1,18 +1,18 @@
 import Head from 'next/head'
-import { Switch, Case, Default } from 'jsx-switch';
+import { Switch, Case, Default } from 'jsx-logical-operators';
 
 import { TYPES } from '@PETE/enums'
 
 import Nav from './Nav';
 import {
   Audio,
-  Blog, 
+  Blog,
   Contact,
   Gallery,
   Text,
   Playlist
 } from './contentTypes/';
-  
+
 import Transition from './Transition';
 
 import styles from './app.module.scss'
@@ -58,23 +58,23 @@ export default function App({ navData, pageData }) {
       <Nav id="nav" navData={navData} />
       <div id="content" className={styles.content}>
         <Transition>
-          <Switch>
-            <Case expr={template == TYPES.BLOG}>
+          <Switch on={template}>
+            <Case when={TYPES.BLOG}>
               <Blog data={pageData} />
             </Case>
-            <Case expr={template == TYPES.GALLERY}>
+            <Case when={TYPES.GALLERY}>
               <Gallery data={pageData} />
             </Case>
-            <Case expr={template == TYPES.AUDIO}>
+            <Case when={TYPES.AUDIO}>
               <Audio data={pageData} />
             </Case>
-            <Case expr={template == TYPES.CONTACT}>
+            <Case when={TYPES.CONTACT}>
               <Contact data={pageData} />
             </Case>
-            <Case expr={template == TYPES.PLAYLIST}>
+            <Case when={TYPES.PLAYLIST}>
               <Playlist data={pageData} />
             </Case>
-            <Case expr={template == TYPES.TEXT}>
+            <Case when={TYPES.TEXT}>
               <Text data={pageData} />
             </Case>
             <Default><React.Fragment /></Default>

@@ -1,6 +1,6 @@
 import Base from "./Base";
-import { Switch, Case, Default } from 'jsx-switch';
-import { BLOG } from '../enums';
+import { Switch, Case } from 'jsx-logical-operators';
+import { BLOG } from '@PETE/enums'
 
 import styles from './blog.module.scss';
 
@@ -17,14 +17,14 @@ export default function Blog(props) {
       <div className={styles.blog}>
         <h1>{title}</h1>
         {content.map(data => 
-          <Switch>
-            <Case expr={data.template == BLOG.TEXT_BLOCK}>
-              <p>text</p>
+          <Switch on={data.template} >
+            <Case when={BLOG.TEXT_BLOCK}>
+              <span dangerouslySetInnerHTML={{__html: data.html}} />
             </Case>
-            <Case expr={data.template == BLOG.IMAGE_BLOCK}>
-              <p>image</p>
+            <Case when={BLOG.IMAGE_BLOCK}>
+              <img src={data.image} alt={data.alt_text}/>
             </Case>
-            <Case expr={data.template == BLOG.VIDEO_BLOCK}>
+            <Case when={BLOG.VIDEO_BLOCK}>
               <p>video</p>
             </Case>
           </Switch>
