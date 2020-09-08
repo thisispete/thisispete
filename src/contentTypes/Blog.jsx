@@ -25,10 +25,21 @@ export default function Blog(props) {
               <img src={data.image} alt={data.alt_text}/>
             </Case>
             <Case when={BLOG.VIDEO_BLOCK}>
-              <p>video</p>
+              <iframe 
+                className={styles.videoFrame} 
+                src={`https://player.vimeo.com/video/${data.vimeo_id}?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;loop=0`} 
+                width="800" 
+                height="450" 
+                frameborder="0" 
+                webkitallowfullscreen="" 
+                mozallowfullscreen="" 
+                allowfullscreen="" />
             </Case>
           </Switch>
         )}
+        {footer &&
+          <p>{footer}</p>
+        }
       </div>
     </Base>
   )

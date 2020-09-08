@@ -5,16 +5,8 @@
   min-width: 540px;
   margin-right: 60px;
 
-  h2:first-child{
+  >:first-child{
     margin-top: 20vh;
-  }
-
-	p, ul{
-	 margin-bottom: 12px;
-  }
-  
-  li p{
-    margin-bottom:0;
   }
 
   >:last-child{

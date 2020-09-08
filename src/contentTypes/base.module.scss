@@ -23,4 +23,12 @@
     color: #fff;
     outline: 0;
   }
+
+  p, ul{
+	 margin-bottom: 12px;
+  }
+  
+  li p{
+    margin-bottom:0;
+  }
 }

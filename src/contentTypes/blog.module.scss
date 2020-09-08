@@ -5,11 +5,18 @@
   >:first-child{
     margin-top: 20vh;
   }
-  p{
-	 margin-bottom: 12px;
+  >:last-child{
+    margin-bottom: 50px;
   }
+  iframe,
   img{
     margin-bottom: 30px;
   }
-  
+  span ~ img,
+  span ~ iframe {
+    margin-top: 18px
+  }
+  .videoFrame{
+    background: rgba(0,0,0,0.6);
+  }
 }
