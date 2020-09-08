@@ -1,0 +1,47 @@
+.scroll{
+  overflow: scroll;
+  height: 100vh;
+  scrollbar-width: none;
+  min-width: 540px;
+  // margin-right: 60px;
+
+  // h1:first-child{
+  //   margin-bottom: 30px;
+  //   margin-top: 20vh;
+  //   text-align: center;
+  // }
+  h2:first-child{
+    margin-top: 20vh;
+  }
+
+	// p{
+	//  margin-bottom: 12px;
+	// }
+
+	// img{
+  //   margin-bottom: 30px;
+	// }
+  // iframe{
+  //   margin-bottom: 30px;
+  // }
+  // p ~ img,
+  // p ~ iframe {
+  //   margin-top: 18px
+  // }
+  // p:last-child,
+  // h3:last-child{
+  //   margin-bottom: 50px;
+  // }
+	// ul{
+  //   margin-bottom:10px;
+  // }
+  // li p:last-child{
+  //   margin-bottom:0;
+  // }
+  // .videoFrame{
+  //   background: rgba(0,0,0,.6);
+  // }
+  // strong {
+  //   font-weight: bolder;
+  // }
+}

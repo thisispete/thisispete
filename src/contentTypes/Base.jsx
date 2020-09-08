@@ -1,3 +1,7 @@
 export default function Base({ children }) {
-  return children
+  return (
+    <React.Fragment>
+      {children}
+    </React.Fragment>
+  )
 }
