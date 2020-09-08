@@ -28,7 +28,7 @@
     },
     {
       "template": "text-block",
-      "html": "<p>The next bit was building a case. I did a lot of searching for boxes online, and finally found one at TAP plastics that looked like a good place to start.</p><p><br></p>"
+      "html": "<p>The next bit was building a case. I did a lot of searching for boxes online, and finally found one at TAP plastics that looked like a good place to start.</p>"
     },
     {
       "template": "image-block",
@@ -37,7 +37,7 @@
     },
     {
       "template": "text-block",
-      "html": "<p>It took a few tries and broken cases to get it right, drilling in plastic is tricky, but in the end I love how it looks with the paint on the inside like a white cube had been incased in clear plastic.</p><p>In the back I wired two buttons for setting the hours and minutes, and added a power connector.</p><p><br></p>"
+      "html": "<p>It took a few tries and broken cases to get it right, drilling in plastic is tricky, but in the end I love how it looks with the paint on the inside like a white cube had been incased in clear plastic.</p><p>In the back I wired two buttons for setting the hours and minutes, and added a power connector.</p>"
     },
     {
       "template": "image-block",
