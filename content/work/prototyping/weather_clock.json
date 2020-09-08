@@ -28,7 +28,7 @@
     },
     {
       "template": "text-block",
-      "html": "<p>In 2011 I re-worked the micro-controller to be fully self contained (previously it required a USB connection and had an app running on a computer)</p><p>It now runs over WiFi, needing just power or battery connection. I off-loaded the logic to run on a web app, so I can change the zip-code or weather service without re-flashing the firmware. However every time I change WiFi credentials I have to re-program the controller.</p><p><br></p>"
+      "html": "<p>In 2011 I re-worked the micro-controller to be fully self contained (previously it required a USB connection and had an app running on a computer)</p><p>It now runs over WiFi, needing just power or battery connection. I off-loaded the logic to run on a web app, so I can change the zip-code or weather service without re-flashing the firmware. However every time I change WiFi credentials I have to re-program the controller.</p>"
     },
     {
       "template": "video-block",
