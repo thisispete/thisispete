@@ -16,7 +16,7 @@ export default function Blog(props) {
     <Base>
       <div className={styles.blog}>
         <h1>{title}</h1>
-        {content.map(data => {
+        {content.map(data => 
           <Switch>
             <Case expr={data.template == BLOG.TEXT_BLOCK}>
               <p>text</p>
@@ -28,7 +28,7 @@ export default function Blog(props) {
               <p>video</p>
             </Case>
           </Switch>
-        })}
+        )}
       </div>
     </Base>
   )
