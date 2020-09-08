@@ -1,7 +1,9 @@
+import styles from './base.module.scss';
+
 export default function Base({ children }) {
   return (
-    <React.Fragment>
+    <div className={styles.base}>
       {children}
-    </React.Fragment>
+    </div>
   )
 }

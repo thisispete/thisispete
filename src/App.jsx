@@ -54,7 +54,7 @@ export default function App({ navData, pageData }) {
         <meta name='theme-color' content='#ffffff' />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,700,400' rel='stylesheet' type='text/css' />
       </Head>
-      <div id="PETElogo"><h1 className="visuallyhidden">PETE</h1></div>
+      <div id="PETElogo"><h1 className={styles.hidden}>PETE</h1></div>
       <Nav id="nav" navData={navData} />
       <div id="content" className={styles.content}>
         <Transition>

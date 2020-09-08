@@ -1,0 +1,26 @@
+@mixin anim-color($speed: .3s) {
+  transition:color $speed ease-in-out;
+}
+
+.base{
+  h1 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  a {
+    @include anim-color(.2s);
+    color: #ccc;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #ccc;
+  }
+  a:focus {
+    outline: 0 !important;
+  }
+  a:hover, a:active {
+    color: #fff;
+    outline: 0;
+  }
+}

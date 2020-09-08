@@ -9,7 +9,6 @@ export default function Audio(props) {
 		url,
 		cover
 	} = props.data;
-	console.dir(props.data);
 
 	return (
 		<Base>
@@ -24,7 +23,7 @@ export default function Audio(props) {
 					volumeControls={true}
 					height={30}
 				/>
-				<div class={styles.copy} dangerouslySetInnerHTML={{__html: description}} />
+				<div className={styles.copy} dangerouslySetInnerHTML={{__html: description}} />
 				<a className={styles.download} href={url} target="_blank">Download</a>
 			</div>
 		</Base>

@@ -30,7 +30,7 @@ body{
   line-height: 13px;
   background: #000;
   padding: 0;
-	.oldbg,
+	// .oldbg,
 	#bg{
     background: center center fixed no-repeat;
     background-image: url("/api/background");
@@ -42,7 +42,7 @@ body{
 		width:100%;
 		z-index: 0;
 	}
-  .oldbg:before,
+  // .oldbg:before,
   #bg:before {
     content: "";
     display: block;
@@ -81,56 +81,15 @@ p, div, span {
   margin: 0;
 }
 
-::-moz-selection {
-  background: #003;
-  color: #fff;
-  text-shadow: none;
-}
 ::selection {
   background: #003;
   color: #fff;
   text-shadow: none;
 }
-img::-moz-selection {
-  background: transparent;
-}
 img::selection {
   background: transparent;
 }
-a {
-  @include anim-color(.2s);
-  color: #ccc;
-  text-decoration: none;
-}
-a:visited {
-  color: #ccc;
-}
-a:focus {
-  outline: 0 !important;
-}
-a:hover, a:active {
-  color: #fff;
-  outline: 0;
-}
+
 ul, ol { margin: 0; padding: 0; list-style: none;}
-td {
-  vertical-align: top;
-}
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
+
+

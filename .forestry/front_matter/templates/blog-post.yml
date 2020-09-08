@@ -13,7 +13,7 @@ fields:
   template_types:
   - image-block
   - video-block
-  - text
+  - text-block
   config:
     min: 
     max: 
