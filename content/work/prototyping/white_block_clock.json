@@ -10,7 +10,7 @@
     },
     {
       "template": "text-block",
-      "html": "<p>I love those wooden block clocks I’ve been seeing around that have LED displays placed behind the surface of thin wood veneer. However I wanted to make one that was all white with a high-gloss finish, and I wanted to be able to design my own font for the time display.</p><p>For the display I used a <a href=\"http://jimmieprodgers.com/kits/lolshield/\" title=\"\" target=\"_blank\">LOL Sheild Kit</a> for Arduino.<br></p>"
+      "html": "<p>I love those wooden block clocks I’ve been seeing around that have LED displays placed behind the surface of thin wood veneer. However I wanted to make one that was all white with a high-gloss finish, and I wanted to be able to design my own font for the time display.</p><p>For the display I used a <a href=\"http://jimmieprodgers.com/kits/lolshield/\" title=\"\">LOL Sheild Kit</a> for Arduino.</p>"
     },
     {
       "template": "image-block",
@@ -19,7 +19,7 @@
     },
     {
       "template": "text-block",
-      "html": "<p>The display uses the <a href=\"http://www.arduino.cc/playground/Code/Charlieplex\" title=\"\" target=\"_blank\">Arduino Charlieplexing</a> library, which reads in lines of binary that have been bit-shifted into decimal. This way it stores a 2-d array of 1’s and 0’s for on and off as a 1-d array of integers, which saves memory.</p><p>To create the custom display graphics, first I made some interactive prototypes of the grid of pixels. I whipped up a couple of flash programs that let me click pixels on and off and export the data in a format that the Arduino code would use to display my custom designed numbers. After I was pretty happy with the designs I exported all the data to the Arduino.</p><p><br></p>"
+      "html": "<p>The display uses the <a href=\"http://www.arduino.cc/playground/Code/Charlieplex\" title=\"\">Arduino Charlieplexing</a> library, which reads in lines of binary that have been bit-shifted into decimal. This way it stores a 2-d array of 1’s and 0’s for on and off as a 1-d array of integers, which saves memory.</p><p>To create the custom display graphics, first I made some interactive prototypes of the grid of pixels. I whipped up a couple of flash programs that let me click pixels on and off and export the data in a format that the Arduino code would use to display my custom designed numbers. After I was pretty happy with the designs I exported all the data to the Arduino.</p>"
     },
     {
       "template": "image-block",
