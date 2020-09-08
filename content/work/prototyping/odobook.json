@@ -52,7 +52,7 @@
     },
     {
       "template": "text-block",
-      "html": "<p>In action we’ve noticed that its not always super accurate, people’s phones go to sleep, or aren’t picked up right away by the network. We constructed a snapshot page that gives us a view into the current stats and it seems to be pretty fun to watch. Next we’re going to hook it up to some analytics and see if we spot any interesting trends over time.</p><p><br></p>"
+      "html": "<p>In action we’ve noticed that its not always super accurate, people’s phones go to sleep, or aren’t picked up right away by the network. We constructed a snapshot page that gives us a view into the current stats and it seems to be pretty fun to watch. Next we’re going to hook it up to some analytics and see if we spot any interesting trends over time.</p>"
     },
     {
       "template": "image-block",
@@ -61,7 +61,7 @@
     },
     {
       "template": "text-block",
-      "html": "<p>Team: Pete Schirmer, Peter Reid, Michael Evans, Eglantine Bonvallet, Jayeon Kim, Ozzy Urrutia, Sebastien Paccioni</p><p><br></p>"
+      "html": "<p>Team: Pete Schirmer, Peter Reid, Michael Evans, Eglantine Bonvallet, Jayeon Kim, Ozzy Urrutia, Sebastien Paccioni</p>"
     }
   ],
   "footer": ""
