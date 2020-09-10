@@ -2,10 +2,6 @@
   "template": "gallery",
   "title": "twitter_lights",
   "display_title": "Twitter Lights",
-  "content": [
-
-  ],
-  "footer": "",
   "description": "<p>Prototype for Twitter, ambient display device that reacts to tweeted keywords by changing colors of a Lifx Tile LED matrix. I was responsible for the industrial design, prototype fabrication, UX design, and full-stack web app development for the admin pages using the Twitter and Lifx apis, and UI components from twitter's in-house framework. Later I also coded a virtualized version using three.js to match a given design direction.</p>",
   "images": [
     "https://s3.amazonaws.com/cms.thisispete.com/images/twitter_lights_02.jpg",

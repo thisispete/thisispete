@@ -1,15 +1,15 @@
-.scroll{
+.scroll {
   overflow: scroll;
   height: 100vh;
   scrollbar-width: none;
   min-width: 540px;
   margin-right: 60px;
 
-  >:first-child{
+  > :first-child {
     margin-top: 20vh;
   }
 
-  >:last-child{
+  > :last-child {
     margin-bottom: 50px;
   }
 

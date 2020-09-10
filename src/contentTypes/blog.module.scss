@@ -1,22 +1,24 @@
-.blog{
+.blog {
   overflow: scroll;
   height: 100vh;
   scrollbar-width: none;
-  >:first-child{
+  > :first-child {
     margin-top: 20vh;
   }
-  >:last-child{
+  > :last-child {
     margin-bottom: 50px;
   }
   iframe,
-  img{
+  img {
     margin-bottom: 30px;
   }
   span ~ img,
   span ~ iframe {
-    margin-top: 18px
+    margin-top: 18px;
   }
-  .videoFrame{
-    background: rgba(0,0,0,0.6);
+  .videoFrame {
+    min-height: 450px;
+    width:100%;
+    background: rgba(0, 0, 0, 0.6);
   }
 }

@@ -1,23 +1,23 @@
-.audio{
-  .cover-art{
-		width:350px;
-		height:350px;
+.audio {
+  .cover-art {
+    width: 350px;
+    height: 350px;
   }
 
   //player component won't take classname
-  img + div{
+  img + div {
     border-radius: 0;
-    margin:0;
+    margin: 0;
   }
 
-  .copy{
+  .copy {
     margin-top: 30px;
   }
 
-  .download{
-    margin-top:10px;
-		text-transform: uppercase;
-		font-size: 11px;
-		font-weight: 600;
+  .download {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
   }
 }

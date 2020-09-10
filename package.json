@@ -19,6 +19,7 @@
     "next-sitemap": "^1.2.4",
     "normalize.scss": "^0.1.0",
     "react": "16.13.1",
+    "react-device-detect": "^1.13.1",
     "react-dom": "16.13.1",
     "react-hooks-player": "^1.0.4",
     "sass": "^1.26.10"

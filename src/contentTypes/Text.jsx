@@ -1,4 +1,4 @@
-import Base from "./Base";
+import Base from './Base';
 import styles from './text.module.scss';
 
 export default function Text(props) {
@@ -7,9 +7,9 @@ export default function Text(props) {
 		text
 	} = props.data;
 
-  return (
-    <Base >
-			<div className={styles.scroll} dangerouslySetInnerHTML={{__html:text}} />
-    </Base>
-  )
+	return (
+		<Base >
+			<div className={styles.scroll} dangerouslySetInnerHTML={{ __html: text }} />
+		</Base>
+	)
 }

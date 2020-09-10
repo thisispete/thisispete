@@ -1,0 +1,43 @@
+.pagination {
+  cursor: default;
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: "prev count next";
+  place-items: center;
+
+  .prev,
+  .next {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    span {
+      display: none;
+    }
+    path {
+      transition: fill 0.2s ease-in-out;
+      fill: #ccc;
+    }
+    &:hover path {
+      fill: #fff;
+    }
+    &.disabled {
+      path {
+        fill: #666;
+      }
+      cursor: default;
+    }
+  }
+
+  .prev {
+    grid-area: prev;
+  }
+  .next {
+    grid-area: next;
+  }
+  .count {
+    grid-area: count;
+    margin: 0 2px 2px;
+  }
+}

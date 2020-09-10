@@ -1,0 +1,14 @@
+.playlist {
+  .videoFrame {
+    width: 600px;
+    height: 400px;
+  }
+  .selected a{
+    color: #fff;
+    font-weight: bolder;
+    cursor: default;
+  }
+  .description {
+    margin: 30px 0;
+  }
+}

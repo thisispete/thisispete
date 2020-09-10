@@ -34,7 +34,7 @@ export default function Transition({children}) {
 
   return(
     <AnimatePresence exitBeforeEnter>
-      <motion.div key={key} initial="hidden" animate="visible" exit="exit" variants={varients}>
+      <motion.div key={key} initial='hidden' animate='visible' exit='exit' variants={varients}>
         {children}
       </motion.div>
     </AnimatePresence>

@@ -1,15 +1,15 @@
-@mixin anim-color($speed: .3s) {
-  transition:color $speed ease-in-out;
+@mixin anim-color($speed: 0.3s) {
+  transition: color $speed ease-in-out;
 }
 
-.base{
+.base {
   h1 {
     margin-bottom: 30px;
     text-align: center;
   }
 
   a {
-    @include anim-color(.2s);
+    @include anim-color(0.2s);
     color: #ccc;
     text-decoration: none;
   }
@@ -19,16 +19,18 @@
   a:focus {
     outline: 0 !important;
   }
-  a:hover, a:active {
+  a:hover,
+  a:active {
     color: #fff;
     outline: 0;
   }
 
-  p, ul{
-	 margin-bottom: 12px;
+  p,
+  ul {
+    margin-bottom: 12px;
   }
-  
-  li p{
-    margin-bottom:0;
+
+  li p {
+    margin-bottom: 0;
   }
 }

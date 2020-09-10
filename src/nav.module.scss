@@ -9,7 +9,7 @@
   transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.nav {
+#nav {
   grid-area: nav;
   width: 100%;
   padding-left: 4rem;
@@ -21,31 +21,31 @@
     height: 1.3rem;
 
     a {
-      @include anim-color(.4s);
+      @include anim-color(0.4s);
       color: #ccc;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 1rem;
       line-height: 1.1rem;
-      user-select: none
+      user-select: none;
     }
     a:hover {
       color: #fff;
-      @include anim-color(.2s);
+      @include anim-color(0.2s);
     }
 
     &.selected {
       a {
-        @include anim-color(.1s);
+        @include anim-color(0.1s);
         color: #66f;
       }
     }
 
     &.hidden {
       height: 0;
-      a{
-        @include anim-color(.01s);
-        color: rgba($color: #fff, $alpha: 0.0);
+      a {
+        @include anim-color(0.01s);
+        color: rgba($color: #fff, $alpha: 0);
       }
     }
 
@@ -55,7 +55,7 @@
         margin-left: $left;
       }
     }
-  
+
     @for $i from 1 through 20 {
       $delay: 0.1s + 0.02s * $i;
       &.delay-#{$i} {
