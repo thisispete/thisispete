@@ -15,6 +15,28 @@ export default function Gallery(props) {
 
   const [slide, setSlide] = React.useState(0);
 
+  // const throttle = (method, scope, time) => {
+  //   clearTimeout(method._tId);
+  //   method._tId = setTimeout(() => {
+  //     method.call(scope);
+  //   }, 100);
+  // }
+
+  // const t = this;
+  // const scroll = (e => {
+  //   throttle(() => {
+  //     let lastCount = t.count;
+  //     let p = t._stack.scrollLeft() / t._stack[0].scrollWidth;
+  //     let nextCount = Math.round(p * t.total) + 1;
+  //     if (lastCount != nextCount) {
+  //       t.count = nextCount;
+  //       t._currentDisp.html(nextCount);
+  //       t._updateCallback(t.count);
+  //     }
+  //   }, this, 100);
+  // });
+
+
   const tap = () => {
     if (slide == slideLen - 1) {
       setSlide(0);

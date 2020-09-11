@@ -1,19 +1,25 @@
-.scroll {
-  overflow: scroll;
-  height: 100vh;
-  scrollbar-width: none;
-  min-width: 540px;
-  margin-right: 60px;
+$mobile: 1023px;
+$desktop: 1024px;
+  // @media (min-width: $desktop) {
+  // @media (max-width: $mobile) {
+
+.text {
+  height: auto;
+  
+  @media (min-width: $desktop) {
+    min-width: 54rem;
+    margin-right: 6rem;
+    height: 100vh;
+    overflow-y:scroll;
+    scrollbar-width: none;
+  }
 
   > :first-child {
     margin-top: 20vh;
   }
 
   > :last-child {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
   }
 
-  strong {
-    font-weight: 700;
-  }
 }

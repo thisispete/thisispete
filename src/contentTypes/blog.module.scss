@@ -1,24 +1,36 @@
+$mobile: 1023px;
+$desktop: 1024px;
+  // @media (min-width: $desktop) {
+  // @media (max-width: $mobile) {
+
 .blog {
-  overflow: scroll;
-  height: 100vh;
-  scrollbar-width: none;
+  height: auto;
+  
+  @media (min-width: $desktop) {
+    height: 100vh;
+    overflow-y:scroll;
+    scrollbar-width: none;
+  }
+
+
   > :first-child {
     margin-top: 20vh;
   }
   > :last-child {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
   }
   iframe,
   img {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
   span ~ img,
   span ~ iframe {
-    margin-top: 18px;
+    margin-top: 1.8rem;
   }
   .videoFrame {
     min-height: 450px;
     width:100%;
     background: rgba(0, 0, 0, 0.6);
   }
+
 }

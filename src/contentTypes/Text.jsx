@@ -9,7 +9,7 @@ export default function Text(props) {
 
 	return (
 		<Base >
-			<div className={styles.scroll} dangerouslySetInnerHTML={{ __html: text }} />
+			<div className={styles.text} dangerouslySetInnerHTML={{ __html: text }} />
 		</Base>
 	)
 }

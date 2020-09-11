@@ -1,69 +1,80 @@
+$mobile: 1023px;
+$desktop: 1024px;
+  // @media (min-width: $desktop) {
+  // @media (max-width: $mobile) {
+
 #main {
   display: grid;
-  grid-template-columns: 250px 1fr min-content 1fr;
-  @media screen and (min-width: 901px) and (max-width: 1049px) {
-    grid-template-columns: 222px 1fr min-content 1fr;
-  }
-  grid-template-areas: "nav . content .";
+  grid-template-columns: auto;
+  grid-template-rows: 100vh 0px auto;
+  grid-template-rows: calc(var(--vh, 1vh) * 100) 0px auto;
+  grid-template-areas: "nav" "logo" "content";
   width: 100vw;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  place-items: center;
+  height:auto;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-y:scroll;
+  scrollbar-width: none;
+
+  @media (min-width: $desktop) {
+    overflow: hidden;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    place-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 23rem 1fr min-content 1fr;
+    grid-template-areas: "nav . content .";
+
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  
 }
+
 #content {
   grid-area: content;
-
-  align-self: center;
-  justify-self: stretch;
-  display: block;
   z-index: 1;
+  
 }
+
 #PETElogo {
   filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.3));
-  position: absolute;
+  z-index: 99;
   right: 30px;
   bottom: 25px;
+  justify-self:right;
+  align-self:end;
+  grid-area: logo;
   z-index: 99;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+  }
+
 
   path {
     fill: #fff;
   }
 
   .hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
-  .hidden.focusable:active,
-  .hidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+    display: none;
+    visibility: hidden;
   }
 }
-	// .oldbg,
-	#bg{
-    background: center center fixed no-repeat;
-    background-image: url("/api/background");
-		-moz-background-size: cover;
-		background-size: cover;
-		top:0;
-		position: fixed;
-		height:100%;
-		width:100%;
-		z-index: 0;
-	}
-  // .oldbg:before,
-  #bg:before {
+
+#bg {
+  background: center center fixed no-repeat;
+  background-image: url("/api/background");
+  background-size: cover;
+  // top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 100);
+  z-index: 0;
+
+  &:before {
     content: "";
     display: block;
     position: absolute;
@@ -71,5 +82,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
   }
+}
