@@ -1,9 +1,31 @@
+$mobile: 1023px;
+$desktop: 1024px;
+
+.wrapper{
+  display:grid;
+  place-items: center;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  ul{
+    margin-bottom:0;
+    padding:0
+  }
+}
 .contact {
   display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
+  place-items: center;
+
+  @media (min-width: $desktop) {
+    grid-auto-flow: column;
+  }
 
   li {
     padding: 15px;
+
+    &:first-child{
+      grid-row: 1;
+    }
 
     a {
       position: relative;

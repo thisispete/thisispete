@@ -37,10 +37,17 @@ $desktop: 1024px;
       li {
         transition: opacity 0.3s ease-in-out;
         min-width: 100vw;
+        text-align: center;
+        img{        
+          max-height: 100vw;
+        }
 
         @media (min-width: $desktop) {
           min-width: unset;
           grid-area: fixed;
+          .img{
+            max-height: unset;
+          }
           &.on {
             opacity: 1;
             z-index: 5;

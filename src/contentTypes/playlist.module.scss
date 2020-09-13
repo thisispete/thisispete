@@ -1,7 +1,23 @@
+$mobile: 1023px;
+$desktop: 1024px;
+
+
 .playlist {
+  display:grid;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  place-items: center;
+  
   .videoFrame {
-    width: 600px;
-    height: 400px;
+    min-height: 68vw;
+    width:100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    @media (min-width: $desktop) {
+      min-height: unset;
+      width: 600px;
+      height: 400px;
+    }
   }
   .selected a{
     color: #fff;
