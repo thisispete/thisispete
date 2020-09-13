@@ -1,6 +1,6 @@
 import styles from './pagination.module.scss';
 
-export default function Gallery(props) {
+export default function Pagination(props) {
 
   const { page, setPage, pageCount } = props;
 

@@ -1,3 +1,8 @@
+$mobile: 1023px;
+$desktop: 1024px;
+  // @media (min-width: $desktop) {
+  // @media (max-width: $mobile) {
+
 .pagination {
   cursor: default;
   display: grid;
@@ -28,6 +33,11 @@
       }
       cursor: default;
     }
+
+    @media (max-width: $mobile) {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   .prev {
@@ -36,6 +46,8 @@
   .next {
     grid-area: next;
   }
+
+
   .count {
     grid-area: count;
     margin: 0 2px 2px;

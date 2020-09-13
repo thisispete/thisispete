@@ -1,7 +1,27 @@
+$mobile: 1023px;
+$desktop: 1024px;
+
 .audio {
-  .cover-art {
-    width: 350px;
-    height: 350px;
+  display:grid;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  place-items: center;
+  
+  .wrapper{
+    width: 100vw;
+    @media (min-width: $desktop) {
+      width: unset;
+    }
+  }
+
+  .cover {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $desktop) {
+      width: 350px;
+      height: 350px;
+    }
   }
 
   //player component won't take classname
@@ -15,9 +35,14 @@
   }
 
   .download {
-    margin-top: 10px;
+    padding: 0 1rem;
+    margin-top: 1rem;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 1.1rem;
     font-weight: 600;
+
+    @media (min-width: $desktop) {
+      padding: unset;
+    }
   }
 }

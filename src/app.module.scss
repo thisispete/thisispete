@@ -2,7 +2,12 @@ $mobile: 1023px;
 $desktop: 1024px;
   // @media (min-width: $desktop) {
   // @media (max-width: $mobile) {
-
+#app{
+  // display: block; 
+  // width: 100vw;
+  // height: 100vh;
+  // height: calc(var(--vh, 1vh) * 100);
+}
 #main {
   display: grid;
   grid-template-columns: auto;
@@ -12,9 +17,10 @@ $desktop: 1024px;
   width: 100vw;
   height:auto;
   position: relative;
-  scroll-behavior: smooth;
-  overflow-y:scroll;
+  // scroll-behavior: smooth;
+  // overflow-y:scroll;
   scrollbar-width: none;
+  z-index: 1;
 
   @media (min-width: $desktop) {
     overflow: hidden;
@@ -34,7 +40,7 @@ $desktop: 1024px;
 
 #content {
   grid-area: content;
-  z-index: 1;
+  z-index: 98;
   
 }
 
@@ -47,6 +53,7 @@ $desktop: 1024px;
   align-self:end;
   grid-area: logo;
   z-index: 99;
+  position: relative;
 
   @media (min-width: $desktop) {
     position: absolute;
@@ -67,7 +74,9 @@ $desktop: 1024px;
   background: center center fixed no-repeat;
   background-image: url("/api/background");
   background-size: cover;
-  // top: 0;
+  top: 0;
+  bottom:0;
+  overflow: hidden;
   position: fixed;
   height: 100vh;
   width: 100vw;

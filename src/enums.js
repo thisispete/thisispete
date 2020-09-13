@@ -10,7 +10,7 @@ export const TYPES = {
 
 export const MENU = {
   SUBMENU: 'submenu',
-  POST: 'post'
+  LINK: 'link'
 }
 
 export const BLOG = {

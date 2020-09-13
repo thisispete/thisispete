@@ -4,7 +4,7 @@ import { MENU } from '@PETE/enums';
 
 import styles from './nav.module.scss'
 
-export default function Nav({ navData }) {
+export default function Nav({ navData, postRef }) {
   const router = useRouter()
   const slugs = [''];
   if (router.query.slug) {
@@ -47,13 +47,15 @@ export default function Nav({ navData }) {
 
       return (
         <li className={classes.join(' ')} key={item.path}>
-          <Link href='[[...slug]]' as={href}>
+          <Link href='[[...slug]]' as={href} >
             <a>{item.slug.split('_').join(' ').toUpperCase()}</a>
           </Link>
         </li>
       )
     }
   });
+
+
 
   return (
     <div id={styles.nav}>
