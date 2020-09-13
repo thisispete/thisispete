@@ -1,13 +1,5 @@
-$mobile: 1023px;
-$desktop: 1024px;
-  // @media (min-width: $desktop) {
-  // @media (max-width: $mobile) {
-#app{
-  // display: block; 
-  // width: 100vw;
-  // height: 100vh;
-  // height: calc(var(--vh, 1vh) * 100);
-}
+@import "utilities.scss";
+
 #main {
   display: grid;
   grid-template-columns: auto;
@@ -17,23 +9,15 @@ $desktop: 1024px;
   width: 100vw;
   height:auto;
   position: relative;
-  // scroll-behavior: smooth;
-  // overflow-y:scroll;
   scrollbar-width: none;
   z-index: 1;
 
   @media (min-width: $desktop) {
     overflow: hidden;
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     place-items: center;
-  }
-
-  @media (min-width: $desktop) {
     grid-template-columns: 23rem 1fr min-content 1fr;
     grid-template-areas: "nav . content .";
-
-    height: calc(var(--vh, 1vh) * 100);
   }
   
 }
@@ -41,7 +25,6 @@ $desktop: 1024px;
 #content {
   grid-area: content;
   z-index: 98;
-  
 }
 
 #PETElogo {
@@ -58,8 +41,7 @@ $desktop: 1024px;
   @media (min-width: $desktop) {
     position: absolute;
   }
-
-
+  
   path {
     fill: #fff;
   }

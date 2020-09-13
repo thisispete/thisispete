@@ -1,7 +1,4 @@
-$mobile: 1023px;
-$desktop: 1024px;
-  // @media (min-width: $desktop) {
-  // @media (max-width: $mobile) {
+@import "utilities.scss";
 
 #nav {
   grid-area: nav;
@@ -16,6 +13,7 @@ $desktop: 1024px;
     transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
     overflow: hidden;
     height: 2.6rem;
+
     @media (min-width: $desktop) {
       height: 2rem;
     }
@@ -39,6 +37,7 @@ $desktop: 1024px;
 
     &.hidden {
       height: 0;
+      
       a {
         color: rgba($color: #fff, $alpha: 0);
       }

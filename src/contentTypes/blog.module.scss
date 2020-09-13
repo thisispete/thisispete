@@ -1,24 +1,22 @@
-$mobile: 1023px;
-$desktop: 1024px;
-  // @media (min-width: $desktop) {
-  // @media (max-width: $mobile) {
+@import "@PETE/utilities.scss";
 
 .blog {
   height: auto;
-  
+
   @media (min-width: $desktop) {
     height: 100vh;
-    overflow-y:scroll;
+    overflow-y: scroll;
     scrollbar-width: none;
   }
-
 
   > :first-child {
     margin-top: 20vh;
   }
+
   > :last-child {
     margin-bottom: 5rem;
   }
+
   iframe,
   img {
     margin-bottom: 3rem;
@@ -27,13 +25,14 @@ $desktop: 1024px;
   span ~ iframe {
     margin-top: 1.8rem;
   }
+
   .videoFrame {
     min-height: 50vw;
-    width:100%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.6);
+    
     @media (min-width: $desktop) {
       min-height: 450px;
     }
   }
-
 }

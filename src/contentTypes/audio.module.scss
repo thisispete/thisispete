@@ -1,10 +1,8 @@
-$mobile: 1023px;
-$desktop: 1024px;
+@import "@PETE/utilities.scss";
 
 .audio {
   display:grid;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  @include vh100;
   place-items: center;
   
   .wrapper{

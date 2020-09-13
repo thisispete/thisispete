@@ -1,16 +1,16 @@
-$mobile: 1023px;
-$desktop: 1024px;
-  // @media (min-width: $desktop) {
-  // @media (max-width: $mobile) {
+@import "@PETE/utilities.scss";
 
 .base {
+
   h1 {
     margin: 0 0 3rem 0;
     text-align: center;
   }
+
   h2{
     margin: 4.5rem 0 2rem 0;
   }
+  
   h3,h4{
     margin: 1.5rem 0 0.5rem;
   }

@@ -1,7 +1,4 @@
-$mobile: 1023px;
-$desktop: 1024px;
-  // @media (min-width: $desktop) {
-  // @media (max-width: $mobile) {
+@import "@PETE/utilities.scss";
 
 .pagination {
   cursor: default;
@@ -17,16 +14,20 @@ $desktop: 1024px;
     border: none;
     outline: none;
     cursor: pointer;
+    
     span {
       display: none;
     }
+
     path {
       transition: fill 0.2s ease-in-out;
       fill: #ccc;
     }
+
     &:hover path {
       fill: #fff;
     }
+
     &.disabled {
       path {
         fill: #666;
@@ -43,10 +44,10 @@ $desktop: 1024px;
   .prev {
     grid-area: prev;
   }
+
   .next {
     grid-area: next;
   }
-
 
   .count {
     grid-area: count;

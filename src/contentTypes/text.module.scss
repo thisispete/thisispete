@@ -1,7 +1,4 @@
-$mobile: 1023px;
-$desktop: 1024px;
-  // @media (min-width: $desktop) {
-  // @media (max-width: $mobile) {
+@import "@PETE/utilities.scss";
 
 .text {
   height: auto;
