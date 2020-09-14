@@ -93,7 +93,7 @@ export default function App({ navData, pageData }) {
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,700,400' rel='stylesheet' type='text/css' />
       </Head>
       <div id={styles.main}>
-
+        <PETE />
         <Nav navData={navData} />
         <div id={styles.content} >
           <Transition>
