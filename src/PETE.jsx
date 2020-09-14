@@ -1,4 +1,4 @@
-import styles from '@PETE/app.module.scss';
+import styles from '@PETE/pete.module.scss';
 
 export default function PETE() {
   return(

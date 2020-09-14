@@ -5,6 +5,7 @@ import { Switch, Case, Default } from 'jsx-logical-operators';
 import { TYPES } from '@PETE/enums'
 import Nav from '@PETE/Nav';
 import PETE from '@PETE/PETE'
+import BG from '@PETE/BG';
 import Transition from '@PETE/Transition';
 import {
   Audio,
@@ -121,7 +122,7 @@ export default function App({ navData, pageData }) {
           </Transition>
         </div>
       </div>
-      <div id={styles.bg}></div>
+      <BG title={pageData.title}/>
     </div>
   )
 }
