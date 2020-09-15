@@ -21,7 +21,7 @@ import { useEffect, useState } from 'react';
 
 export default function App({ navData, pageData }) {
   const { template } = pageData;
-  const idRoot = 'https://aws.thisispete.com/icons';
+  const idRoot = 'http://aws.thisispete.com/icons';
 
   const [vh, setVh] = useState(0);
 
