@@ -3,7 +3,6 @@ const dotenvLoad = require('dotenv-load');
 const { createSecureHeaders } = require("next-secure-headers");
 
 dotenvLoad();
-
 const withNextEnv = nextEnv();
 
 module.exports = withNextEnv({
