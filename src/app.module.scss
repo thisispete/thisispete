@@ -11,6 +11,7 @@
   position: relative;
   scrollbar-width: none;
   z-index: 1;
+  pointer-events: none;
 
   @media (min-width: $desktop) {
     overflow: hidden;
@@ -25,5 +26,6 @@
 #content {
   grid-area: content;
   z-index: 98;
+  pointer-events: auto;
 }
 

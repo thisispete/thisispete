@@ -21,7 +21,7 @@ import { useEffect, useState } from 'react';
 
 export default function App({ navData, pageData }) {
   const { template } = pageData;
-  const idRoot = 'http://aws.thisispete.com/icons';
+  const idRoot = 'https://aws.thisispete.com/icons';
 
   const [vh, setVh] = useState(0);
 
@@ -72,7 +72,7 @@ export default function App({ navData, pageData }) {
         <meta name='apple-mobile-web-app-capable' content='yes' />
         <meta property='og:title' content='THISISPETE' />
         <meta property='og:description' content='Pete Schirmer: artist and creative engineer from Oakland CA.' />
-        <meta property='og:url' content='http://www.thisispete.com' />
+        <meta property='og:url' content='https://www.thisispete.com' />
         <meta property='og:type' content='website' />
         <meta property='og:image' content={`${idRoot}/thisispete_logo_share.jpg`} />
         <meta property='og:image:type' content='image/jpg' />
@@ -91,8 +91,9 @@ export default function App({ navData, pageData }) {
         <meta name='msapplication-TileColor' content='#603cba' />
         <meta name='msapplication-config' content={`${idRoot}/browserconfig.xml`} />
         <meta name='theme-color' content='#ffffff' />
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,700,400' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:800,700,400' rel='stylesheet' type='text/css' />
       </Head>
+      <BG />
       <div id={styles.main}>
         <PETE />
         <Nav navData={navData} />
@@ -122,7 +123,7 @@ export default function App({ navData, pageData }) {
           </Transition>
         </div>
       </div>
-      <BG title={pageData.title}/>
+
     </div>
   )
 }
