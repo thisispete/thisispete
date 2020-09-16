@@ -1,0 +1,15 @@
+{
+  "template": "gallery",
+  "title": "video_riot",
+  "display_title": "Video Riot 2004",
+  "description": "<p>My first video show in SF Video Riot was a sorta guerrilla event with dozens of visual artists all projecting onto a massive white warehouse from the parking lot, with music provided by short broadcast radio and lots of open tailgates and boomboxes.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/video_riot_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/video_riot_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/video_riot_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/video_riot_04.jpg"
+  ],
+  "videos": [
+
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "template": "gallery",
+  "title": "future",
+  "display_title": "Future",
+  "description": "<p>Resident VJ for club Future. Underground SF and 330 Ritch</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/future_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/future_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/future_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/future_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/future_05.jpg"
+  ],
+  "videos": [
+    {
+      "template": "video-block",
+      "vimeo_id": "5659324",
+      "title": "future 1"
+    },
+    {
+      "template": "video-block",
+      "vimeo_id": "5659347",
+      "title": "future 2"
+    },
+    {
+      "template": "video-block",
+      "vimeo_id": "5659338",
+      "title": "future 3"
+    }
+  ]
+}

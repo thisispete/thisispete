@@ -1,0 +1,19 @@
+{
+  "template": "gallery",
+  "title": "tesla_refresh",
+  "display_title": "Tesla Kiosk Refresh",
+  "description": "<p>2015 refresh of the Tesla Motors retail kiosk experience, brings a brand new configurator experience as well as a facelift and new maps detailing the Supercharging Network</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_refresh_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_refresh_03.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_refresh_04.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_refresh_05.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_refresh_06.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_refresh_07.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_refresh_08.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_refresh_09.png"
+  ],
+  "videos": [
+
+  ]
+}

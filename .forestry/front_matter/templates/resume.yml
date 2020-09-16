@@ -1,0 +1,113 @@
+---
+label: Resume
+hide_body: true
+display_field: mission
+fields:
+- name: post_template
+  type: include
+  config: {}
+  template: post
+  label: post template
+- name: mission
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Mission
+- name: qualifications
+  type: field_group
+  config: {}
+  fields:
+  - name: qualification_list
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Qualification List
+  - name: expert
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Expert Skills
+  - name: experience
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Experience Skills
+  label: Qualifications
+- name: work_experience
+  type: field_group_list
+  fields:
+  - name: position
+    type: text
+    config:
+      required: true
+    label: Position
+  - name: company
+    type: text
+    config:
+      required: true
+    label: Company
+  - name: date_range
+    type: text
+    config:
+      required: true
+    label: Date Range
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Description
+  config:
+    min: 
+    max: 
+    labelField: company
+  label: Work Experience
+- name: education
+  type: field_group
+  config: {}
+  fields:
+  - name: school
+    type: text
+    config:
+      required: true
+    label: School
+  - name: degree
+    type: text
+    config:
+      required: true
+    label: Degree
+  - name: date
+    type: text
+    config:
+      required: true
+    label: Date
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Description
+  label: Education
+- name: pdf
+  type: text
+  config:
+    required: false
+  label: pdf

@@ -1,0 +1,18 @@
+{
+  "template": "gallery",
+  "title": "assembly_table",
+  "display_title": "808 Assembly Table",
+  "description": "<p>This is my assembly / clamping table, inspired by the various other \"MFT\" tables I combined the best of both t-track and bench-dog holes, purchased steel legs, and added storage cubbies below. Huge thanks to Jerimiah at <a href=\"http://jeremiahcollection.com/\" title=\"\" target=\"_blank\">Jeremiah Collection</a> for doing the CNC fabrication.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/assembly_table_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/assembly_table_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/assembly_table_03.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/assembly_table_04.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/assembly_table_05.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/assembly_table_06.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/assembly_table_07.png"
+  ],
+  "videos": [
+
+  ]
+}

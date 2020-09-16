@@ -1,0 +1,37 @@
+{
+  "links": [
+    {
+      "url": "http://instagram.com/peteschirmer",
+      "hover": "instagram",
+      "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/instagram.svg"
+    },
+    {
+      "url": "https://twitter.com/peteschirmer",
+      "hover": "twitter",
+      "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/twitter.svg"
+    },
+    {
+      "url": "http://www.facebook.com/peterschirmer",
+      "hover": "facebook",
+      "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/facebook.svg"
+    },
+    {
+      "url": "http://linkedin.com/in/thisispete",
+      "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/linkedin.svg",
+      "hover": "linkedin"
+    },
+    {
+      "url": "https://github.com/thisispete",
+      "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/github.svg",
+      "hover": "github"
+    },
+    {
+      "url": "http://www.facebook.com/pennyluchia",
+      "hover": "penny",
+      "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/penny.svg"
+    }
+  ],
+  "title": "contact",
+  "display_title": "contact",
+  "template": "contact"
+}

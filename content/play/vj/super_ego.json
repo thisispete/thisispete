@@ -1,0 +1,34 @@
+{
+  "template": "gallery",
+  "title": "super_ego",
+  "display_title": "Super Ego",
+  "description": "<p>Resident VJ and Co-host with <a href=\"http://www.kidhack.com/\" title=\"\" target=\"_blank\">DJ KidHack</a> for monthly night at rickshaw stop, later resident DJ and VJ when <a href=\"http://futureuniversal.com/\" title=\"\" target=\"_blank\">Future Universal</a> re-launched the event at DNA lounge.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/super_ego_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/super_ego_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/super_ego_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/super_ego_04.jpg"
+  ],
+  "videos": [
+    {
+      "template": "video-block",
+      "vimeo_id": "5659395",
+      "title": "super ego 1"
+    },
+    {
+      "template": "video-block",
+      "title": "super ego 2",
+      "vimeo_id": "5659380"
+    },
+    {
+      "template": "video-block",
+      "title": "super ego 3",
+      "vimeo_id": "5659468"
+    },
+    {
+      "template": "video-block",
+      "title": "super ego 4",
+      "vimeo_id": "5659436"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "template": "gallery",
+  "title": "odopod_sign",
+  "display_title": "Odopod Sign Prototype",
+  "description": "<p>When odopod rebranded I designed this sign for the reception area, the front would glow white during the day, and at night it would eclipse just illuminating the brick wall around it.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/odopod_sign_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/odopod_sign_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/odopod_sign_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/odopod_sign_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/odopod_sign_05.jpg"
+  ],
+  "videos": [
+    {
+      "template": "video-block",
+      "vimeo_id": "332375955",
+      "title": "Odopod Sign"
+    }
+  ]
+}

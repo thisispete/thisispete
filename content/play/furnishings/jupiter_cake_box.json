@@ -1,0 +1,19 @@
+{
+  "template": "gallery",
+  "title": "jupiter_cake_box",
+  "display_title": "Jupiter Cake Box",
+  "description": "<p>Made this cake box and platter set for Ms. Presley. It takes a 9\" or 10\" springform cake, and fits either the glass dome or the matching travel box lid. The wood is quarter sawn sycamore, after a few prototypes I cut out the parts on the CNC, and then bent the kerf cut box sides by first soaking in water. And the red elastic strap holds it all together.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/jupiter_cake_box_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/jupiter_cake_box_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/jupiter_cake_box_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/jupiter_cake_box_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/jupiter_cake_box_05.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/jupiter_cake_box_06.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/jupiter_cake_box_07.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/jupiter_cake_box_08.jpg"
+  ],
+  "videos": [
+
+  ]
+}

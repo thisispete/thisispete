@@ -1,0 +1,32 @@
+@import "utilities.scss";
+
+
+#main {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100vh 0px auto;
+  grid-template-rows: calc(var(--vh, 1vh) * 100) 0px auto;
+  grid-template-areas: "nav" "logo" "content";
+  width: 100vw;
+  height:auto;
+  scrollbar-width: none;
+  z-index: 1;
+  pointer-events: none;
+
+  @media (min-width: $desktop) {
+    overflow: hidden;
+    height: 100vh;
+    place-items: center;
+    grid-template-columns: 23rem 1fr min-content 1fr;
+    grid-template-areas: "nav . content .";
+  }
+  
+}
+
+#content {
+  grid-area: content;
+  z-index: 98;
+  pointer-events: auto;
+}
+

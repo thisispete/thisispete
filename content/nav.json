@@ -1,0 +1,382 @@
+{
+  "template": "submenu",
+  "slug": "",
+  "items": [
+    {
+      "template": "submenu",
+      "slug": "work",
+      "items": [
+        {
+          "template": "submenu",
+          "slug": "exhibit",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/work/exhibit/reset_button.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/exhibit/mission_control.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/exhibit/tesla_refresh.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/exhibit/ap_pos.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/exhibit/tesla_go_electric.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/exhibit/tesla_configurator.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/exhibit/honda_kiosks.json"
+            }
+          ]
+        },
+        {
+          "template": "submenu",
+          "slug": "prototyping",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/work/prototyping/twitter_lights.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/dust_collector.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/captive_platform.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/ar_visualizations.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/odopod_sign.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/odobook.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/white_block_clock.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/prototyping/weather_clock.json"
+            }
+          ]
+        },
+        {
+          "template": "submenu",
+          "slug": "web",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/work/web/odopod.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/sony_global.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/nest_labs.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/sony_google_tv.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/sony_piiq_launch.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/liquid_awesome.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/nvidia_speak_visual.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/got_milk_white_gold.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/scion_little_d.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/scion_w2bs.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/exprescion.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/web/electropolis_site.json"
+            }
+          ]
+        },
+        {
+          "template": "link",
+          "post": "content/work/identity.json"
+        },
+        {
+          "template": "link",
+          "post": "content/work/promotional.json"
+        },
+        {
+          "template": "submenu",
+          "slug": "ui",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/work/ui/time_for_pi.json"
+            },
+            {
+              "template": "link",
+              "post": "content/work/ui/triple_20.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template": "submenu",
+      "slug": "play",
+      "items": [
+        {
+          "template": "submenu",
+          "slug": "art",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/play/art/rochester_dvd.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/sketches.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/untitled.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/duos.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/synaethesia.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/80_circles.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/art/lines.json"
+            }
+          ]
+        },
+        {
+          "template": "link",
+          "post": "content/play/photo.json"
+        },
+        {
+          "template": "submenu",
+          "slug": "furniture",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/play/furniture/kitchen_helper.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/assembly_table.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/workbench.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/highhorse.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/garden.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/picnic_table.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furniture/bed.json"
+            }
+          ]
+        },
+        {
+          "template": "submenu",
+          "slug": "furnishings",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/play/furnishings/grow_station.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/spice_rack.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/knife_rack.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/shop_storage.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/jupiter_cake_box.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/wood_turning.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/tea_boxes.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/cutting_boards.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/tool_roll.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/furnishings/brass_wreaths.json"
+            }
+          ]
+        },
+        {
+          "template": "submenu",
+          "slug": "vj",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/play/vj/getaround.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/fitc.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/electropolis.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/opulent_temple.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/super_ego.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/future.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/be_the_riottt.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/pop_roxx.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/sea_of_dreams.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/video_riot.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/comacast.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/vj/terry_mullens.json"
+            }
+          ]
+        },
+        {
+          "template": "submenu",
+          "slug": "dj",
+          "items": [
+            {
+              "template": "link",
+              "post": "content/play/dj/nightlife_1.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/dj/nightlife_2.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/dj/dusty_summer.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/dj/partyline.json"
+            },
+            {
+              "template": "link",
+              "post": "content/play/dj/odopod_10_years.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template": "submenu",
+      "slug": "about",
+      "items": [
+        {
+          "template": "link",
+          "post": "content/about/resume.json"
+        },
+        {
+          "template": "link",
+          "post": "content/about/bio.json"
+        },
+        {
+          "template": "link",
+          "post": "content/about/contact.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "template": "gallery",
+  "title": "highhorse",
+  "display_title": "High Horse (for sitting)",
+  "description": "<p>This is the accompanying stool for my long workbench. Made from the same Afzelia legs, and with a large slab Fir top. Matching finish and hardware connectors. I wanted something reminiscent of a saw-bench or a pommel-horse.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/high_horse_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/high_horse_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/high_horse_03.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/high_horse_04.png"
+  ],
+  "videos": [
+
+  ]
+}

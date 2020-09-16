@@ -1,0 +1,21 @@
+---
+label: Nav
+hide_body: true
+fields:
+- name: slug
+  type: text
+  config:
+    required: false
+  label: slug
+  hidden: true
+  default: "/"
+- name: items
+  type: blocks
+  template_types:
+  - submenu
+  config:
+    min: 
+    max: 
+  label: items
+pages:
+- content/nav.json

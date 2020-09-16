@@ -1,0 +1,20 @@
+{
+  "template": "gallery",
+  "title": "sketches",
+  "display_title": "Sketches",
+  "description": "",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sketch_book_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sketch_book_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sketch_book_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sketch_book_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sketch_book_05.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sketch_book_06.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sketch_book_07.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sketch_book_08.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sketch_book_09.jpg"
+  ],
+  "videos": [
+
+  ]
+}

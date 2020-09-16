@@ -1,0 +1,17 @@
+{
+  "template": "gallery",
+  "title": "sea_of_dreams",
+  "display_title": "Sea of Dreams",
+  "description": "<p>VJ for <a href=\"http://anonsalon.com/\" title=\"\" target=\"_blank\">Anon Salon's</a> massive new year's eve blowout event in SF.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sea_of_dreams_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/sea_of_dreams_02.jpg"
+  ],
+  "videos": [
+    {
+      "template": "video-block",
+      "title": "sea of dreams",
+      "vimeo_id": "5659328"
+    }
+  ]
+}

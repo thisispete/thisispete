@@ -1,0 +1,14 @@
+{
+  "template": "gallery",
+  "title": "knife_rack",
+  "display_title": "Magnetic Knife Rack",
+  "description": "<p>This chunk of wood started out as a bleacher seat at the old Cal stadium in Berkeley. It was then used by the Wooden Duck, a local re-claimed wood furniture store, as a finish sample. When they went out of business I acquired it and turned it into a knife rack by milling out spaces in the back to embed magnets.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/knife_rack_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/knife_rack_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/knife_rack_03.jpg"
+  ],
+  "videos": [
+
+  ]
+}

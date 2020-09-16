@@ -1,0 +1,19 @@
+{
+  "template": "gallery",
+  "title": "terry_mullens",
+  "display_title": "Terry Mullens",
+  "description": "<p>VJ set for Terry Mullens, Venus 7, and several other DJ's at Water Street Music Hall in Rochester.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/terry_mullens_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/terry_mullens_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/terry_mullens_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/terry_mullens_04.jpg"
+  ],
+  "videos": [
+    {
+      "template": "video-block",
+      "vimeo_id": "5659304",
+      "title": "Water Street Music Hall"
+    }
+  ]
+}

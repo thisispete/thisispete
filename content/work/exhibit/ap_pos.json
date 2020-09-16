@@ -1,0 +1,16 @@
+{
+  "template": "gallery",
+  "title": "ap_pos",
+  "display_title": "Audemars Piguet Retail App",
+  "description": "<p>Custom iOS app for watchmaker Audemars Piguet retail engagements.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/ap_pos_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/ap_pos_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/ap_pos_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/ap_pos_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/ap_pos_06.jpg"
+  ],
+  "videos": [
+
+  ]
+}

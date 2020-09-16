@@ -1,0 +1,46 @@
+@import "@PETE/utilities.scss";
+
+.audio {
+  display:grid;
+  @include vh100;
+  place-items: center;
+  
+  .wrapper{
+    width: 100vw;
+    @media (min-width: $desktop) {
+      width: unset;
+    }
+  }
+
+  .cover {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $desktop) {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
+  //player component won't take classname
+  img + div {
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .copy {
+    margin-top: 30px;
+  }
+
+  .download {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    @media (min-width: $desktop) {
+      padding: unset;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "template": "gallery",
+  "title": "fitc",
+  "display_title": "FITC Afterparty",
+  "description": "<p>DJ and VJ for the Flash in the Can festival official after-party at Mezzanine SF</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/fitc_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/fitc_02.jpg"
+  ],
+  "videos": [
+    {
+      "template": "video-block",
+      "vimeo_id": "14275859",
+      "title": "fitc 1"
+    },
+    {
+      "template": "video-block",
+      "vimeo_id": "14275628",
+      "title": "fitc 2"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "template": "gallery",
+  "title": "tool_roll",
+  "display_title": "Waxed Canvas Tool Roll",
+  "description": "<p>I made this to hold all the little things I take camping. I roughly followed this instructible <a href=\"http://www.instructables.com/id/DIY-Brown-Bag\" title=\"http://www.instructables.com/id/DIY-Brown-Bag\" target=\"_blank\">http://www.instructables.com/id/DIY-Brown-Bag</a> for how to wax canvas, and the pattern was something I just made up on the fly.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tool_roll_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tool_roll_03.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tool_roll_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tool_roll_04.png"
+  ],
+  "videos": [
+
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "title": "reset_button",
+  "display_title": "Reset Insurance Button",
+  "content": [
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/berkshire_reset_01.jpg",
+      "alt_text": "Giant novelty button with the word 'reset' displayed, electronics"
+    },
+    {
+      "template": "text-block",
+      "html": "<p>Worked with the team at Fjord, and John Murray Productions to create this massive reset button to promote the 'Three' insurance product by Berkshire Hathaway at their annual shareholder meeting in Omaha Nebraska.</p><p>The concept was to have this oversized reset button, that had some lighting effects, and when pressed the lights would change, and it would trigger a video on the wall behind it to play.</p>"
+    },
+    {
+      "template": "image-block",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/berkshire_reset_04.jpg",
+      "alt_text": "Trade show booth rendering with giant reset button"
+    },
+    {
+      "template": "text-block",
+      "html": "<p>I whipped up an Arduino controller that controlled the lighting over DMX, and connected to a computer as a USB keyboard, then coded a custom video player app in open-frameworks to handle the video playback and keyboard control.</p>"
+    },
+    {
+      "template": "video-block",
+      "vimeo_id": "332487293",
+      "title": "button demo"
+    },
+    {
+      "template": "text-block",
+      "html": "<p>Here's the final piece working on the trade-show floor</p>"
+    },
+    {
+      "template": "image-block",
+      "alt_text": "Final reset button installed in trade show booth",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/berkshire_reset_03.jpg"
+    },
+    {
+      "template": "video-block",
+      "vimeo_id": "336239295",
+      "title": "reset button demo video"
+    },
+    {
+      "template": "text-block",
+      "html": "<p>And here's the <em>money</em> shot of Warren Buffet interacting with it.</p>"
+    },
+    {
+      "template": "image-block",
+      "alt_text": "Warren Buffet pushing the reset button, with some help",
+      "image": "https://s3.amazonaws.com/cms.thisispete.com/images/berkshire_reset_02.jpg"
+    }
+  ],
+  "footer": "",
+  "template": "blog"
+}

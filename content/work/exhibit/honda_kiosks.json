@@ -1,0 +1,22 @@
+{
+  "title": "honda_kiosks",
+  "display_title": "Honda Kiosks",
+  "description": "<p>Contracted by odopod to develop a series of interactive experiences for Honda to be displayed on 46\" touch screen kiosks for their 08-09 auto-show booths.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/honda_kiosk_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/honda_kiosk_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/honda_kiosk_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/honda_kiosk_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/honda_kiosk_05.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/honda_kiosk_06.jpg"
+  ],
+  "videos": [
+    {
+      "template": "video-block",
+      "vimeo_id": "35731963",
+      "title": "honda kiosk",
+      "description": ""
+    }
+  ],
+  "template": "gallery"
+}

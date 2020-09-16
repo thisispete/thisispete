@@ -1,0 +1,95 @@
+---
+label: Gallery
+hide_body: true
+display_field: title
+fields:
+- name: post_template
+  type: include
+  config: {}
+  template: post
+  label: Post Template
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Description
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
+- name: videos
+  type: blocks
+  label: Videos
+  template_types:
+  - video-block
+  config:
+    min: 
+    max: 
+pages:
+- content/play/art/80_circles.json
+- content/play/art/duos.json
+- content/play/art/lines.json
+- content/play/art/sketches.json
+- content/play/art/synaethesia.json
+- content/play/art/untitled.json
+- content/play/furnishings/brass_wreaths.json
+- content/play/furnishings/cutting_boards.json
+- content/play/furnishings/elephant_mobile.json
+- content/play/furnishings/grow_station.json
+- content/play/furnishings/jupiter_cake_box.json
+- content/play/furnishings/knife_rack.json
+- content/play/furnishings/shop_storage.json
+- content/play/furnishings/spice_rack.json
+- content/play/furnishings/tea_boxes.json
+- content/play/furnishings/tool_roll.json
+- content/play/furnishings/wood_turning.json
+- content/play/furniture/assembly_table.json
+- content/play/furniture/bed.json
+- content/play/furniture/garden.json
+- content/play/furniture/highhorse.json
+- content/play/furniture/kitchen_helper.json
+- content/play/furniture/picnic_table.json
+- content/play/furniture/workbench.json
+- content/play/photo.json
+- content/play/vj/be_the_riottt.json
+- content/play/vj/comacast.json
+- content/play/vj/electropolis.json
+- content/play/vj/fitc.json
+- content/play/vj/future.json
+- content/play/vj/getaround.json
+- content/play/vj/opulent_temple.json
+- content/play/vj/pop_roxx.json
+- content/play/vj/sea_of_dreams.json
+- content/play/vj/super_ego.json
+- content/play/vj/terry_mullens.json
+- content/play/vj/video_riot.json
+- content/work/exhibit/ap_pos.json
+- content/work/exhibit/honda_kiosks.json
+- content/work/exhibit/mission_control.json
+- content/work/exhibit/tesla_configurator.json
+- content/work/exhibit/tesla_go_electric.json
+- content/work/exhibit/tesla_refresh.json
+- content/work/identity.json
+- content/work/promotional.json
+- content/work/prototyping/ar_visualizations.json
+- content/work/prototyping/dust_collector.json
+- content/work/prototyping/odopod_sign.json
+- content/work/prototyping/twitter_lights.json
+- content/work/ui/time_for_pi.json
+- content/work/ui/triple_20.json
+- content/work/web/electropolis_site.json
+- content/work/web/exprescion.json
+- content/work/web/got_milk_white_gold.json
+- content/work/web/liquid_awesome.json
+- content/work/web/nest_labs.json
+- content/work/web/nvidia_speak_visual.json
+- content/work/web/odopod.json
+- content/work/web/scion_little_d.json
+- content/work/web/scion_w2bs.json
+- content/work/web/sony_global.json
+- content/work/web/sony_google_tv.json
+- content/work/web/sony_piiq_launch.json

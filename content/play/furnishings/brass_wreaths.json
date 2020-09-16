@@ -1,0 +1,14 @@
+{
+  "template": "gallery",
+  "title": "brass_wreaths",
+  "display_title": "Brass Wreaths",
+  "description": "<p>I built 10 of these for gifts for friends who help me through hard times. Brass tube and wire.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/brass_wreaths_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/brass_wreaths_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/brass_wreaths_03.png"
+  ],
+  "videos": [
+
+  ]
+}

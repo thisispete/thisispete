@@ -1,0 +1,14 @@
+{
+  "template": "gallery",
+  "title": "mission_control",
+  "display_title": "Tesla Mission Control",
+  "description": "<p>Data visualization application created for Tesla Motors HQ Lobby. Inspired by SpaceX \"Mission Control\" displays locations and stats about Tesla Charging stations and global green electricity output.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_mission_control_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_mission_control_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_mission_control_03.png"
+  ],
+  "videos": [
+    
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "template": "gallery",
+  "title": "promotional",
+  "display_title": "Promotional",
+  "description": "",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/promo_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/promo_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/promo_03.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/promo_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/promo_05.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/promo_06.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/promo_07.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/promo_08.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/promo_09.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/promo_10.jpg"
+  ],
+  "videos": [
+
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "template": "playlist",
+  "title": "rochester_dvd",
+  "display_title": "Rochester Collaborations",
+  "video_list": [
+    {
+      "template": "video-block",
+      "vimeo_id": "5935388",
+      "title": "Lank - Kissing Down"
+    },
+    {
+      "template": "video-block",
+      "title": "Comacast - Angel Prey [dilute]",
+      "vimeo_id": "6077093"
+    },
+    {
+      "template": "video-block",
+      "title": "Aural Surgery - Stretching Together",
+      "vimeo_id": "5725942"
+    },
+    {
+      "template": "video-block",
+      "title": "Gumshoe - Interstellar Washout",
+      "vimeo_id": "5934968"
+    },
+    {
+      "template": "video-block",
+      "title": "Marc McNulty - Sonkinet",
+      "vimeo_id": "6067246"
+    },
+    {
+      "template": "video-block",
+      "title": "Threadworm - Rails",
+      "vimeo_id": "6052088"
+    },
+    {
+      "template": "video-block",
+      "title": "Belbivdevoidod - Felt like last night",
+      "vimeo_id": "75709446"
+    },
+    {
+      "template": "video-block",
+      "title": "Owen Brimijoin - After Hours",
+      "vimeo_id": "5680842"
+    }
+  ],
+  "description": "<p>A collection of work in collaboration with various Rochester Area Musicians, and sonic artists.</p>"
+}

@@ -1,0 +1,16 @@
+{
+  "template": "gallery",
+  "title": "nest_labs",
+  "display_title": "Nest Learning Thermostat",
+  "description": "<p>Worked with the teams at odopod and the Nerdery to create a new website for the Nest learning thermostat.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/nest_labs_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/nest_labs_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/nest_labs_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/nest_labs_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/nest_labs_05.jpg"
+  ],
+  "videos": [
+
+  ]
+}

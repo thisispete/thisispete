@@ -1,0 +1,15 @@
+{
+  "template": "gallery",
+  "title": "elephant_mobile",
+  "display_title": "Addison's Elephant Mobile",
+  "description": "<p>I made this for my niece. Her nursery was elephant themed. The pipe cleaner and washer gave them some heft and let me pose the shape a bit better than just fabric on it's own. The dowels were finished with a few coats of tung oil.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/elephant_mobile_01.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/elephant_mobile_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/elephant_mobile_03.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/elephant_mobile_04.png"
+  ],
+  "videos": [
+
+  ]
+}

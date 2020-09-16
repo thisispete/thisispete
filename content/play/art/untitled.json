@@ -1,0 +1,13 @@
+{
+  "template": "gallery",
+  "title": "untitled",
+  "display_title": "untitled",
+  "description": "",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/untitled_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/untitled_02.jpg"
+  ],
+  "videos": [
+
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "template": "gallery",
+  "title": "comacast",
+  "display_title": "Comacast",
+  "description": "<p>VJ'ed a number of shows for the band Comacast in NY.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/comacast_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/comacast_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/comacast_02.jpg"
+  ],
+  "videos": [
+    {
+      "template": "video-block",
+      "vimeo_id": "6077093",
+      "title": "Angel Prey [Dilute]"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+@import "@PETE/utilities.scss";
+
+.text {
+  height: auto;
+  
+  @media (min-width: $desktop) {
+    min-width: 54rem;
+    margin-right: 6rem;
+    height: 100vh;
+    overflow-y:scroll;
+    scrollbar-width: none;
+  }
+
+  > :first-child {
+    margin-top: 20vh;
+  }
+
+  > :last-child {
+    margin-bottom: 5rem;
+  }
+
+}

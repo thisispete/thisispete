@@ -1,0 +1,12 @@
+{
+  "template": "gallery",
+  "title": "80_circles",
+  "display_title": "80 Circles",
+  "description": "",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/80_circles.jpg"
+  ],
+  "videos": [
+
+  ]
+}

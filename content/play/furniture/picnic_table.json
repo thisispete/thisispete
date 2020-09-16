@@ -1,0 +1,15 @@
+{
+  "template": "gallery",
+  "title": "picnic_table",
+  "display_title": "Picnic Table",
+  "description": "<p>This was just a classic picnic table I built from redwood for <a href=\"http://808.estate\" title=\"\" target=\"_blank\">808 Estate</a>.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/picnic_table_04.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/picnic_table_03.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/picnic_table_02.png",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/picnic_table_01.png"
+  ],
+  "videos": [
+
+  ]
+}

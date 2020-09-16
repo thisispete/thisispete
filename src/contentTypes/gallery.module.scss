@@ -1,0 +1,84 @@
+@import "@PETE/utilities.scss";
+
+.gallery {
+  display: grid;
+  @include vh100;
+  overflow: hidden;
+  grid-template-rows: 45px 1fr 20px 25px;
+  grid-template-areas: "." "gallerycontent" "galleryfooter" ".";
+
+  .content {
+    display: block;
+    grid-area: gallerycontent;
+    align-self: center;
+    justify-self: stretch;
+
+    > :first-child {
+      margin-top: -30px;
+    }
+
+    .stack {
+      -webkit-overflow-scrolling: touch;
+      width: 100vw;
+      display: grid;
+      grid-auto-flow: column;
+      margin-bottom: 0;
+      padding:0;
+      scrollbar-width: none;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      
+      @media (min-width: $desktop) {
+        width: unset;
+        grid-template-areas: "fixed";
+        grid-template-columns: repeat(auto-fill, 1fr);
+      }
+
+      li {
+        transition: opacity 0.3s ease-in-out;
+        scroll-snap-align: center;
+        min-width: 100vw;
+        text-align: center;
+
+        img{        
+          max-height: 100vw;
+        }
+
+        @media (min-width: $desktop) {
+          min-width: unset;
+          grid-area: fixed;
+          .img{
+            max-height: unset;
+          }
+          &.on {
+            opacity: 1;
+            z-index: 5;
+          }
+          &.off {
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    .videoFrame {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      
+      @media (min-width: $desktop) {
+        min-width: 525px;
+        min-height: 400px;
+      }
+    }
+    .description {
+      margin-top: 30px;
+    }
+  }
+
+  .footer {
+    grid-area: galleryfooter;
+    align-self: end;
+    justify-self: center;
+  }
+}

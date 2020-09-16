@@ -1,0 +1,15 @@
+{
+  "template": "gallery",
+  "title": "triple_20",
+  "display_title": "Triple 20",
+  "description": "<p>Design for a score keeping app for darts. Developed the app for iOS 7, however it is no longer maintained for newer versions of iOS.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/triple_20_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/triple_20_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/triple_20_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/triple_20_04.jpg"
+  ],
+  "videos": [
+
+  ]
+}

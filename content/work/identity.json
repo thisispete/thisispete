@@ -1,0 +1,18 @@
+{
+  "template": "gallery",
+  "title": "identity",
+  "display_title": "Identity",
+  "description": "",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/identity_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/identity_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/identity_05.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/identity_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/identity_06.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/identity_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/identity_07.jpg"
+  ],
+  "videos": [
+
+  ]
+}

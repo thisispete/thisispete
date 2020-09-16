@@ -1,0 +1,18 @@
+{
+  "template": "gallery",
+  "title": "tesla_go_electric",
+  "display_title": "Tesla Go Electric Kiosk",
+  "description": "<p>Worked with the teams at Tesla Motors and odopod to create a series of educational tools designed to teach customers what its like to own an electric car.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_go_electric_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_go_electric_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_go_electric_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_go_electric_04.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_go_electric_05.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_go_electric_06.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/tesla_go_electric_07.jpg"
+  ],
+  "videos": [
+
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "template": "gallery",
+  "title": "duos",
+  "display_title": "Duos",
+  "description": "<p>A night of video projections paired with sonic arts performances at the AV room. featuring Marc McNulty</p>",
+  "images": [
+
+  ],
+  "videos": [
+    {
+      "template": "video-block",
+      "vimeo_id": "5659314",
+      "title": "Duos"
+    }
+  ]
+}

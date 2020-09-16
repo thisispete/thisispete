@@ -1,0 +1,46 @@
+@import "@PETE/utilities.scss";
+
+.wrapper{
+  display:grid;
+  place-items: center;
+  @include vh100;
+
+  ul{
+    margin-bottom:0;
+    padding:0
+  }
+}
+
+.contact {
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+
+  @media (min-width: $desktop) {
+    grid-auto-flow: column;
+  }
+
+  li {
+    padding: 15px;
+
+    &:first-child{
+      grid-row: 1;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      z-index: 10;
+
+      h3 {
+        display: none;
+      }
+    }
+
+    img {
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

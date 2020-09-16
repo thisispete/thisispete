@@ -1,0 +1,15 @@
+{
+  "template": "gallery",
+  "title": "exprescion",
+  "display_title": "Exprescion",
+  "description": "<p>Worked with the folks at Attik to develop this flash site showcasing the Scion owner event series called Exprescion.</p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/exprescion_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/exprescion_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/exprescion_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/exprescion_04.jpg"
+  ],
+  "videos": [
+
+  ]
+}
