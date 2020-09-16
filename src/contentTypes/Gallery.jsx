@@ -36,7 +36,7 @@ export default function Gallery(props) {
     const {width, height} = i.currentTarget;    
     if (isMobile){
       setVideoStyles({ height: `${height / width * 100}vw` })
-      scrollRef.current.scrollTo({left:0});
+      scrollRef.current.scrollTo({ left: scrollRef.current.scrollLeft});
     }
   }
 

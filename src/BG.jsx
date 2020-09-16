@@ -2,19 +2,21 @@ import styles from '@PETE/bg.module.scss';
 import { useEffect, useRef } from 'react';
 import { isMobile } from 'react-device-detect';
 
-export default function BG() {
+export default function BG({data}) {
 
+  const {images} = data;
   const bg = useRef();
   const newbg = useRef();
   var loading = useRef(false);
 
   useEffect(()=>{
     const i = setInterval(loadNext, 1000 * 20);
-    return () => {clearInterval(i)}
+    loadNext();
+    return () => {clearInterval(i)};
   }, []);
 
   const loadNext = () => {
-    if (loading.current == true || isMobile) {
+    if (loading.current == true) {
       return;
     }
     loading.current = true;
@@ -28,13 +30,21 @@ export default function BG() {
         loading.current = false;
       }, 800);
     };
-    newImg.src = `/api/background?rnd=${Math.random()}`;
+    const pick = Math.floor(Math.random() * images.length)
+    newImg.src = images[pick];
   }
+
+  const handleClick = () => {
+    if(!isMobile){
+      loadNext();
+    }
+  }
+  
 
   return(
     <>
       <div ref={bg} id={styles.bg} />
-      <div ref={newbg} id={styles.newbg} onClick={loadNext}/>
+      <div ref={newbg} id={styles.newbg} onClick={handleClick}/>
     </>
   )
 }

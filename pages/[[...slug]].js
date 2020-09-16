@@ -1,5 +1,10 @@
 import Head from 'next/head';
-import { getNavPaths, getDataForPath, getNavJson } from '@PETE/content';
+import { 
+  getNavPaths, 
+  getDataForPath, 
+  getNavJson, 
+  getBGJson 
+} from '@PETE/content';
 import App from '@PETE/App';
 
 export default function Post(props) {
@@ -24,10 +29,12 @@ export async function getStaticProps(props) {
   }
   const { pageData } = getDataForPath(path);
   const navData = getNavJson();
+  const bgData = getBGJson();
   return {
     props: {
       navData,
-      pageData
+      pageData,
+      bgData
     }
   }
 }

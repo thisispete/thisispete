@@ -1,6 +1,8 @@
 @import "utilities.scss";
 
+
 #main {
+  position: relative;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 100vh 0px auto;
@@ -8,7 +10,6 @@
   grid-template-areas: "nav" "logo" "content";
   width: 100vw;
   height:auto;
-  position: relative;
   scrollbar-width: none;
   z-index: 1;
   pointer-events: none;

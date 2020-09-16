@@ -19,7 +19,7 @@ import {
 import styles from '@PETE/app.module.scss'
 import { useEffect, useState } from 'react';
 
-export default function App({ navData, pageData }) {
+export default function App({ navData, pageData, bgData }) {
   const { template } = pageData;
   const idRoot = '/icons';
 
@@ -46,6 +46,7 @@ export default function App({ navData, pageData }) {
   }, [])
 
   const scrollToContent = () => {
+    console.log('scroll to ', vh*100)
     animateScroll.scrollTo(vh * 100, {
       duration: 400,
       delay: 100,
@@ -53,6 +54,7 @@ export default function App({ navData, pageData }) {
   }
 
   if (isMobile){
+    console.dir('ismobil')
     useEffect(() => {
       setTimeout(scrollToContent, 300)
     }, [pageData.title]);
@@ -93,7 +95,7 @@ export default function App({ navData, pageData }) {
         <meta name='theme-color' content='#ffffff' />
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:800,700,400' rel='stylesheet' type='text/css' />
       </Head>
-      <BG />
+      <BG data={bgData}/>
       <div id={styles.main}>
         <PETE />
         <Nav navData={navData} />
@@ -123,7 +125,6 @@ export default function App({ navData, pageData }) {
           </Transition>
         </div>
       </div>
-
     </div>
   )
 }

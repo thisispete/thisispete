@@ -4,6 +4,13 @@ import { MENU, TYPES } from 'src/enums';
 
 const contentDir = path.join(process.cwd(), 'content')
 
+export function getBGJson() {
+  const filePath = path.join(contentDir, `bg.json`)
+  const fileContents = fs.readFileSync(filePath, 'utf8')
+  const json = JSON.parse(fileContents);
+  return json;
+}
+
 export function getNavJson() {
   const filePath = path.join(contentDir, `nav.json`)
   const fileContents = fs.readFileSync(filePath, 'utf8')
