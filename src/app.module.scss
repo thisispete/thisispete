@@ -1,6 +1,5 @@
 @import "utilities.scss";
 
-
 #main {
   position: relative;
   display: grid;
@@ -9,7 +8,7 @@
   grid-template-rows: calc(var(--vh, 1vh) * 100) 0px auto;
   grid-template-areas: "nav" "logo" "content";
   width: 100vw;
-  height:auto;
+  height: auto;
   scrollbar-width: none;
   z-index: 1;
   pointer-events: none;
@@ -21,7 +20,6 @@
     grid-template-columns: 23rem 1fr min-content 1fr;
     grid-template-areas: "nav . content .";
   }
-  
 }
 
 #content {
@@ -30,3 +28,19 @@
   pointer-events: auto;
 }
 
+//404 styles
+#nope {
+  cursor: pointer;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+
+  svg {
+    filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.3));
+    z-index: 99;
+    path {
+      fill: #fff;
+    }
+  }
+}
