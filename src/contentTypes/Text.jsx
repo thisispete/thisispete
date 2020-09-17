@@ -7,9 +7,11 @@ export default function Text(props) {
 		text
 	} = props.data;
 
+	const textreplacepdf = text.split('.pdf\"').join('.pdf\" download target="_blank"');
+
 	return (
 		<Base >
-			<div className={styles.text} dangerouslySetInnerHTML={{ __html: text }} />
+			<div className={styles.text} dangerouslySetInnerHTML={{ __html: textreplacepdf }} />
 		</Base>
 	)
 }
