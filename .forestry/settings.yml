@@ -122,7 +122,7 @@ sections:
 upload_dir: images
 public_path: https://s3.amazonaws.com/cms.thisispete.com/images
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_output_directory: build
