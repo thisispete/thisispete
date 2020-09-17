@@ -10,7 +10,7 @@ export default function BG({data}) {
   var loading = useRef(false);
 
   useEffect(()=>{
-    const i = setInterval(loadNext, 1000 * 20);
+    const i = setInterval(loadNext, 1000 * 23);
     loadNext();
     return () => {clearInterval(i)};
   }, []);
