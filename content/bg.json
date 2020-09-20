@@ -1,5 +1,7 @@
 {
   "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/bg_82.jpeg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/bg_81.jpeg",
     "https://s3.amazonaws.com/cms.thisispete.com/images/bg_80.jpeg",
     "https://s3.amazonaws.com/cms.thisispete.com/images/bg_79.jpeg",
     "https://s3.amazonaws.com/cms.thisispete.com/images/bg_78.jpeg",
@@ -27,7 +29,6 @@
     "https://s3.amazonaws.com/cms.thisispete.com/images/bg_54.jpeg",
     "https://s3.amazonaws.com/cms.thisispete.com/images/bg_53.jpeg",
     "https://s3.amazonaws.com/cms.thisispete.com/images/bg_51.jpeg",
-    "https://s3.amazonaws.com/cms.thisispete.com/images/bg_50.jpeg",
     "https://s3.amazonaws.com/cms.thisispete.com/images/bg_49.jpeg",
     "https://s3.amazonaws.com/cms.thisispete.com/images/bg_48.jpeg",
     "https://s3.amazonaws.com/cms.thisispete.com/images/bg_47.jpeg",
