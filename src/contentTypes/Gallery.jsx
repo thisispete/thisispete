@@ -72,8 +72,8 @@ export default function Gallery(props) {
   return (
     <Base>
       <div className={styles.gallery}>
+        <h1 className={styles.title}>{title}</h1>
         <div className={styles.content}>
-          <h1>{title}</h1>
           <ul ref={scrollRef}  className={styles.stack}>
             {hasImages && images.map((image, imageNum) =>
               <li key={image} className={getClassesFor(imageNum)} onClick={tap}>
@@ -93,8 +93,8 @@ export default function Gallery(props) {
               </li>
             )}
           </ul>
-          <div className={styles.description} dangerouslySetInnerHTML={{ __html: description }} />
         </div>
+        <div className={styles.description} dangerouslySetInnerHTML={{ __html: description }} />
         {slideLen > 1 &&
           <div className={styles.footer}>
             <Pagination page={slide} setPage={setSlide} pageCount={slideLen} />
