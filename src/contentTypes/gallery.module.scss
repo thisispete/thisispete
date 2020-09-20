@@ -17,6 +17,10 @@
     grid-area: gallerycontent;
     align-self: center;
     justify-self: stretch;
+    
+    ::-webkit-scrollbar {
+      display:none;
+    }
 
     .stack {
       -webkit-overflow-scrolling: touch;
@@ -35,6 +39,7 @@
         grid-template-areas: "fixed";
         grid-template-columns: repeat(auto-fill, 1fr);
       }
+
 
       li {
         transition: opacity 0.3s ease-in-out;
