@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { animateScroll } from 'react-scroll';
 import { isMobile } from 'react-device-detect';
@@ -27,6 +28,8 @@ export default function App({ navData, pageData, bgData }) {
     OGDescription
   } = pageData;
   const idRoot = '/icons';
+  const router = useRouter()
+  console.dir(router);
 
   const [vh, setVh] = useState(0);
 
@@ -77,9 +80,9 @@ export default function App({ navData, pageData, bgData }) {
         <meta name='author' content='thisispete' />
         <meta name='viewport' content='initial-scale=1, maximum-scale=1' />
         <meta name='apple-mobile-web-app-capable' content='yes' />
-        <meta property='og:title' content={`THISISPETE : ${title}`} />
+        <meta property='og:title' content={title ? `THISISPETE : ${title}` : 'THISISPETE'} />
         <meta property='og:description' content={OGDescription || '▲PETE - artist and creative engineer from Oakland CA.'} />
-        <meta property='og:url' content='https://www.thisispete.com' />
+        <meta property='og:url' content={`https://www.thisispete.com${router.asPath}`} />
         <meta property='og:type' content='website' />
         <meta property='og:image' content={OGImage ||`${idRoot}/thisispete_logo_share.jpg`} />
         <meta property='og:image:type' content='image/jpg' />
