@@ -33,3 +33,16 @@ fields:
       file: 
       path: 
   label: Template
+- name: OGImage
+  type: file
+  config:
+    maxSize: 64
+  label: Social Graph Image
+  default: https://s3.amazonaws.com/cms.thisispete.com/images/thisispete_logo_share.jpg
+  description: 'Share Image for Open Graph<br>best size: 1200x630'
+- name: OGDescription
+  type: text
+  config:
+    required: false
+  label: Social Graph Description
+  default: 'Pete Schirmer: artist and creative engineer from Oakland CA.'
