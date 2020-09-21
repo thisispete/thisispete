@@ -2,7 +2,7 @@
   "template": "gallery",
   "title": "kitchen_helper",
   "display_title": "Addison's Kitchen Stool",
-  "description": "<p>This one is for my Niece. Kitchen \"learning tower\" for counter activities. Design by the <a href=\"http://thewoodwisperer.com\" title=\"\" target=\"_blank\">wood wisperer</a> - Marc Spagnuolo. <a href=\"https://m.youtube.com/watch?v=vnbP-Q8a5Nc\" title=\"\" target=\"_blank\">video</a></p>",
+  "description": "<p>This one is for my Niece. Kitchen \"learning tower\" for counter activities. Design by the <a href=\"http://thewoodwisperer.com\" title=\"\">wood whisperer</a> - Marc Spagnuolo. <a href=\"https://m.youtube.com/watch?v=vnbP-Q8a5Nc\" title=\"\">video</a></p>",
   "images": [
     "https://s3.amazonaws.com/cms.thisispete.com/images/kitchen_helper_01.png",
     "https://s3.amazonaws.com/cms.thisispete.com/images/kitchen_helper_02.png",
@@ -11,5 +11,7 @@
   ],
   "videos": [
 
-  ]
+  ],
+  "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/kitchen_helper_01.png",
+  "OGDescription": "Kitchen \"learning tower\" for counter activities. Design by the Wood Whisperer"
 }
