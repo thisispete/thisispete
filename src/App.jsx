@@ -80,8 +80,8 @@ export default function App({ navData, pageData, bgData }) {
         <meta name='author' content='thisispete' />
         <meta name='viewport' content='initial-scale=1, maximum-scale=1' />
         <meta name='apple-mobile-web-app-capable' content='yes' />
-        <meta property='og:title' content={title ? `THISISPETE : ${title}` : 'THISISPETE'} />
-        <meta property='og:description' content={OGDescription || '▲PETE - artist and creative engineer from Oakland CA.'} />
+        <meta property='og:title' content={title || 'THISISPETE'} />
+        <meta property='og:description' content={OGDescription || 'Artist and creative engineer from Oakland CA.'} />
         <meta property='og:url' content={`https://www.thisispete.com${router.asPath}`} />
         <meta property='og:type' content='website' />
         <meta property='og:image' content={OGImage ||`${idRoot}/thisispete_logo_share.jpg`} />
