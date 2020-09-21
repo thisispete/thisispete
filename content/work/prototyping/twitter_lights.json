@@ -15,5 +15,7 @@
   ],
   "videos": [
 
-  ]
+  ],
+  "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/twitter_lights_03.jpg",
+  "OGDescription": "Prototype ambient display device that reacts to tweeted keywords by changing colors"
 }
