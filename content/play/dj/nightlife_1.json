@@ -4,5 +4,7 @@
   "url": "http://aws.thisispete.com/dj/nightlife_11311_1.mp3",
   "cover": "https://s3.amazonaws.com/cms.thisispete.com/images/nightlife.jpg",
   "template": "audio",
-  "description": "<p>Live set for <a href=\"\" title=\"\">Cal Academy of Science</a> Nightlife event (1/2)</p>"
+  "description": "<p>Live set for <a href=\"\" title=\"\">Cal Academy of Science</a> Nightlife event (1/2)</p>",
+  "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/nightlife.jpg",
+  "OGDescription": "Live set for Cal Academy of Science Nightlife (1/2)"
 }
