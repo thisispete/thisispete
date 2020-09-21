@@ -18,5 +18,7 @@
       "description": ""
     }
   ],
-  "template": "gallery"
+  "template": "gallery",
+  "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/honda_kiosk_03.jpg",
+  "OGDescription": "Touch screen interactive experiences for Honda auto shows"
 }
