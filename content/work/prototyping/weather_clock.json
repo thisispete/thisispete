@@ -36,5 +36,7 @@
       "title": "video of clock hand moving"
     }
   ],
-  "footer": "©2006 Peter Schirmer"
+  "footer": "©2006 Peter Schirmer",
+  "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/weather_clock_01.jpg",
+  "OGDescription": "Hacked 'antique' clock - shows weather instead of time."
 }
