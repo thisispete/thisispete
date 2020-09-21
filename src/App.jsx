@@ -20,7 +20,12 @@ import styles from '@PETE/app.module.scss'
 import { useEffect, useState } from 'react';
 
 export default function App({ navData, pageData, bgData }) {
-  const { template } = pageData;
+  const { 
+    template,
+    display_title: title = '',
+    OGImage,
+    OGDescription
+  } = pageData;
   const idRoot = '/icons';
 
   const [vh, setVh] = useState(0);
@@ -60,7 +65,7 @@ export default function App({ navData, pageData, bgData }) {
     }, [pageData.title]);
   }
 
-
+  console.dir(pageData);
 
   return (
     <div id={styles.app}>
@@ -72,11 +77,11 @@ export default function App({ navData, pageData, bgData }) {
         <meta name='author' content='thisispete' />
         <meta name='viewport' content='initial-scale=1, maximum-scale=1' />
         <meta name='apple-mobile-web-app-capable' content='yes' />
-        <meta property='og:title' content='THISISPETE' />
-        <meta property='og:description' content='Pete Schirmer: artist and creative engineer from Oakland CA.' />
+        <meta property='og:title' content={`THISISPETE : ${title}`} />
+        <meta property='og:description' content={OGDescription || '▲PETE - artist and creative engineer from Oakland CA.'} />
         <meta property='og:url' content='https://www.thisispete.com' />
         <meta property='og:type' content='website' />
-        <meta property='og:image' content={`${idRoot}/thisispete_logo_share.jpg`} />
+        <meta property='og:image' content={OGImage ||`${idRoot}/thisispete_logo_share.jpg`} />
         <meta property='og:image:type' content='image/jpg' />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />
