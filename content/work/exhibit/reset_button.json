@@ -50,5 +50,7 @@
     }
   ],
   "footer": "",
-  "template": "blog"
+  "template": "blog",
+  "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/berkshire_reset_02.jpg",
+  "OGDescription": "Three insurance unveiling at Berkshire Hathaway annual shareholder meeting"
 }
