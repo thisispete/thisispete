@@ -14,5 +14,7 @@
   ],
   "videos": [
 
-  ]
+  ],
+  "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/assembly_table_05.png",
+  "OGDescription": "assembly / clamping table inspired by various other \"MFT\" tables, with added T-tracks"
 }
