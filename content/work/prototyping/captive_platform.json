@@ -46,5 +46,7 @@
       "alt_text": "home made circuit board with colorful wires"
     }
   ],
-  "footer": ""
+  "footer": "",
+  "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/matter_captive_portal_05.jpg",
+  "OGDescription": "Battery powered, Raspberry Pi, captive web portal, prototyping platform"
 }
