@@ -1,8 +1,24 @@
+import { useEffect } from 'react';
 import styles from './pagination.module.scss';
 
 export default function Pagination(props) {
 
   const { page, setPage, pageCount } = props;
+
+  useEffect(() => {
+    window.addEventListener('keyup', onKeyUp);
+    return () => {
+      window.removeEventListener('keyup', onKeyUp);
+    };
+  }, [page]);
+
+  const onKeyUp = e => {
+    if (e.keyCode == 39) {
+      next();
+    } else if (e.keyCode == 37) {
+      prev();
+    }
+  }
 
   const prev = () => {
     setPage(Math.max(0, page - 1));
