@@ -28,7 +28,12 @@ export default function Gallery(props) {
   useEffect(() => {
     if (isMobile){
       let i = setInterval(onScrollEvent, 200);
-      return () => {clearInterval(i)}
+      return () => {clearInterval(i)};
+    }else{
+      window.addEventListener('keyup', onKeyUp);
+      return () => {
+        window.removeEventListener('keyup', onKeyUp);
+      };
     }
   }, [isMobile]);
 
@@ -48,15 +53,28 @@ export default function Gallery(props) {
     }
   }
 
-  const tap = () => {
-    if (isBrowser) {
-      if (slide == slideLen - 1) {
-        setSlide(0);
-      } else {
-        setSlide(slide + 1);
-      }
+  const prev = () => {
+    setSlide(Math.max(0, currentSlide.current - 1));
+  }
+
+  const next = () => {
+    setSlide(Math.min(slideLen - 1, currentSlide.current + 1));
+  }
+
+  const onKeyUp = e => {
+    if(e.keyCode == 39){
+      next();
+    }else if(e.keyCode == 37){
+      prev();
     }
   }
+
+  const tap = () => {
+    if (isBrowser) {
+     next();
+    }
+  }
+
   const getClassesFor = (imageNum, videoNum = 0) => {
     if(isMobile){
       return 'noTapActions';
