@@ -33,5 +33,7 @@
   ],
   "title": "contact",
   "display_title": "contact",
-  "template": "contact"
+  "template": "contact",
+  "OGImage": "",
+  "OGDescription": "Call me maybe?"
 }
