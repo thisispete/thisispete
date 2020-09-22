@@ -13,5 +13,7 @@
   ],
   "videos": [
 
-  ]
+  ],
+  "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/cnc_dust_collector_01.jpg",
+  "OGDescription": "Loc-Line CNC Dust Collector Hub"
 }
