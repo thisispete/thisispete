@@ -29,7 +29,6 @@ export default function App({ navData, pageData, bgData }) {
   } = pageData;
   const idRoot = '/icons';
   const router = useRouter()
-  console.dir(router);
 
   const [vh, setVh] = useState(0);
 
@@ -62,13 +61,10 @@ export default function App({ navData, pageData, bgData }) {
   }
 
   if (isMobile){
-    console.dir('ismobil')
     useEffect(() => {
       setTimeout(scrollToContent, 300)
     }, [pageData.title]);
   }
-
-  console.dir(pageData);
 
   return (
     <div id={styles.app}>
