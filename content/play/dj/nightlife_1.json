@@ -1,7 +1,7 @@
 {
   "title": "nightlife_1",
   "display_title": "Nightlife 1",
-  "url": "https://aws.thisispete.com/dj/nightlife_11311_1.mp3",
+  "url": "https://s3-us-west-1.amazonaws.com/aws.thisispete.com/dj/nightlife_11311_1.mp3",
   "cover": "https://s3.amazonaws.com/cms.thisispete.com/images/nightlife.jpg",
   "template": "audio",
   "description": "<p>Live set for <a href=\"\" title=\"\">Cal Academy of Science</a> Nightlife event (1/2)</p>",
