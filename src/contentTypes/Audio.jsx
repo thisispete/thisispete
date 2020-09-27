@@ -26,7 +26,7 @@ export default function Audio(props) {
 						height={30}
 					/>
 					<div className={styles.copy} dangerouslySetInnerHTML={{ __html: description }} />
-					<a className={styles.download} href={url} target='_blank'>Download</a>
+					<a className={styles.download} href={url} target='_blank' download>Download</a>
 				</div>
 			</div>
 		</Base>
