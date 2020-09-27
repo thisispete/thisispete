@@ -3,7 +3,7 @@
   "title": "partyline",
   "display_title": "Partyline!",
   "description": "<p>Excerpt from a set performed at Partyline!</p>",
-  "url": "http://aws.thisispete.com/dj/Partyline.mp3",
+  "url": "https://aws.thisispete.com/dj/Partyline.mp3",
   "cover": "https://s3.amazonaws.com/cms.thisispete.com/images/partyline.jpg",
   "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/partyline.jpg",
   "OGDescription": "Excerpt from a set performed at Partyline!"
