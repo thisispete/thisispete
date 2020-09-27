@@ -32,19 +32,12 @@ export default function BG({data}) {
     };
     const pick = Math.floor(Math.random() * images.length)
     newImg.src = images[pick];
-  }
-
-  const handleClick = () => {
-    if(!isMobile){
-      loadNext();
-    }
-  }
-  
+  }  
 
   return(
     <>
       <div ref={bg} id={styles.bg} />
-      <div ref={newbg} id={styles.newbg} onClick={handleClick}/>
+      <div ref={newbg} id={styles.newbg} />
     </>
   )
 }
