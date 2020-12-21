@@ -12,6 +12,12 @@
     "https://s3.amazonaws.com/cms.thisispete.com/images/sony_piiq_06.jpg"
   ],
   "videos": [
-
-  ]
+    {
+      "template": "video-block",
+      "title": "Piiq",
+      "vimeo_id": "493521424"
+    }
+  ],
+  "OGImage": "",
+  "OGDescription": ""
 }
