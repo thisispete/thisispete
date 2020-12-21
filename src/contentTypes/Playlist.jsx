@@ -18,7 +18,7 @@ export default function Playlist(props) {
           <h1>{title}</h1>
           <iframe
             className={styles.videoFrame}
-            src={`http://player.vimeo.com/video/${vid}?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;loop=0`}
+            src={`https://player.vimeo.com/video/${vid}?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;loop=0`}
             frameBorder="0"
             webkitallowfullscreen="true"
             mozallowfullscreen="true"
