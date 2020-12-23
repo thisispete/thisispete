@@ -11,6 +11,12 @@
     "https://s3.amazonaws.com/cms.thisispete.com/images/nvidia_speak_visual_05.jpg"
   ],
   "videos": [
-
-  ]
+    {
+      "template": "video-block",
+      "vimeo_id": "494168188",
+      "title": "Nvidia Speak Visual"
+    }
+  ],
+  "OGImage": "",
+  "OGDescription": ""
 }
