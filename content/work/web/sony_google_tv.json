@@ -12,6 +12,12 @@
     "https://s3.amazonaws.com/cms.thisispete.com/images/sony_google_tv_06.jpg"
   ],
   "videos": [
-
-  ]
+    {
+      "template": "video-block",
+      "vimeo_id": "494200029",
+      "title": "Sony Google TV"
+    }
+  ],
+  "OGImage": "",
+  "OGDescription": ""
 }
