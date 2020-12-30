@@ -10,6 +10,12 @@
     "https://s3.amazonaws.com/cms.thisispete.com/images/nestea_liquid_awesome_04.jpg"
   ],
   "videos": [
-
-  ]
+    {
+      "template": "video-block",
+      "vimeo_id": "495834310",
+      "title": "Nestea Liquid Awesomeness"
+    }
+  ],
+  "OGImage": "",
+  "OGDescription": ""
 }
