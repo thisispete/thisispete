@@ -11,6 +11,12 @@
     "https://s3.amazonaws.com/cms.thisispete.com/images/white_gold_05.jpg"
   ],
   "videos": [
-
-  ]
+    {
+      "template": "video-block",
+      "vimeo_id": "498975221",
+      "title": "White Gold - Got Milk?"
+    }
+  ],
+  "OGImage": "",
+  "OGDescription": ""
 }
