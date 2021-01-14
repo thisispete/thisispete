@@ -1,7 +1,7 @@
 {
   "template": "gallery",
   "title": "scion_little_d",
-  "display_title": "Little Deviant",
+  "display_title": "Book of Deviants",
   "description": "<p>Worked with the team at Attik and Form Collective to create this Flash website launching the new Scion xD model. The site featured a series of games hosted in a popup book styled environment.</p>",
   "images": [
     "https://s3.amazonaws.com/cms.thisispete.com/images/scion_little_d_01.jpg",
@@ -9,6 +9,12 @@
     "https://s3.amazonaws.com/cms.thisispete.com/images/scion_little_d_02.jpg"
   ],
   "videos": [
-
-  ]
+    {
+      "template": "video-block",
+      "vimeo_id": "500650789",
+      "title": "Book of Deviants"
+    }
+  ],
+  "OGImage": "",
+  "OGDescription": ""
 }
