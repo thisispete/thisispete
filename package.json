@@ -11,7 +11,7 @@
   "dependencies": {
     "dotenv-load": "^2.0.0",
     "framer-motion": "^2.9.5",
-    "gsap": "^3.5.1",
+    "gsap": "^3.6.0",
     "jsx-logical-operators": "^0.0.21",
     "next": "^10.0.3",
     "next-env": "^1.1.1",
