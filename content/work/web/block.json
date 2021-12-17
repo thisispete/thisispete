@@ -1,0 +1,17 @@
+{
+  "template": "gallery",
+  "OGImage": "https://s3.amazonaws.com/cms.thisispete.com/images/thisispete_logo_share.jpg",
+  "OGDescription": "Pete Schirmer: artist and creative engineer from Oakland CA.",
+  "title": "block",
+  "display_title": "Block.xyz",
+  "description": "<p>For the Block (FKA Square inc.) rebrand launch, working with the Block brand / communications design team, I built the interactive landing page, and interactive logo for block.xyz, using three.js and GLSL shader code.  </p>",
+  "images": [
+    "https://s3.amazonaws.com/cms.thisispete.com/images/block_01.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/block_02.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/block_03.jpg",
+    "https://s3.amazonaws.com/cms.thisispete.com/images/block_04.jpg"
+  ],
+  "videos": [
+
+  ]
+}
