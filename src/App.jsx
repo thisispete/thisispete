@@ -69,15 +69,15 @@ export default function App({ navData, pageData, bgData }) {
   return (
     <div id={styles.app}>
       <Head>
-        <title>THISISPETE</title>
+        <title>▲PETE</title>
         <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1,requiresActiveX=true' />
         <meta charSet='utf-8' />
-        <meta name='description' content='portfolio website for Pete Schirmer: artist and creative engineer from Oakland CA.' />
-        <meta name='author' content='thisispete' />
+        <meta name='description' content='portfolio website for Pete Schirmer: artist and creative engineer from Marin CA.' />
+        <meta name='author' content='▲PETE' />
         <meta name='viewport' content='initial-scale=1, maximum-scale=1' />
         <meta name='apple-mobile-web-app-capable' content='yes' />
-        <meta property='og:title' content={title || 'THISISPETE'} />
-        <meta property='og:description' content={OGDescription || 'Artist and creative engineer from Oakland CA.'} />
+        <meta property='og:title' content={title || '▲PETE'} />
+        <meta property='og:description' content={OGDescription || 'Artist and Creative Engineer.'} />
         <meta property='og:url' content={`https://www.thisispete.com${router.asPath}`} />
         <meta property='og:type' content='website' />
         <meta property='og:image' content={OGImage ||`${idRoot}/thisispete_logo_share.jpg`} />
@@ -92,8 +92,8 @@ export default function App({ navData, pageData, bgData }) {
         <link rel='icon' type='image/png' sizes='16x16' href={`${idRoot}/favicon-16x16.png`} />
         <link rel='manifest' href={`${idRoot}/site.webmanifest`} />
         <link rel='mask-icon' href={`${idRoot}/safari-pinned-tab.svg`} color='#ffffff' />
-        <meta name='apple-mobile-web-app-title' content='PETE' />
-        <meta name='application-name' content='PETE' />
+        <meta name='apple-mobile-web-app-title' content='▲PETE' />
+        <meta name='application-name' content='▲PETE' />
         <meta name='msapplication-TileColor' content='#603cba' />
         <meta name='msapplication-config' content={`${idRoot}/browserconfig.xml`} />
         <meta name='theme-color' content='#ffffff' />
