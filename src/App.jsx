@@ -93,7 +93,7 @@ export default function App({ navData, pageData, bgData }) {
         <link rel='manifest' href={`${idRoot}/site.webmanifest`} />
         <link rel='mask-icon' href={`${idRoot}/safari-pinned-tab.svg`} color='#ffffff' />
         <meta name='apple-mobile-web-app-title' content='▲PETE' />
-        <meta name='application-name' content='▲PETE' />
+        <meta name='application-name' content='THISISPETE' />
         <meta name='msapplication-TileColor' content='#603cba' />
         <meta name='msapplication-config' content={`${idRoot}/browserconfig.xml`} />
         <meta name='theme-color' content='#ffffff' />
