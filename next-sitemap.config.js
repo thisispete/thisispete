@@ -1,5 +1,5 @@
 module.exports = {
   siteUrl: 'http://thisispete.com',
-  generateRobotsTxt: true, 
+  generateRobotsTxt: true,
   changefreq: 'monthly'
 }
