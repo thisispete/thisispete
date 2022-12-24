@@ -18,7 +18,7 @@ import {
 } from '@PETE/contentTypes/';
 
 import styles from '@PETE/app.module.scss'
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function App({ navData, pageData, bgData }) {
   const { 
@@ -97,7 +97,7 @@ export default function App({ navData, pageData, bgData }) {
         <meta name='msapplication-TileColor' content='#603cba' />
         <meta name='msapplication-config' content={`${idRoot}/browserconfig.xml`} />
         <meta name='theme-color' content='#ffffff' />
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:800,700,400' rel='stylesheet' type='text/css' />
+
       </Head>
       <BG data={bgData}/>
       <div id={styles.main}>
@@ -124,7 +124,7 @@ export default function App({ navData, pageData, bgData }) {
               <Case when={TYPES.TEXT}>
                 <Text data={pageData} />
               </Case>
-              <Default><React.Fragment /></Default>
+              <Default><React.Fragment/></Default>
             </Switch>
           </Transition>
         </div>

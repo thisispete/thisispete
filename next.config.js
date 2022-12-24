@@ -13,7 +13,9 @@ module.exports = withNextEnv({
       }) }];
   },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    config.node = { fs: "empty" };
+    if (!isServer) {
+      config.resolve.fallback.fs = false;
+    }
     return config
   },
 })

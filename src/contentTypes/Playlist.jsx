@@ -1,3 +1,4 @@
+import React from 'react';
 import Base from './Base';
 import styles from './playlist.module.scss';
 

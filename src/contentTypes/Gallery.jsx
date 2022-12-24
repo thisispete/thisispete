@@ -1,7 +1,7 @@
 import Base from './Base';
 import Pagination from './Pagination';
 import styles from './gallery.module.scss';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { isBrowser, isMobile } from 'react-device-detect';
 
 export default function Gallery(props) {
