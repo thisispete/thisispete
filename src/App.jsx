@@ -69,7 +69,7 @@ export default function App({ navData, pageData, bgData }) {
   return (
     <div id={styles.app}>
       <Head>
-        <title>▲PETE</title>
+        <title>THISISPETE</title>
         <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1,requiresActiveX=true' />
         <meta charSet='utf-8' />
         <meta name='description' content='portfolio website for Pete Schirmer: artist and creative engineer from Marin CA.' />
