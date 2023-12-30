@@ -1,19 +1,19 @@
 {
   "links": [
     {
+      "url": "https://www.reddit.com/user/peteschirmer",
+      "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/reddit.svg",
+      "hover": "reddit"
+    },
+    {
       "url": "http://instagram.com/peteschirmer",
       "hover": "instagram",
       "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/instagram.svg"
     },
     {
-      "url": "https://twitter.com/peteschirmer",
-      "hover": "twitter",
-      "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/twitter.svg"
-    },
-    {
-      "url": "http://www.facebook.com/peterschirmer",
-      "hover": "facebook",
-      "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/facebook.svg"
+      "url": "https://www.threads.net/@peteschirmer",
+      "icon": "https://s3.amazonaws.com/cms.thisispete.com/images/threads.svg",
+      "hover": "threads"
     },
     {
       "url": "http://linkedin.com/in/thisispete",
