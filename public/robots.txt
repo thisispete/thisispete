@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: http://thisispete.com
+
+# Sitemaps
+Sitemap: http://thisispete.com/sitemap.xml
