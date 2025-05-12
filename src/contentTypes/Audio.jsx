@@ -1,6 +1,6 @@
 import Base from './Base';
 import styles from './audio.module.scss';
-import Player from 'react-hooks-player';
+import { AudioPlayer } from 'react-audio-play';
 
 export default function Audio(props) {
 	const {
@@ -17,14 +17,17 @@ export default function Audio(props) {
 
 					<h1>{title}</h1>
 					<img className={styles.cover} src={cover} alt='album art' />
-					<Player
-						url={url}
+					<AudioPlayer
+						src={url}
 						title=''
 						color='#fff'
-						background='rgba(255,255,255,0.05)'
+						sliderColor='#eee'
+						backgroundColor='rgba(255,255,255,0.05)'
 						volumeControls={true}
 						height={30}
 					/>
+
+					
 					<div className={styles.copy} dangerouslySetInnerHTML={{ __html: description }} />
 					<a className={styles.download} href={url} target='_blank' download>Download</a>
 				</div>
