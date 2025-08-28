@@ -7,7 +7,6 @@ THIS IS PETE DOT COM
 *   [node.js](https://nodejs.org/)
 *   [next.js](https://nextjs.org/)
 *   [react](https://reactjs.org/)
-*   [forestry.io](https://forestry.io/)
 *   [SASS](http://sass-lang.com/)
 *   [framer-motion](https://www.framer.com/motion/)
 *   [gsap](https://greensock.com/gsap/)
