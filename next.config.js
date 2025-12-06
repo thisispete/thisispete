@@ -30,5 +30,7 @@ module.exports = withNextEnv({
     }
     return config
   },
+  // Turbopack config - empty to silence the warning while keeping webpack config
+  turbopack: {},
 })
 
